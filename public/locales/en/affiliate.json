@@ -1,0 +1,56 @@
+{
+    "product": {
+      "name": "OUR PRODUCTS",
+      "content": ["Slots","Real people","Lottery","Sport"]
+  },
+  "advantage": {
+      "name": "OUR ADVANTAGE",
+      "content": [
+          {
+              "title": "Quick and convenient audit process",
+              "p": ["7*24 acting industry agent team","complete the audit 3 days after application","Telephone, QQ, SKYPE, WeChat and other channels make communication more convenient"]
+          },
+          {
+              "title": "Our advantage, you promote the weapon",
+              "p": ["7*24 acting industry agent team","complete the audit 3 days after application","Telephone, QQ, SKYPE, WeChat and other channels make communication more convenient"]
+          },
+          {
+              "title": "A high rate of return on commission",
+              "p": ["7*24 acting industry agent team","complete the audit 3 days after application","Telephone, QQ, SKYPE, WeChat and other channels make communication more convenient"]
+          },
+          {
+              "title": "The report is clear and easy to calculate",
+              "p": ["7*24 acting industry agent team","complete the audit 3 days after application","Telephone, QQ, SKYPE, WeChat and other channels make communication more convenient"]
+          },
+          {
+              "title": "Special agent VIP, industry initiative, show honor",
+              "p": ["7*24 acting industry agent team","complete the audit 3 days after application","Telephone, QQ, SKYPE, WeChat and other channels make communication more convenient"]
+          }
+      ]
+  },
+  "plan": {
+      "name": "PLAN DETAILS",
+      "content": {
+          "header": ["counts","Active users","rate"],
+          "note": ["It's a nice day today", "Really good", "It's really nice"]
+      }
+  },
+  "arrange": {
+      "name": "DATE PLANNING",
+      "content": ["Climb Qomolangma","Then come down","Climb Down"]
+  },
+  "goal": {
+      "name": "GOAL",
+      "content": [
+          ["Make a hundred million dollars first"],
+          ["Buy a car","Buy a house"],
+          ["Cost all","Make money"],
+          ["Cost slowly"]
+      ]
+  },
+  "download": {
+      "name": "CLIENT DOWNLOAD",
+      "explain": "Provide the computer client and mobile phone client download, really do anytime anywhere",
+      "content": ["Mac","Windows","iPhone","Android"]
+  }
+}

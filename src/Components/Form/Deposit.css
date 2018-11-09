@@ -1,0 +1,1083 @@
+.deposit-wrapper {
+    /*padding-top: 30px;*/
+    position: relative;
+    z-index: 4;
+}
+
+.deposit-wrapper .modal__close {
+    /*font-size: 10px;*/
+    padding: 29px 0 0;
+}
+
+.form {
+    font-size: .8125em;
+}
+.form--part {
+    margin-bottom: 10px;
+}
+
+.form__row, .free-wallet {
+    display: block;
+    box-sizing: border-box;
+    height: 40px;
+    line-height: 40px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-top: #cdcdcd solid 1px;
+}
+.form__row.inputs {
+    height: 60px;
+    line-height: 60px;
+    padding: 0 10px;
+}
+.accordion__label {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+.form__row--interactive, .form__row--summary {
+    height: 45px;
+    line-height: 45px;
+}
+.label {
+    padding: 0 10px;
+    color: grey;
+    cursor: pointer;
+}
+.label__icon {
+    display: inline-block;
+    position: relative;
+    top: 2px;
+    width: 1em;
+    height: 1em;
+    margin-right: .75em;
+    border: 1px solid #b8b8b8;
+    background-color: #ededed;
+    background-clip: content-box;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,.1), inset 0 0 0 4px #ededed;
+}
+.label__icon--radio {
+    border-radius: 50%;
+}
+.is-selected .label__icon--radio {
+    background-color: #4c4c4c;
+}
+.label__img {
+    display: inline;
+    margin-right: .75em;
+    opacity: .8;
+}
+.label.is-selected .label__img {
+    opacity: 1;
+}
+
+.accordion__body:before {
+    content: '';
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    margin: 0 0 0 2px;
+    opacity: 0;
+    -webkit-transform: rotate(-52deg) skewX(-14deg);
+    transform: rotate(-52deg) skewX(-14deg);
+    background: #d7d7d7;
+    box-shadow: inset -1px 1px 0 #cdcdcd;
+    transition: margin linear .15s;
+}
+
+.accordion__body.is-active:before {
+    margin-top: -14px;
+    opacity: 1;
+}
+
+.accordion__body--info:before {
+    background: #e9e2cd;
+}
+
+.img-card--mastercard, .img-card--paypal, .img-card--paysafe, .img-card--visa, .img-card--webmoney, .img-card--yandex {
+    width: 34px;
+    height: 24px;
+}
+.input-element__icon {
+    margin-left: 9px;
+    color: grey;
+}
+
+.icon-card {
+    display: inline-block;
+    vertical-align: -2px;
+    width: 22px;
+    height: 14px;
+    fill: grey;
+}
+.input-element._price:before {
+    color: grey;
+}
+
+.img-card {
+    background-image: url(../../images/payment.1x.png);
+    display: inline-block;
+    vertical-align: -6px;
+}
+
+.coupon-hint{
+    list-style: none;
+    width: 100%;
+    background-color: white;
+    border: 1px solid #ccc;
+    position: absolute;
+    z-index: 10;
+    left: -1px;
+    top: 38px;
+}
+.coupon-hint li{
+    text-align: left;
+    color: #000;
+    font: 13px arial;
+    line-height: 22px;
+    padding: 0 8px;
+    position: relative;
+    cursor: default;
+}
+.coupon-hint li:hover{
+    background-color: #cdcdcda8
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5) and (-webkit-min-device-pixel-ratio:1.5),only screen and (min--moz-device-pixel-ratio:1.5) and (-webkit-min-device-pixel-ratio:1.5),only screen and (min-device-pixel-ratio:1.5) and (-webkit-min-device-pixel-ratio:1.5),only screen and (min-resolution:144dpi) and (-webkit-min-device-pixel-ratio:1.5),only screen and (min-resolution:1.5dppx) and (-webkit-min-device-pixel-ratio:1.5),only screen and (-webkit-min-device-pixel-ratio:1.5) and (min--moz-device-pixel-ratio:1.5),only screen and (min--moz-device-pixel-ratio:1.5) and (min--moz-device-pixel-ratio:1.5),only screen and (min-device-pixel-ratio:1.5) and (min--moz-device-pixel-ratio:1.5),only screen and (min-resolution:144dpi) and (min--moz-device-pixel-ratio:1.5),only screen and (min-resolution:1.5dppx) and (min--moz-device-pixel-ratio:1.5),only screen and (-webkit-min-device-pixel-ratio:1.5) and (min-device-pixel-ratio:1.5),only screen and (min--moz-device-pixel-ratio:1.5) and (min-device-pixel-ratio:1.5),only screen and (min-device-pixel-ratio:1.5) and (min-device-pixel-ratio:1.5),only screen and (min-resolution:144dpi) and (min-device-pixel-ratio:1.5),only screen and (min-resolution:1.5dppx) and (min-device-pixel-ratio:1.5),only screen and (-webkit-min-device-pixel-ratio:1.5) and (min-resolution:144dpi),only screen and (min--moz-device-pixel-ratio:1.5) and (min-resolution:144dpi),only screen and (min-device-pixel-ratio:1.5) and (min-resolution:144dpi),only screen and (min-resolution:144dpi) and (min-resolution:144dpi),only screen and (min-resolution:1.5dppx) and (min-resolution:144dpi),only screen and (-webkit-min-device-pixel-ratio:1.5) and (min-resolution:1.5dppx),only screen and (min--moz-device-pixel-ratio:1.5) and (min-resolution:1.5dppx),only screen and (min-device-pixel-ratio:1.5) and (min-resolution:1.5dppx),only screen and (min-resolution:144dpi) and (min-resolution:1.5dppx),only screen and (min-resolution:1.5dppx) and (min-resolution:1.5dppx) {
+    .img-card {
+        background-image:url(../../images/payment.2x.png);
+        background-size: 170px auto
+    }
+}
+.img-card~.img-card {
+    margin-left: 3px
+}
+.img-card--paypal {
+    background-position: -68px -96px
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),only screen and (min--moz-device-pixel-ratio:1.5),only screen and (min-device-pixel-ratio:1.5),only screen and (min-resolution:144dpi),only screen and (min-resolution:1.5dppx) {
+    .img-card--paypal {
+        background-position:-68px -96px
+    }
+
+    .img-card--yandex {
+        background-position: -34px -144px
+    }
+}
+
+.img-card--yandex {
+    background-position: -34px -144px
+}
+
+.img-card--visa {
+    background-position: -68px -120px
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),only screen and (min--moz-device-pixel-ratio:1.5),only screen and (min-device-pixel-ratio:1.5),only screen and (min-resolution:144dpi),only screen and (min-resolution:1.5dppx) {
+    .img-card--visa {
+        background-position:-68px -120px
+    }
+
+    .img-card--webmoney {
+        background-position: 0 -144px
+    }
+}
+
+.img-card--webmoney {
+    background-position: 0 -144px
+}
+
+.img-card--mastercard {
+    background-position: -102px -24px
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),only screen and (min--moz-device-pixel-ratio:1.5),only screen and (min-device-pixel-ratio:1.5),only screen and (min-resolution:144dpi),only screen and (min-resolution:1.5dppx) {
+    .img-card--mastercard {
+        background-position:-102px -24px
+    }
+
+    .img-card--paysafe {
+        background-position: -102px -96px
+    }
+}
+
+.img-card--paysafe {
+    background-position: -102px -96px
+}
+
+.img-card--scode {
+    width: 32px;
+    height: 20px;
+    background-position: -68px -144px
+}
+
+.img-card--alipay,
+.img-card--aliwap,
+.img-card--amex,
+.img-card--bancodobrasil,
+.img-card--bancontact,
+.img-card--banrisul,
+.img-card--boacompra,
+.img-card--boleto,
+.img-card--eps,
+.img-card--giropay,
+.img-card--goldcredits,
+.img-card--itau,
+.img-card--jcb,
+.img-card--konbini,
+.img-card--multibanco,
+.img-card--mybank,
+.img-card--payeasy_jp,
+.img-card--przelewy24,
+.img-card--qiwi,
+.img-card--skrill,
+.img-card--sofort,
+.img-card--tenpay,
+.img-card--union_pay,
+.img-card--wallet,
+.img-card--we_chat,
+.img-card--wmoney_jp {
+    width: 34px;
+    height: 24px
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),only screen and (min--moz-device-pixel-ratio:1.5),only screen and (min-device-pixel-ratio:1.5),only screen and (min-resolution:144dpi),only screen and (min-resolution:1.5dppx) {
+    .img-card--scode {
+        background-position:-68px -144px
+    }
+
+    .img-card--giropay {
+        background-position: -68px -48px
+    }
+}
+
+.img-card--giropay {
+    background-position: -68px -48px
+}
+
+.img-card--sofort {
+    background-position: -136px -96px
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),only screen and (min--moz-device-pixel-ratio:1.5),only screen and (min-device-pixel-ratio:1.5),only screen and (min-resolution:144dpi),only screen and (min-resolution:1.5dppx) {
+    .img-card--sofort {
+        background-position:-136px -96px
+    }
+
+    .img-card--skrill {
+        background-position: -136px -72px
+    }
+}
+
+.img-card--skrill {
+    background-position: -136px -72px
+}
+
+.img-card--qiwi {
+    background-position: -136px -24px
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),only screen and (min--moz-device-pixel-ratio:1.5),only screen and (min-device-pixel-ratio:1.5),only screen and (min-resolution:144dpi),only screen and (min-resolution:1.5dppx) {
+    .img-card--qiwi {
+        background-position:-136px -24px
+    }
+
+    .img-card--amex {
+        background-position: 0 -96px
+    }
+}
+
+.img-card--amex {
+    background-position: 0 -96px
+}
+
+.img-card--boacompra {
+    background-position: -68px -24px
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),only screen and (min--moz-device-pixel-ratio:1.5),only screen and (min-device-pixel-ratio:1.5),only screen and (min-resolution:144dpi),only screen and (min-resolution:1.5dppx) {
+    .img-card--boacompra {
+        background-position:-68px -24px
+    }
+
+    .img-card--wallet {
+        background-position: -102px -120px
+    }
+}
+
+.img-card--wallet {
+    background-position: -102px -120px
+}
+
+.img-card--bancodobrasil {
+    background-position: 0 -24px
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),only screen and (min--moz-device-pixel-ratio:1.5),only screen and (min-device-pixel-ratio:1.5),only screen and (min-resolution:144dpi),only screen and (min-resolution:1.5dppx) {
+    .img-card--bancodobrasil {
+        background-position:0 -24px
+    }
+
+    .img-card--banrisul {
+        background-position: -68px 0
+    }
+}
+
+.img-card--banrisul {
+    background-position: -68px 0
+}
+
+.img-card--boleto {
+    background-position: 0 -48px
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),only screen and (min--moz-device-pixel-ratio:1.5),only screen and (min-device-pixel-ratio:1.5),only screen and (min-resolution:144dpi),only screen and (min-resolution:1.5dppx) {
+    .img-card--boleto {
+        background-position:0 -48px
+    }
+
+    .img-card--goldcredits {
+        background-position: 0 -72px
+    }
+}
+
+.img-card--goldcredits {
+    background-position: 0 -72px
+}
+
+.img-card--itau {
+    background-position: -34px -72px
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),only screen and (min--moz-device-pixel-ratio:1.5),only screen and (min-device-pixel-ratio:1.5),only screen and (min-resolution:144dpi),only screen and (min-resolution:1.5dppx) {
+    .img-card--itau {
+        background-position:-34px -72px
+    }
+
+    .img-card--pagseguro {
+        background-position: 0 0
+    }
+}
+
+.img-card--pagseguro {
+    width: 34px;
+    height: 24px;
+    background-position: 0 0
+}
+
+.img-card--jcb {
+    background-position: -68px -72px
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),only screen and (min--moz-device-pixel-ratio:1.5),only screen and (min-device-pixel-ratio:1.5),only screen and (min-resolution:144dpi),only screen and (min-resolution:1.5dppx) {
+    .img-card--jcb {
+        background-position:-68px -72px
+    }
+
+    .img-card--alipay, .img-card--aliwap {
+        background-position: -34px 0
+    }
+}
+
+.img-card--alipay, .img-card--aliwap {
+    background-position: -34px 0
+}
+
+.img-card--union_pay {
+    background-position: -34px -120px
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),only screen and (min--moz-device-pixel-ratio:1.5),only screen and (min-device-pixel-ratio:1.5),only screen and (min-resolution:144dpi),only screen and (min-resolution:1.5dppx) {
+    .img-card--union_pay {
+        background-position:-34px -120px
+    }
+
+    .img-card--we_chat {
+        background-position: -136px -120px
+    }
+}
+
+.img-card--we_chat {
+    background-position: -136px -120px
+}
+
+.img-card--tenpay {
+    background-position: 0 -120px
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min--moz-device-pixel-ratio:1.5),
+only screen and (min-device-pixel-ratio:1.5),
+only screen and (min-resolution:144dpi),
+only screen and (min-resolution:1.5dppx) {
+    .img-card--tenpay {
+        background-position:0 -120px
+    }
+
+    .img-card--eps {
+        background-position: -34px -48px
+    }
+}
+
+.img-card--eps {
+    background-position: -34px -48px
+}
+
+.img-card--mybank {
+    background-position: -102px -72px
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),only screen and (min--moz-device-pixel-ratio:1.5),only screen and (min-device-pixel-ratio:1.5),only screen and (min-resolution:144dpi),only screen and (min-resolution:1.5dppx) {
+    .img-card--mybank {
+        background-position:-102px -72px
+    }
+
+    .img-card--przelewy24 {
+        background-position: -136px 0
+    }
+}
+
+.img-card--przelewy24 {
+    background-position: -136px 0
+}
+
+.img-card--bancontact {
+    background-position: -34px -24px
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),only screen and (min--moz-device-pixel-ratio:1.5),only screen and (min-device-pixel-ratio:1.5),only screen and (min-resolution:144dpi),only screen and (min-resolution:1.5dppx) {
+    .img-card--bancontact {
+        background-position:-34px -24px
+    }
+
+    .img-card--wmoney_jp {
+        background-position: -136px -48px
+    }
+}
+
+.img-card--wmoney_jp {
+    background-position: -136px -48px
+}
+
+.img-card--multibanco {
+    background-position: -102px -48px
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),only screen and (min--moz-device-pixel-ratio:1.5),only screen and (min-device-pixel-ratio:1.5),only screen and (min-resolution:144dpi),only screen and (min-resolution:1.5dppx) {
+    .img-card--multibanco {
+        background-position:-102px -48px
+    }
+
+    .img-card--konbini {
+        background-position: -102px 0
+    }
+}
+
+.img-card--konbini {
+    background-position: -102px 0
+}
+
+.img-card--payeasy_jp {
+    background-position: -34px -96px
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),only screen and (min--moz-device-pixel-ratio:1.5),only screen and (min-device-pixel-ratio:1.5),only screen and (min-resolution:144dpi),only screen and (min-resolution:1.5dppx) {
+    .img-card--payeasy_jp {
+        background-position:-34px -96px
+    }
+}
+
+.order .css-data-holder--for-sticky:before {
+    content: '{ "isStickyNeeded" : false }'
+}
+
+.order .css-data-holder--for-order-products-lists:before {
+    content: '{ "limitProducts" : 10 }'
+}
+
+.order__related-games .css-data-holder--for-products-lists:before {
+    content: '{ "limitProducts" : 4 }'
+}
+
+.input, .input-element {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 40px;
+    padding: 0 9px;
+    line-height: 40px;
+    background: #ededed;
+    border: 1px solid #b1b1b1;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,.1);
+}
+.input-element {
+    display: inline-block;
+    white-space: nowrap;
+    cursor: text;
+}
+.input--scode>input {
+    width: 39px;
+}
+.input-element input {
+    border: none;
+    background: 0 0;
+}
+
+.l-columns {
+    margin: 0;
+    max-height: 100%;
+}
+
+.l-columns ._spinner:not(.form__btn) {
+    min-height: 45px;
+}
+
+.l-columns.is-finished {
+    /*display: none;*/
+    /*height: 0;*/
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .15s linear;
+}
+
+.l-section {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    vertical-align: top;
+}
+.form__submit {
+    padding: 10px;
+    font-size: 1.1875em;
+    text-align: right;
+    text-transform: uppercase;
+    color: #1a1a1a;
+}
+.form__summary {
+    float: left;
+    height: 36px;
+    line-height: 36px;
+}
+.form__additional-info {
+    position: absolute;
+    top: 0;
+    font-weight: 400;
+    font-size: 12px;
+    color: #1a1a1a;
+    text-transform: none;
+}
+.form__btn {
+    vertical-align: .15em;
+    margin-left: 10px;
+    font-size: .6315789474em;
+    outline: none;
+}
+.form__row--key-value {
+    display: table;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: right;
+    white-space: nowrap
+}
+.form__row-key,.form__row-key+.form__row-value {
+    display: table-cell
+}
+
+.form__row-key {
+    vertical-align: middle;
+    text-align: left
+}
+
+.form__row-key:last-child {
+    width: 100%
+}
+
+.form__row-key--small-print {
+    padding: 0 10px;
+    white-space: normal;
+    color: grey
+}
+.form__small-print {
+    font-size: 10px;
+    line-height: 1.4545454545em;
+    text-transform: none;
+}
+.form__small-print.error {
+    color: red;
+}
+.form__row-value {
+    display: inline-block;
+    vertical-align: middle;
+    padding-right: 10px;
+    text-align: right;
+}
+.form__price {
+    display: block;
+    margin: 0;
+    white-space: nowrap;
+}
+.form__sheet-cell--label {
+    padding-right: 1.2em;
+}
+@media (min-width: 450px) {
+    .order .header__title {
+        font-size:1em
+    }
+
+    .order__related-games {
+        margin-top: 45px
+    }
+
+    .order-article {
+        margin: 0 auto 80px;
+        padding: 0 20px
+    }
+
+    .order__hero-unit {
+        margin: 80px auto 40px
+    }
+
+    .order__title {
+        font-size: 32px
+    }
+
+    .order .header__switches,.order__games .product-row .product-row__price-old {
+        font-size: 1em
+    }
+
+    .order-article--no-space,.order-article--no-space .order__hero-unit {
+        margin-bottom: 0
+    }
+
+    .order-message__actions {
+        margin: 40px auto
+    }
+
+    .order-message__separator {
+        display: inline;
+        margin: 0 20px
+    }
+
+    .order__games .product-row .product-row__title {
+        margin-bottom: 3px
+    }
+
+    .order__games .product-row .product-row__price {
+        font-size: 1em;
+        text-align: right
+    }
+
+    .order__games .product-row.is-option-visible .product-row__content-in,.order__games .product-row:hover .product-row__content-in {
+        margin-top: 10px
+    }
+
+    .order--not-editable .order__games .product-row.is-option-visible .product-row__content-in,.order--not-editable .order__games .product-row:hover .product-row__content-in,.order__games .product-row__content-in {
+        vertical-align: top;
+        margin-top: 19px
+    }
+
+    .order .header__switches .header__switch-icon {
+        margin-left: .8em
+    }
+
+    .order .page-header {
+        padding-top: 40px
+    }
+
+    .order .module-header {
+        padding-bottom: 14px
+    }
+
+    .order__label-owned {
+        line-height: 20px
+    }
+
+    .order__label-owned:before {
+        border-width: 10px 7px
+    }
+
+    .form,.form__description {
+        font-size: .8125em
+    }
+
+    .form__row {
+        height: 60px;
+        line-height: 60px
+    }
+
+    .form__row--empty {
+        height: 120px;
+        line-height: 120px
+    }
+
+    .form__row--label {
+        height: 44px;
+        line-height: 44px
+    }
+
+    .form__row-value {
+        font-size: 1em
+    }
+
+    .form__submit {
+        font-size: 1.25em
+    }
+
+    .form--small-print,.form__description {
+        padding: 0
+    }
+
+    .form__btn {
+        font-size: .65em;
+        min-width: auto
+    }
+
+    .form__small-print {
+        font-size: 11px
+    }
+
+    .input,.input-element {
+        /*height: 40px;*/
+        /*line-height: 40px*/
+    }
+
+    textarea.input {
+        min-height: 40px;
+        padding: 10px 9px
+    }
+}
+@media (min-width: 780px) {
+    .form__btn {
+        min-width:0
+    }
+
+    .form--description {
+        padding: 0
+    }
+}
+@media (min-width: 1040px) {
+    .form__btn {
+        min-width:auto
+    }
+}
+
+@media (min-width: 450px) {
+    .accordion__body:before {
+        width:12px;
+        height: 12px
+    }
+
+    .accordion__body.is-active:before {
+        margin-top: -17px
+    }
+
+    .accordion__body .input {
+        height: 40px;
+        line-height: 40px;
+    }
+    .l-columns {
+        /*margin: 0 20px*/
+    }
+}
+@media (min-width: 780px) {
+    .l-section {
+        /*display: table-cell;*/
+    }
+    .l-columns>.l-section {
+        float:right;
+        width: 43.3962264151%;
+        padding-left: 20px
+    }
+
+    .l-columns>.l-section--primary {
+        float: left;
+        clear: left;
+        width: 56.6037735849%;
+        padding-left: 0;
+        margin-right: -100%
+    }
+}
+
+/*@media (min-width: 980px) {*/
+    .l-columns .l-section--secondary {
+        /*padding-left:60px*/
+        /*overflow-y: auto;*/
+        /*overflow-x: hidden;*/
+        /* height: 100%; */
+         /*max-height: 300px;*/
+    }
+/*}*/
+
+@media (min-width: 1100px) {
+    .l-columns {
+        margin:0 auto
+    }
+}
+
+.form__row:first-child, .free-wallet:first-child {
+    border-top-width: 0;
+}
+
+.accordion__label.is-active {
+    box-shadow: inset 0 -1px 0 #cdcdcd;
+}
+
+.label.is-selected {
+    color: inherit;
+}
+.label.is-disabled {
+    opacity: .5;
+    cursor: not-allowed;
+}
+.accordion__body {
+    overflow: hidden;
+    padding: 0 10px;
+    height: 0;
+    background: #d7d7d7;
+    transition: padding linear .15s;
+}
+.accordion__body.is-active {
+    height: auto;
+    padding: 10px;
+}
+.accordion__body ._cs-left, .accordion__body ._cs-right {
+    top: 50%;
+    margin-top: -9px;
+}
+.accordion__body__head, .accordion__message {
+    padding: 10px;
+    margin: -10px -10px 10px;
+    font-size: 13px;
+    line-height: 1.25em;
+    background-color: #e9e2cd;
+    border-bottom: #cdcdcd solid 1px;
+}
+
+.accordion__message {
+    margin-bottom: -10px;
+    border-bottom: 0;
+}
+
+.form--part .fieldset {
+    display: table;
+    width: 100%;
+}
+
+.accordion__body .input-wrapper {
+    display: inline-block;
+}
+
+.fieldset__field {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.form__row.inputs input {
+    max-width: 129px;
+}
+
+.fieldset__field:last-child, .form__sheet-row, .message {
+    text-align: right;
+}
+.message {
+    pointer-events: none;
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    max-width: 60%;
+    padding: 3px 5px 3px 30px;
+    -webkit-transform: translate(0,-50%);
+    transform: translate(0,-50%);
+    font-size: .9230769231em;
+    font-weight: 600;
+    line-height: 1.3em;
+}
+.message--error {
+    background: linear-gradient(90deg,rgba(238,221,213,0),#eeddd5 15px);
+    color: #f25100;
+}
+.fieldset--card-additional-info {
+    display: block;
+}
+.fieldset__field--card-expire {
+    /*display: block;*/
+    clear: right;
+}
+.fieldset__field--card-expire .input-wrapper--month {
+    float: left;
+    margin-right: 10px;
+}
+.fieldset__field--card-expire .input--month {
+    max-width: 115px;
+}
+.input--month:disabled, .input--year:disabled {
+    -webkit-text-fill-color: inherit;
+    -webkit-opacity: 1;
+}
+.input+.input, .input+.input-wrapper, .input-wrapper+.input, .fieldset__field--card-expire .input-wrapper+.input-wrapper {
+    margin-left: 10px;
+}
+.fieldset__field--scode {
+    float: left;
+    /*margin-top: 10px;*/
+    /*margin-right: 10px;*/
+}
+.input--scode {
+    max-width: 101px;
+}
+.input-element:focus, .input-wrapper.is-focused, .input:focus, .is-focused, .is-focused.input, .is-focused.input-element {
+    box-shadow: 0 0 5px #128aff;
+    outline: 0;
+}
+.input-element input:focus {
+    outline: 0;
+}
+.fieldset--cardholder {
+    display: block;
+    overflow: hidden;
+    width: auto;
+}
+.save-card-option {
+    display: block;
+    padding-top: 13px;
+    font-size: 12px;
+    font-weight: 600;
+    color: grey;
+}
+.save-card-option__checkbox {
+    margin-right: 10px;
+}
+.save-card-option__description {
+    font-weight: 400;
+}
+.accordion__body p {
+    margin-top: 5px;
+}
+.accordion__body ._cs-content {
+    line-height: 0;
+}
+.payment-desc {
+    padding: 10px;
+    text-align: center;
+    line-height: 1.2em;
+}
+.payment-desc__head {
+    font-weight: 600;
+}
+.payment-desc__details {
+    margin: 10px 0;
+    font-size: .9230769231em;
+}
+@media (min-width: 410px) and (max-width:779px),(min-width:1020px) {
+    .fieldset--card-additional-info,.fieldset--cardholder {
+        display:table;
+        width: 100%
+    }
+
+    .fieldset__field--card-expire {
+        display: table-cell;
+        clear: none
+    }
+
+    .fieldset__field--scode {
+        float: none;
+        margin: 0
+    }
+
+    .fieldset__field--card-expire .input--year {
+        max-width: 95px
+    }
+
+    .lang--fr-fr .fieldset__field--card-expire .input--year {
+        max-width: 88px
+    }
+
+    .fieldset__field--card-expire .input-wrapper--month {
+        float: none;
+        margin-right: 0
+    }
+
+    .fieldset__field--card-expire .input-wrapper--year {
+        display: inline-block;
+        overflow: visible
+    }
+}
+.fieldset~.fieldset {
+    margin-top: 10px;
+}
+.modal-form__bank-selector.deposit {
+    padding: 0;
+    border-left-width: 0;
+}
+.input-element.ng-invalid-code-length.ng-touched,
+.input-element.ng-invalid-number-type.ng-touched,
+.input.ng-invalid-card-number-remove.ng-touched,
+.input.ng-invalid-card-number.ng-touched,
+.input.ng-invalid-email.ng-touched,
+.input.ng-invalid-expiration,
+.input.ng-invalid-pattern.ng-touched {
+    background: #eeddd5;
+    border-color: #b8a79f;
+}
+.PaymentFrameContainer {
+    position: relative;
+    min-height: 542px;
+}
+
+.GalaxyAccountsFrameContainer__container .icon-cancel {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    font-size: 2em;
+    color: grey;
+    cursor: pointer;
+}
+iframe.PaymentFrameContainer__iframe {
+    background: #fff;
+}
+@media (min-width: 450px) {
+    .GalaxyAccountsFrameContainer__container.payment {
+        padding: 4%;
+    }
+}
+.wallet-deposit__header--status, .wallet-deposit__details--status {
+    text-align: right;
+}
+.order-header-btn {
+    margin-left: 10px;
+    white-space: nowrap;
+}
+@media (max-width: 23.4375em) {
+    .form__row.inputs .input-element._price input {
+        max-width: 56px;
+    }
+}
+
+.header__title .warning {
+    color: #bb946e;
+    font-size: 12px;
+    font-weight: normal;
+    margin-left: 5px;
+    display: inline-block;
+}
+
+.message__icon {
+    /*position: absolute;*/
+    /*left: 0;*/
+    /*top: 0;*/
+    height: 13px;
+    width: 14px;
+    fill: currentColor;
+    vertical-align: -.1em;
+}
+.GalaxyAccountsFrameContainer__container .container {
+    height: 100%;
+    /*min-height: 640px;*/
+    position: relative;
+}
+@media (max-width: 68.75em) {
+    .GalaxyAccountsFrameContainer__container .container {
+        margin: 0;
+    }
+}
+

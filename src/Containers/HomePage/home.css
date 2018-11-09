@@ -1,0 +1,1568 @@
+@charset "UTF-8";
+#glx-main-menu:after, .glx-button .glx-icon, .glx-button.is-pending, .glx-button[disabled], .glx-icon > *, .glx-images {
+    pointer-events: none
+}
+
+@-webkit-keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg)
+    }
+}
+
+@keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg)
+    }
+}
+
+.glx-button.is-pending:after {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 50%;
+    background: 50% 50% no-repeat;
+    -webkit-transform: translate3d(0);
+    transform: translate3d(0);
+    -webkit-animation: spin .5s linear infinite;
+    animation: spin .5s linear infinite;
+    font-size: 1rem
+}
+
+.no-cssanimations .glx-button.is-pending:after, .no-csspseudoanimations .glx-button.is-pending:after {
+    width: 1em;
+    height: 1em;
+    box-shadow: none
+}
+
+.glx-text--underlined {
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    cursor: pointer
+}
+
+.glx-universe {
+    font: 300 16px/1.625 Lato, "Open Sans", sans-serif;
+    text-rendering: optimizeLegibility
+}
+
+.glx-button, .glx-text-box {
+    outline: 0;
+    font-family: inherit;
+    text-transform: uppercase
+}
+
+.glx-universe .glx-faq-list__question:not(.glx-button):hover, .glx-universe a:not(.glx-button):hover {
+    opacity: .9
+}
+
+.glx-universe .glx-faq-list__question:not(.glx-button):active, .glx-universe a:not(.glx-button):active {
+    opacity: .75
+}
+
+body.page_galaxy_landing_page > .universe > .wrapper > .content {
+    background-color: #0c0231
+}
+
+body.page_galaxy_landing_page .footer-spacer {
+    margin-top: 0 !important
+}
+
+.glx-universe h1, .glx-universe h2, .glx-universe h3, .glx-universe h4 {
+    margin: 0
+}
+
+.glx-universe h1 {
+    font-size: 44px;
+    font-weight: 300;
+    line-height: 1;
+    text-transform: uppercase
+}
+
+.glx-universe h2 {
+    font-size: 22px;
+    font-weight: 400;
+    padding-top: 8px;
+    padding-bottom: 8px
+}
+
+.glx-universe h3 {
+    font-size: 16px;
+    font-weight: 400
+}
+
+.glx-universe strong {
+    font-weight: 600
+}
+
+.glx-universe small {
+    font-size: .6875em
+}
+
+.glx-universe p {
+    margin: 0;
+    line-height: 1.625;
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none
+}
+
+.glx-big-header:not(:last-child) {
+    margin-bottom: 40px
+}
+
+.glx-box.glx-box--inline:not(:last-child), .glx-button:not(:last-child), .glx-text-box:not(:last-child) {
+    margin-right: 10px
+}
+
+.glx-background {
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    background-repeat: no-repeat
+}
+
+.glx-background[data-background-glue] {
+    display: none
+}
+
+.glx-background[data-background-glue].is-ready {
+    display: block
+}
+
+.glx-background--stars {
+    -webkit-transform: translate(-50%, -420px);
+    transform: translate(-50%, -420px);
+    background-position: center 0;
+    height: 3600px;
+    z-index: 9
+}
+
+@media screen and (max-width: 1024px) {
+    .glx-background--stars {
+        background-image: url(../../images/galaxy/stars-3-1024.jpg);
+        width: 1024px
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+    .glx-background--stars {
+        background-image: url(../../images/galaxy/stars-3-1280.jpg);
+        width: 1280px
+    }
+}
+
+@media screen and (min-width: 1281px) and (max-width: 1600px) {
+    .glx-background--stars {
+        background-image: url(../../images/galaxy/stars-3-1600.jpg);
+        width: 1600px
+    }
+}
+
+@media screen and (min-width: 1601px) and (max-width: 1920px) {
+    .glx-background--stars {
+        background-image: url(../../images/galaxy/stars-3-1920.jpg);
+        width: 1920px
+    }
+}
+
+@media screen and (min-width: 1921px) {
+    .glx-background--stars {
+        background-image: url(../../images/galaxy/stars-3-2560.jpg);
+        width: 2560px
+        /*width: 100%;*/
+        /*background-size: cover;*/
+    }
+}
+
+.glx-background--clouds {
+    background-position: center 0;
+    height: 1730px;
+    margin-top: -560px;
+    z-index: 8
+}
+
+@media screen and (min-width: 891px) {
+    .glx-background--clouds {
+        background-image: url(../../images/galaxy/clouds-2.png);
+        width: 2560px;
+        top: 6813px;
+    }
+}
+
+@media screen and (max-width: 890px) {
+    .glx-background--clouds {
+        background-image: url(../../images/galaxy/clouds-2-mob.png);
+        width: 890px;
+        top: 9346px;
+    }
+}
+
+.glx-background--planets {
+    background-position: center 0;
+    height: 2573px;
+    z-index: 7
+}
+
+@media screen and (min-width: 891px) {
+    .glx-background--planets {
+        background-image: url(../../images/galaxy/planets-2.jpg);
+        width: 2560px;
+        margin-top: -1950px;
+        top: 6813px;
+    }
+}
+
+@media screen and (max-width: 890px) {
+    .glx-background--planets {
+        background-image: url(../../images/galaxy/planets-2-mob.jpg);
+        width: 890px;
+        margin-top: -1750px;
+        top: 9346px;
+    }
+}
+
+.glx-feature-badgeWrapper {
+    position: relative;
+    display: inline-block
+}
+
+.glx-feature-badge {
+    position: absolute;
+    top: -10px;
+    left: 100%;
+    margin-left: -8px;
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 2px;
+    color: #1c033e;
+    background-color: #cca8d6;
+    border-radius: 2px;
+    line-height: 12px;
+    font-size: 8px;
+    font-weight: 900;
+    text-transform: uppercase
+}
+
+.glx-big-header.glx-big-header--iconed {
+    margin-top: 60px;
+    padding-top: 60px;
+    position: relative
+}
+
+.glx-big-header h1 {
+    position: relative;
+    display: inline-block;
+    vertical-align: top
+}
+
+@media screen and (max-width: 890px) {
+    .glx-big-header h1 {
+        font-size: 32px
+    }
+}
+
+.glx-big-header .glx-big-header__intro {
+    padding-top: 12px;
+    line-height: 1.35;
+    font-size: 40px;
+    font-weight: 300;
+    color: #cca8d6;
+    margin: 0
+}
+
+@media screen and (max-width: 890px) {
+    .glx-big-header .glx-big-header__intro {
+        font-size: 24px
+    }
+}
+
+.glx-big-header .glx-big-header__icon {
+    position: absolute;
+    z-index: 10;
+    top: -187.5px;
+    left: 50%;
+    margin-left: -187.5px;
+    width: 375px;
+    height: 375px;
+    background-size: 100% 100%;
+    pointer-events: none
+}
+
+.glx-section--intro .glx-big-header {
+    margin-bottom: 60px
+}
+
+.glx-section--intro .glx-big-header__label-icon {
+    position: absolute;
+    bottom: 27px;
+    right: -12px;
+    width: 10px;
+    height: 10px
+}
+
+.glx-section--intro .glx-big-header .glx-big-header__intro {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 34px;
+    color: #fff;
+    padding-bottom: 0
+}
+
+.glx-box {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+.glx-box--container {
+    position: relative
+}
+
+.glx-box--inline {
+    display: inline-block;
+    vertical-align: middle
+}
+
+.glx-box--padded-giant {
+    padding: 60px
+}
+
+.glx-box--padded-h-giant {
+    padding-left: 60px;
+    padding-right: 60px
+}
+
+.glx-box--padded-v-giant {
+    padding-top: 60px;
+    padding-bottom: 60px
+}
+
+.glx-box--padded-t-giant {
+    padding-top: 60px
+}
+
+.glx-box--padded-r-giant {
+    padding-right: 60px
+}
+
+.glx-box--padded-b-giant {
+    padding-bottom: 60px
+}
+
+.glx-box--padded-l-giant {
+    padding-left: 60px
+}
+
+.glx-box--padded-large {
+    padding: 30px
+}
+
+.glx-box--padded-h-large {
+    padding-left: 30px;
+    padding-right: 30px
+}
+
+.glx-box--padded-v-large {
+    padding-top: 30px;
+    padding-bottom: 30px
+}
+
+.glx-box--padded-t-large {
+    padding-top: 30px
+}
+
+.glx-box--padded-t, .glx-box--padded-v {
+    padding-top: 20px
+}
+
+.glx-box--padded-r-large {
+    padding-right: 30px
+}
+
+.glx-box--padded-h, .glx-box--padded-r {
+    padding-right: 20px
+}
+
+.glx-box--padded-b-large {
+    padding-bottom: 30px
+}
+
+.glx-box--padded-b, .glx-box--padded-v {
+    padding-bottom: 20px
+}
+
+.glx-box--padded-l-large {
+    padding-left: 30px
+}
+
+.glx-box--padded {
+    padding: 20px
+}
+
+.glx-box--padded-h {
+    padding-left: 20px
+}
+
+.glx-box--padded-l {
+    padding-left: 20px
+}
+
+.glx-box--padded-small {
+    padding: 10px
+}
+
+.glx-box--padded-h-small {
+    padding-left: 10px;
+    padding-right: 10px
+}
+
+.glx-box--padded-v-small {
+    padding-top: 10px;
+    padding-bottom: 10px
+}
+
+.glx-box--padded-t-small {
+    padding-top: 10px
+}
+
+.glx-box--padded-r-small {
+    padding-right: 10px
+}
+
+.glx-box--padded-b-small {
+    padding-bottom: 10px
+}
+
+.glx-box--padded-l-small {
+    padding-left: 10px
+}
+
+.glx-box--line-menu-companion {
+    position: relative;
+    height: 55px;
+    line-height: 55px
+}
+
+.glx-box--line-menu-companion:after {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: 10;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: rgba(255, 255, 255, .25)
+}
+
+.glx-box--line-menu-companion .glx-button {
+    vertical-align: bottom;
+    margin-bottom: 10px
+}
+
+.glx-button {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    margin: 0;
+    border: 0;
+    padding: 12px 20px 11px;
+    border-radius: 3px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    text-align: center;
+    font-size: 13px;
+    line-height: 1;
+    font-weight: 600;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    color: #fff;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, .25), 0 1px 3px rgba(0, 0, 0, .25);
+    background: linear-gradient(to bottom, #6c437f 0, #5c2f74 95%)
+}
+
+.glx-faq-list__answer a, .glx-features-list__element .glx-features-list__text {
+    font-weight: 400
+}
+
+.glx-button:hover {
+    background: linear-gradient(to bottom, #774a8c 0, #683583 95%)
+}
+
+.glx-button:active {
+    background: linear-gradient(to bottom, #683583 0, #774a8c 95%)
+}
+
+.glx-button[disabled] {
+    opacity: .5
+}
+
+.glx-button.is-pending {
+    color: transparent !important
+}
+
+.glx-button.is-pending .glx-icon {
+    opacity: 0
+}
+
+.glx-button.is-pending:after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: .1em;
+    height: .1em;
+    box-shadow: .475em 0 0 #fff, .4725em -.0495em 0 rgba(255, 255, 255, .966667), .4645em -.099em 0 rgba(255, 255, 255, .933333), .452em -.147em 0 rgba(255, 255, 255, .9), .434em -.193em 0 rgba(255, 255, 255, .866667), .4115em -.2375em 0 rgba(255, 255, 255, .833333), .3845em -.279em 0 rgba(255, 255, 255, .8), .353em -.318em 0 rgba(255, 255, 255, .766667), .318em -.353em 0 rgba(255, 255, 255, .733333), .279em -.3845em 0 rgba(255, 255, 255, .7), .2375em -.4115em 0 rgba(255, 255, 255, .666667), .193em -.434em 0 rgba(255, 255, 255, .633333), .147em -.452em 0 rgba(255, 255, 255, .6), .099em -.4645em 0 rgba(255, 255, 255, .566667), .0495em -.4725em 0 rgba(255, 255, 255, .533333), 0 -.475em 0 rgba(255, 255, 255, .5), -.0495em -.4725em 0 rgba(255, 255, 255, .466667), -.099em -.4645em 0 rgba(255, 255, 255, .433333), -.147em -.452em 0 rgba(255, 255, 255, .4), -.193em -.434em 0 rgba(255, 255, 255, .366667), -.2375em -.4115em 0 rgba(255, 255, 255, .333333), -.279em -.3845em 0 rgba(255, 255, 255, .3), -.318em -.353em 0 rgba(255, 255, 255, .266667), -.353em -.318em 0 rgba(255, 255, 255, .233333), -.3845em -.279em 0 rgba(255, 255, 255, .2), -.4115em -.2375em 0 rgba(255, 255, 255, .166667), -.434em -.193em 0 rgba(255, 255, 255, .133333), -.452em -.147em 0 rgba(255, 255, 255, .1), -.4645em -.099em 0 rgba(255, 255, 255, .0666667), -.4725em -.0495em 0 rgba(255, 255, 255, .0333333)
+}
+
+.glx-button--full {
+    width: 100%
+}
+
+.glx-button--narrow {
+    padding-left: 5px;
+    padding-right: 5px
+}
+
+.glx-button--wide {
+    padding-left: 33.33px;
+    padding-right: 33.33px
+}
+
+.glx-button--tall {
+    padding-top: 14px;
+    padding-bottom: 13px
+}
+
+.glx-button--big {
+    font-size: 16px;
+    padding: 15px 30px
+}
+
+.glx-button--big.glx-button--wide {
+    padding-left: 50px;
+    padding-right: 50px
+}
+
+.glx-button--blue {
+    background: linear-gradient(to bottom, #389ddc 0, #1479d2 95%)
+}
+
+.glx-button--blue:hover {
+    background: linear-gradient(to bottom, #49a6df 0, #1684e5 95%)
+}
+
+.glx-button--blue:active {
+    background: linear-gradient(to bottom, #1684e5 0, #49a6df 95%)
+}
+
+.glx-button.glx-button--naked {
+    border-radius: 0;
+    font-size: inherit;
+    color: inherit;
+    box-shadow: none;
+    background: 0 0
+}
+
+.glx-button.glx-button--naked:hover {
+    background: 0 0;
+    opacity: .8
+}
+
+.glx-button.glx-button--naked:active {
+    background: 0 0;
+    opacity: .6
+}
+
+.glx-faq-list .glx-list > li {
+    padding-top: 10px;
+    padding-bottom: 10px
+}
+
+@media screen and (min-width: 891px) {
+    .glx-faq-list .glx-list {
+        width: 50%;
+        display: inline-block;
+        vertical-align: top;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box
+    }
+
+    .glx-faq-list .glx-list:nth-child(odd) {
+        padding-right: 30px
+    }
+
+    .glx-faq-list .glx-list:nth-child(even) {
+        padding-left: 30px
+    }
+}
+
+.glx-faq-list__item.is-collapsed .glx-faq-list__answer {
+    max-height: 0;
+    padding-top: 0
+}
+
+.glx-faq-list__item.is-expanded .glx-faq-list__answer {
+    padding-top: 10px;
+    max-height: 999px
+}
+
+.glx-faq-list__question {
+    cursor: pointer;
+    position: relative
+}
+
+.glx-faq-list__question:before {
+    content: '\25b6';
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    vertical-align: middle;
+    font-size: .5em;
+    width: 15px
+}
+
+.glx-faq-list__answer, .glx-faq-list__question {
+    padding-left: 15px
+}
+
+.glx-faq-list__answer {
+    overflow: hidden;
+    transition: .25s
+}
+
+.glx-icon {
+    display: inline-block;
+    vertical-align: middle;
+    height: 35px;
+    width: 35px;
+    fill: currentColor;
+    shape-rendering: geometricPrecision;
+    color: inherit
+}
+
+.glx-icon--big {
+    width: 50px;
+    height: 50px
+}
+
+.glx-images {
+    width: 100%;
+    height: 0
+}
+
+.glx-image {
+    max-width: none;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    background: 0 0
+}
+
+.glx-overlay, .glx-overlay iframe, .glx-overlay__glass {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%
+}
+
+.glx-features-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center
+}
+
+.glx-features-list__element {
+    display: inline-block;
+    margin-left: 25px;
+    margin-right: 25px;
+    max-width: 300px;
+    vertical-align: top;
+    padding-bottom: 30px
+}
+
+@media (max-width: 1090px) {
+    .glx-features-list__element {
+        margin-left: 10px;
+        margin-right: 10px
+    }
+}
+
+.glx-list {
+    list-style: none;
+    margin: 0;
+    padding: 0
+}
+
+.glx-overlay {
+    position: fixed;
+    z-index: 80;
+    transition: .25s;
+    color: #212121
+}
+
+.glx-overlay iframe {
+    position: absolute
+}
+
+.glx-overlay.is-hidden {
+    visibility: hidden;
+    opacity: 0
+}
+
+.glx-overlay__glass {
+    position: absolute;
+    z-index: 81;
+    background-color: rgba(204, 204, 204, .5)
+}
+
+.glx-overlay__glass--dark {
+    background-color: rgba(0, 0, 0, .5)
+}
+
+.glx-overlay__glass--naked {
+    background-color: transparent
+}
+
+.glx-overlay__box {
+    position: absolute;
+    z-index: 82;
+    max-width: 420px;
+    width: 95%;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 100px 0 rgba(109, 37, 167, .25), 0 0 7px 0 #8440dd, 0 3px 20px 0 rgba(0, 0, 0, .33), 0 0 75px 0 rgba(109, 37, 167, .25), 0 0 15px 0 rgba(0, 0, 0, .16), 0 1px 3px 0 rgba(0, 0, 0, .16);
+    background-color: #f2f2f2;
+    background-image: linear-gradient(120deg, rgba(136, 0, 255, .12) 0, transparent 100%)
+}
+
+.glx-overlay__box header {
+    padding-bottom: 10px
+}
+
+.glx-overlay__box footer, .glx-overlay__box header:not(:first-child) {
+    padding-top: 20px
+}
+
+@media screen and (max-width: 890px) {
+    .glx-overlay[galaxy-overlay*=changelogOverlay] .glx-whats-new__close {
+        display: none
+    }
+
+    .glx-overlay__box:before {
+        content: '\00D7';
+        pointer-events: none;
+        position: absolute;
+        bottom: 100%;
+        right: 0;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        text-align: right;
+        font-size: 30px;
+        font-weight: 700;
+        color: #fff;
+        text-shadow: 0 0 3px #8440dd, 0 0 7px rgba(109, 37, 167, .25), 0 0 15px rgba(109, 37, 167, .25)
+    }
+}
+
+.glx-overlay__box.glx-overlay__box--video {
+    height: 80%
+}
+
+.glx-overlay__box.glx-overlay__box--big {
+    max-width: 1100px;
+    max-height: 80%;
+    background-image: none
+}
+
+@media (max-width: 890px) {
+    .glx-overlay__box.glx-overlay__box--big {
+        width: 98%
+    }
+}
+
+.glx-overlay__content {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 50px
+}
+
+@media screen and (max-width: 890px) {
+    .glx-overlay__content {
+        padding: 25px
+    }
+}
+
+.glx-overlay__content__inner {
+    overflow-y: auto;
+    height: 100%
+}
+
+.glx-overlay__box.glx-overlay__box--naked {
+    background-color: none
+}
+
+.glx-section--faq, .glx-section--footer {
+    background-color: #fff
+}
+
+.glx-section {
+    width: 100%;
+    position: relative;
+    z-index: 20
+}
+
+.glx-section__inner {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1100px;
+    padding-left: 20px;
+    padding-right: 20px
+}
+
+.glx-section--background {
+    position: static
+}
+
+.glx-section--intro .glx-section__inner {
+    padding-top: 80px;
+    padding-bottom: 80px
+}
+
+@media screen and (max-width: 890px) {
+    .glx-section--intro .glx-section__inner {
+        padding-bottom: 50px
+    }
+
+    .glx-section--intro .glx-section__inner .glx-box.glx-box--inline {
+        margin-right: 0
+    }
+
+    .glx-section--intro .glx-section__inner .glx-button.glx-button--big {
+        width: 100%;
+        padding-right: 10px;
+        padding-left: 10px;
+        margin-right: 0;
+        margin-bottom: 10px
+    }
+}
+
+.glx-section--hero .glx-icon {
+    fill: #f6d6ff
+}
+
+.glx-section--hero h1, .glx-section--hero h2, .glx-section--hero h3, .glx-section--hero h4 {
+    color: #f6d6ff
+}
+
+.glx-section--hero .glx-big-header__icon {
+    /*background-image: url(../bundles/gogplugingalaxylandingpage/img/new/sections/hero/icon-hero-1x.png)*/
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi), only screen and (min-resolution: 1.5dppx) {
+    .glx-section--hero .glx-big-header__icon {
+        /*background-image: url(../bundles/gogplugingalaxylandingpage/img/new/sections/hero/icon-hero-2x.png)*/
+    }
+}
+
+.glx-section--hero .glx-image--screen-hero-main {
+    z-index: 1
+}
+
+.glx-section--hero .glx-image--screen-hero-chat {
+    z-index: 2;
+    top: 240px
+}
+
+@media screen and (min-width: 891px) {
+    html.native-mode .glx-overlay__box {
+        margin-top: 28px
+    }
+
+    .glx-section--hero .glx-images {
+        padding-bottom: 550px
+    }
+
+    .glx-section--hero .glx-image--screen-hero-chat {
+        margin-left: -540px
+    }
+}
+
+@media screen and (max-width: 890px) {
+    .glx-section--hero .glx-images {
+        padding-bottom: 600px
+    }
+
+    .glx-section--hero .glx-image--screen-hero-chat {
+        margin-left: -280px
+    }
+}
+
+.glx-section--hero .glx-image--screen-hero-friends {
+    z-index: 2;
+    top: 110px
+}
+
+.glx-section--community .glx-image--screen-chat-conversation, .glx-section--community .glx-image--screen-friends-list {
+    top: -20px
+}
+
+.glx-section--update-1-2 .glx-icon {
+    fill: #35c7bb
+}
+
+.glx-section--update-1-2 h1, .glx-section--update-1-2 h2, .glx-section--update-1-2 h3, .glx-section--update-1-2 h4 {
+    color: #35c7bb
+}
+
+.glx-section--update-1-2 .glx-big-header__icon {
+    background-image: url(../../images/galaxy/icon-update-1-2-1x.png)
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi), only screen and (min-resolution: 1.5dppx) {
+    .glx-section--update-1-2 .glx-big-header__icon {
+        background-image: url(../../images/galaxy/icon-update-1-2-2x.png)
+    }
+}
+
+.glx-section--library .glx-icon {
+    fill: #faaf00
+}
+
+.glx-section--library h1, .glx-section--library h2, .glx-section--library h3, .glx-section--library h4 {
+    color: #faaf00
+}
+
+.glx-section--library .glx-big-header__icon {
+    background-image: url(../../images/galaxy/icon-library-1x.png)
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi), only screen and (min-resolution: 1.5dppx) {
+    .glx-section--library .glx-big-header__icon {
+        background-image: url(../../images/galaxy/icon-library-2x.png)
+    }
+}
+
+.glx-section--in-game .glx-icon {
+    fill: #21e475
+}
+
+.glx-section--in-game h1, .glx-section--in-game h2, .glx-section--in-game h3, .glx-section--in-game h4 {
+    color: #21e475
+}
+
+.glx-section--in-game .glx-big-header__icon {
+    background-image: url(../../images/galaxy/icon-in-game-1x.png)
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi), only screen and (min-resolution: 1.5dppx) {
+    .glx-section--in-game .glx-big-header__icon {
+        background-image: url(../../images/galaxy/icon-in-game-2x.png)
+    }
+}
+
+.glx-section--community {
+    z-index: 21
+}
+
+.glx-section--community .glx-icon {
+    fill: #4db5ff
+}
+
+.glx-section--community h1, .glx-section--community h2, .glx-section--community h3, .glx-section--community h4 {
+    color: #4db5ff
+}
+
+.glx-section--community .glx-big-header__icon {
+    background-image: url(../../images/galaxy/icon-community-1x.png)
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi), only screen and (min-resolution: 1.5dppx) {
+    .glx-section--community .glx-big-header__icon {
+        background-image: url(../../images/galaxy/icon-community-2x.png)
+    }
+}
+
+@media screen and (min-width: 891px) {
+    .glx-section--hero .glx-image--screen-hero-friends {
+        margin-left: 590px
+    }
+
+    .glx-section--update-1-2 .glx-section__inner {
+        padding-top: 40px
+    }
+
+    .glx-section--library .glx-images {
+        padding-bottom: 600px
+    }
+
+    .glx-section--library .glx-section__inner {
+        margin-top: 100px
+    }
+
+    .glx-section--in-game .glx-images {
+        padding-bottom: 600px
+    }
+
+    .glx-section--in-game .glx-section__inner {
+        margin-top: 50px
+    }
+
+    .glx-section--community .glx-images {
+        padding-bottom: 600px
+    }
+}
+
+@media screen and (max-width: 890px) {
+    .glx-section--hero .glx-image--screen-hero-friends {
+        margin-left: 330px
+    }
+
+    .glx-section--community .glx-images, .glx-section--in-game .glx-images, .glx-section--library .glx-images {
+        padding-bottom: 600px
+    }
+}
+
+@media screen and (min-width: 891px) {
+    .glx-section--community .glx-image--screen-chat-conversation {
+        margin-left: 192px
+    }
+}
+
+@media screen and (max-width: 890px) {
+    .glx-section--community .glx-image--screen-chat-conversation {
+        margin-left: 270px
+    }
+}
+
+.glx-text-rotator, .glx-text-rotator__item {
+    top: 0;
+    position: absolute;
+    width: 100%;
+    left: 0
+}
+
+.glx-section--more .glx-icon {
+    fill: #dc8aff
+}
+
+.glx-section--more h1, .glx-section--more h2, .glx-section--more h3, .glx-section--more h4 {
+    color: #dc8aff
+}
+
+.glx-section--more .glx-big-header__icon {
+    background-image: url(../../images/galaxy/icon-more-1x.png)
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi), only screen and (min-resolution: 1.5dppx) {
+    .glx-section--more .glx-big-header__icon {
+        background-image: url(../../images/galaxy/icon-more-2x.png)
+    }
+}
+
+@media screen and (min-width: 891px) {
+    .glx-section--community .glx-image--screen-friends-list {
+        margin-left: -358px
+    }
+
+    .glx-section--more .glx-images {
+        padding-bottom: 600px
+    }
+}
+
+@media screen and (max-width: 890px) {
+    .glx-section--community .glx-image--screen-friends-list {
+        margin-left: -290px
+    }
+
+    .glx-section--more .glx-images {
+        padding-bottom: 600px
+    }
+}
+
+.glx-section--faq {
+    color: #4d4d4d;
+    padding-bottom: 80px
+}
+
+.glx-section--faq .glx-icon {
+    fill: #7e92b4
+}
+
+.glx-section--faq h1, .glx-section--faq h2, .glx-section--faq h3, .glx-section--faq h4 {
+    color: #7e92b4
+}
+
+.glx-section--faq .glx-big-header__icon {
+    background-image: url(../../images/galaxy/icon-faq-1x.png)
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi), only screen and (min-resolution: 1.5dppx) {
+    .glx-section--faq .glx-big-header__icon {
+        background-image: url(../../images/galaxy/icon-faq-2x.png)
+    }
+}
+
+@media screen and (min-width: 891px) {
+    .glx-section--faq .glx-images {
+        padding-bottom: 0
+    }
+
+    .glx-section--faq {
+        margin-top: 330px
+    }
+}
+
+@media screen and (max-width: 890px) {
+    .glx-section--faq .glx-images {
+        padding-bottom: 0
+    }
+
+    .glx-section--faq {
+        margin-top: 430px
+    }
+}
+
+.glx-section--footer .glx-section__inner {
+    padding: 30px;
+    color: gray;
+    text-align: center;
+    font-size: 13px;
+    text-transform: uppercase;
+    border-top: 1px solid rgba(0, 0, 0, .08)
+}
+
+.glx-section--footer .glx-section__inner a {
+    color: #7e92b4
+}
+
+.glx-text-box {
+    -webkit-appearance: initial;
+    -moz-appearance: initial;
+    appearance: initial;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    border: 0;
+    padding: 10px;
+    color: #212121;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, .16);
+    background-color: #f2f2f2;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1;
+    font-size: 13px;
+    font-weight: 600
+}
+
+.glx-text-box::-webkit-input-placeholder {
+    text-transform: uppercase;
+    color: rgba(33, 33, 33, .5)
+}
+
+.glx-text-box:-moz-placeholder {
+    text-transform: uppercase;
+    color: rgba(33, 33, 33, .5)
+}
+
+.glx-text-box::-moz-placeholder {
+    text-transform: uppercase;
+    color: rgba(33, 33, 33, .5)
+}
+
+.glx-text-box:-ms-input-placeholder {
+    text-transform: uppercase;
+    color: rgba(33, 33, 33, .5)
+}
+
+.glx-text-box--full {
+    width: 100%
+}
+
+.glx-text-box--tall {
+    padding-top: 0;
+    padding-bottom: 0;
+    line-height: 40px;
+    height: 40px
+}
+
+.glx-text-rotator {
+    text-align: center;
+    height: 26px;
+    color: #f6d6ff
+}
+
+.glx-text-rotator__item {
+    display: block;
+    margin: 0;
+    padding: 0;
+    font-size: 26px;
+    font-style: italic;
+    line-height: 1;
+    transition-duration: 1s;
+    transition-property: opacity;
+    transition-timing-function: ease-in-out;
+    opacity: 0
+}
+
+.glx-text-rotator__item.is-active {
+    opacity: 1;
+    transition-delay: .5s
+}
+
+.glx-text-rotator__quote {
+    font-weight: 300
+}
+
+.glx-text-rotator__title {
+    font-weight: 400;
+    white-space: nowrap
+}
+
+.glx-text-rotator__title::before {
+    content: "\2013";
+    margin-left: 5px;
+    margin-right: 5px
+}
+
+.glx-text--lefted {
+    text-align: left
+}
+
+.glx-text--righted {
+    text-align: right
+}
+
+.glx-text--centered {
+    text-align: center
+}
+
+.glx-text--300 {
+    font-weight: 300
+}
+
+.glx-text--400 {
+    font-weight: 400
+}
+
+.glx-text--600 {
+    font-weight: 600
+}
+
+.glx-text--uppercased {
+    text-transform: uppercase
+}
+
+.glx-text--untransformed {
+    text-transform: none
+}
+
+.glx-dimmed {
+    opacity: .5
+}
+
+.glx-text--underlined {
+    background-image: linear-gradient(to right, currentColor, currentColor);
+    background-size: 100% 1px
+}
+
+.glx-text--big {
+    font-size: 1.25em
+}
+
+.glx-text--magnolia-light {
+    color: #f6d6ff
+}
+
+.glx-text--magnolia {
+    color: #cca8d6
+}
+
+.glx-line-header:after, .glx-line-header__title:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: currentColor
+}
+
+.glx-line-header {
+    position: relative;
+    height: 55px;
+    line-height: 55px
+}
+
+.glx-line-header:after {
+    top: 100%;
+    opacity: .16
+}
+
+.glx-line-header__title {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    padding-bottom: 1px;
+    max-width: 100%;
+    height: 55px;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase
+}
+
+.glx-line-header__title:after {
+    bottom: 0;
+    opacity: 1
+}
+
+.glx-whats-new {
+    height: 80%;
+    width: 98%
+}
+
+.glx-whats-new__header {
+    padding-left: 50px;
+    padding-right: 105px
+}
+
+.glx-whats-new__title {
+    font-weight: 600;
+    cursor: default
+}
+
+.glx-whats-new__close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 55px;
+    height: 55px;
+    background: 0 0;
+    line-height: 55px;
+    text-align: center;
+    font-size: 26px;
+    font-weight: 300;
+    cursor: pointer
+}
+
+.glx-whats-new__close:hover {
+    opacity: .8
+}
+
+.glx-whats-new__close:active {
+    opacity: .6
+}
+
+.glx-whats-new__content {
+    position: absolute;
+    top: 56px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: auto;
+    overflow-x: hidden;
+    padding-bottom: 50px
+}
+
+.glx-universe, .glx-wrapper {
+    position: relative
+}
+
+.glx-about-update {
+    background-color: #f2f2f2;
+    color: #262626
+}
+
+.glx-about-update__version-circle {
+    margin: -100px auto -130px;
+    width: 337px;
+    height: 337px;
+    background-size: 100% 100%
+}
+
+.glx-overlay.is-hidden .glx-about-update__version-circle {
+    background-image: none
+}
+
+.glx-about-update__version-circle--1-1 {
+    background-image: url(../../images/galaxy/circle-1-1-1x.png)
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi), only screen and (min-resolution: 1.5dppx) {
+    .glx-about-update__version-circle--1-1 {
+        background-image: url(../../images/galaxy/circle-1-1-2x.png)
+    }
+}
+
+.glx-about-update__version-circle--1-2 {
+    background-image: url(../../images/galaxy/circle-1-2-1x.png)
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi), only screen and (min-resolution: 1.5dppx) {
+    .glx-about-update__version-circle--1-2 {
+        background-image: url(../../images/galaxy/circle-1-2-2x.png)
+    }
+}
+
+.glx-about-update__subtitle {
+    margin-top: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 28px;
+    line-height: 1.5em;
+    font-weight: 400
+}
+
+.glx-about-update__features-list {
+    margin-top: 38px;
+    margin-bottom: 30px
+}
+
+.glx-about-update__other-improvements {
+    padding-top: 30px;
+    text-align: center
+}
+
+.glx-about-update__other-improvements-column {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 25px;
+    margin-left: 25px;
+    max-width: 300px;
+    text-align: left
+}
+
+@media (max-width: 1090px) {
+    .glx-about-update__other-improvements-column {
+        margin-right: 10px;
+        margin-left: 10px
+    }
+}
+
+@media (max-width: 890px) {
+    .glx-about-update__other-improvements-column {
+        max-width: 500px
+    }
+}
+
+.glx-about-update__other-improvement-title {
+    padding-bottom: 2px;
+    font-weight: 400
+}
+
+.glx-about-update__other-improvement-text {
+    padding-bottom: 20px;
+    font-weight: 400
+}
+
+.glx-about-update--1-1 .glx-about-update__subtitle {
+    color: #b980ab
+}
+
+.glx-about-update--1-1 .glx-about-update__features-list .glx-icon, .glx-about-update--1-1 .glx-about-update__other-improvement-title, .glx-about-update--1-1 .glx-features-list__label {
+    color: #d978ac
+}
+
+.glx-about-update--1-2 .glx-about-update__subtitle {
+    color: #5e9da1
+}
+
+.glx-about-update--1-2 .glx-about-update__features-list .glx-icon, .glx-about-update--1-2 .glx-about-update__other-improvement-title, .glx-about-update--1-2 .glx-features-list__label {
+    color: #00949c
+}
+
+.glx-universe {
+    overflow: hidden;
+    min-height: 100%
+}
+
+.glx-universe:not(.glx-universe--no-bg) {
+    color: #fff;
+    background-color: #0c0231
+}
+
+.glx-universe, _:-webkit-full-screen:not(:root:root) {
+    top: -300px;
+    padding-top: 300px;
+    margin-bottom: -300px
+}
+
+#glx-main-menu {
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    z-index: 50;
+    font-size: 15px
+}
+
+#glx-main-menu.is-glued, #glx-main-menu:after {
+    position: fixed;
+    top: 56px
+}
+
+@media screen and (min-width: 1061px) {
+    #glx-main-menu {
+        left: 50%;
+        margin-left: -530px;
+        width: 1060px
+    }
+}
+
+@media screen and (max-width: 1060px) {
+    #glx-main-menu {
+        width: 96%;
+        left: 2%
+    }
+
+    #glx-main-menu #glx-main-menu-list {
+        width: 100%
+    }
+
+    #glx-main-menu #glx-main-menu-buttons {
+        display: none
+    }
+}
+
+#glx-main-menu .show-on-glued, #glx-main-menu:after {
+    opacity: 0;
+    visibility: hidden
+}
+
+#glx-main-menu:after {
+    content: '';
+    display: block;
+    left: 0;
+    width: 100%;
+    height: 150px;
+    z-index: -1;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, .25) 0, transparent 95%);
+    transition: .75s
+}
+
+#glx-main-menu .show-on-glued {
+    transition: .25s
+}
+
+#glx-main-menu.is-glued .show-on-glued, #glx-main-menu.is-glued:after {
+    opacity: 1;
+    visibility: visible
+}

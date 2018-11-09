@@ -1,0 +1,115 @@
+.otp_wrapper {
+    position: relative;
+}
+
+.otp__token {
+    box-sizing: border-box;
+    min-height: 42px;
+    padding: 10px;
+    border: #b1b1b1 solid 1px;
+    line-height: 20px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    background: #ededed;
+    font-family: inherit;
+    color: #4c4c4c;
+    width: 42px;
+    display: inline-block;
+    margin-left: 5px;
+    margin-right: 5px;
+    text-align: center;
+    font-size: 1.25em;
+    ime-mode:disabled;
+    -ms-ime-mode:disabled;
+}
+
+.otp_wrapper .otp__token:first-child {
+    margin-left: 0;
+}
+.otp_wrapper .otp__token:last-child {
+    margin-right: 0;
+}
+
+.otp_wrapper .field__msg {
+    /*font-size: .92308em;*/
+    pointer-events: none;
+}
+
+@-webkit-keyframes framesShake {
+    8%, 41% {
+        -webkit-transform: translateX(-10px);
+        transform: translateX(-10px)
+    }
+    25%, 58% {
+        -webkit-transform: translateX(10px);
+        transform: translateX(10px)
+    }
+    75% {
+        -webkit-transform: translateX(-5px);
+        transform: translateX(-5px)
+    }
+    92% {
+        -webkit-transform: translateX(5px);
+        transform: translateX(5px)
+    }
+    0%, 100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0)
+    }
+}
+
+@keyframes framesShake {
+    8%, 41% {
+        -webkit-transform: translateX(-10px);
+        transform: translateX(-10px)
+    }
+    25%, 58% {
+        -webkit-transform: translateX(10px);
+        transform: translateX(10px)
+    }
+    75% {
+        -webkit-transform: translateX(-5px);
+        transform: translateX(-5px)
+    }
+    92% {
+        -webkit-transform: translateX(5px);
+        transform: translateX(5px)
+    }
+    0%, 100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0)
+    }
+}
+
+.otp_wrapper.error .otp__token {
+    -webkit-animation: framesShake 0.5s linear 0.25s 1 forwards;
+    animation: framesShake 0.5s linear 0.25s 1 forwards;
+    animation-name: framesShake;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-delay: 0.25s;
+    animation-iteration-count: 1;
+    animation-direction: initial;
+    animation-fill-mode: forwards;
+    animation-play-state: initial;
+}
+
+.error > .otp__token {
+    background: #eeddd5;
+    border-color: #b8a79f;
+}
+
+.error > .field__msg {
+    color: #f25100;
+}
+
+.otp_wrapper .eye_wrapper {
+    box-sizing: border-box;
+    /*min-height: 42px;*/
+    /*padding: 10px;*/
+    line-height: 20px;
+    color: #4c4c4c;
+    display: inline-block;
+    text-align: center;
+    font-size: 1.25em;
+    cursor: pointer;
+}

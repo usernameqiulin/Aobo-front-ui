@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+</head>
+<body>
+<style>
+    html, body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        display: table
+    }
+    .wrapper {
+        display: table-cell;
+        text-align: center;
+        vertical-align: middle;
+    }
+</style>
+<script type="text/javascript">
+    var url = 'https://bsicw.playngonetwork.com/Casino/js?div=pngCasinoGame&pid=266&demo=1&rcexiturl='
+    function normal(params) {
+        var rurl = url + "&gameid=" + getValue(params, 'gameId', '');
+        rurl += "&lang=" + getValue(params, 'lang', 'en');
+        // rurl += "&width=" + getValue(params, 'width', '990px');
+        // rurl += "&height=" + getValue(params, 'height', '742px');
+        var practice = buildPractice(getValue(params, 'mode', 'fun'));
+        rurl += "&practice=" + practice;
+        if (practice == 0) {
+            var token = getValue(params, 'token', '');
+            rurl += "&username=" + token;
+        }
+        return rurl;
+    }
+
+    function queryParams() {
+        var qs = (location.search.length > 0 ? location.search.substring(1) : "");
+        var args = {}
+        var items = qs.split("&");
+        for (var i = 0; i < items.length; i++) {
+            var item = items[i];
+            var index = item.indexOf('=');
+            var name = decodeURIComponent(item.substring(0, index));
+            var value = decodeURIComponent(item.substring(index + 1));
+            args[name] = value;
+        }
+        return args;
+    }
+
+    function getValue(param, name, defaultValue) {
+        if (param[name]) {
+            return param[name];
+        }
+        return defaultValue;
+    }
+
+    function buildPractice(playmode) {
+        return 'fun' !== playmode ? 0 : 1;
+    }
+
+    function ShowCashier() {
+        window.location = '<CASHIERURL>';
+    }
+    function PlayForReal() {
+        window.location = '<REALURL>';
+    }
+    function Logout() {
+        alert('Are you sure?');
+        window.close();
+    }
+
+    var x = normal(queryParams());
+    document.write("<script language=\"javascript\" src=\"" + x + "\"><\/script>");
+</script>
+<div class="wrapper">
+    <div id="pngCasinoGame"></div>
+</div>
+</body>
+</html>

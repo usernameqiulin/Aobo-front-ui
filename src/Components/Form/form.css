@@ -1,0 +1,454 @@
+@charset "UTF-8";
+
+.modal-form {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 720px;
+}
+
+.modal-form__header {
+    margin-bottom: 20px;
+}
+
+.modal-form__title {
+    margin-top: 3px;
+    line-height: 1.25;
+    color: #262626;
+    font-size: .875em;
+}
+
+.modal-form__field {
+    display: block;
+    position: relative;
+    min-height: 38px;
+    margin-top: 10px;
+    border: 1px solid #b7b7b7;
+    font-size: .8125em;
+    background: #ededed;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, .1);
+}
+
+.modal-form__field-transparent {
+    border: 0;
+    background: transparent;
+    box-shadow: none;
+}
+
+.modal-form__item {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    /*height: 100%;*/
+    line-height: 38px;
+}
+
+.modal-form__icon {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    /*height: 100%;*/
+    line-height: 38px;
+    font-size: 1.5em;
+}
+
+.modal-form__input, .modal-form__textarea, .modal-form__bank-selector {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 0;
+    width: 100%;
+    padding: 5px 40px 5px 10px;
+    color: #212121;
+    background: 0 0;
+    resize: none;
+    font: inherit;
+}
+
+.modal-form__input {
+    padding: 0 40px 0 0;
+    border-left: 10px solid transparent;
+    line-height: 38px;
+}
+
+.modal-form__input.otp {
+    padding: 0;
+    border:0;
+    /*text-align: center;*/
+}
+
+.modal-form__input[disabled] {
+    /*color: grey;*/
+}
+
+.modal-form__bank-selector {
+    padding: 0 40px 0 0;
+    border-left: 10px solid transparent;
+    overflow-y: hidden;
+}
+.modal-form__bank-selector ._cs-content {
+    line-height: 0;
+}
+.modal-form__bank-selector ._cs-left, .modal-form__bank-selector ._cs-right {
+    top: 50%;
+    margin-top: -9px;
+}
+.modal-form__label {
+    margin-right: .75em;
+    color: grey;
+    font-weight: 600;
+}
+
+.modal-form__textarea {
+    height: 251px;
+}
+
+.modal-form__select {
+    width: 100%;
+    font: inherit;
+    height: 40px;
+    /*box-shadow: inset 0 1px 3px rgba(0, 0, 0, .1);*/
+}
+
+.modal-form__counter {
+    position: absolute;
+    bottom: 0;
+    right: 2px;
+    padding: 0 8px;
+    line-height: 38px;
+    font-size: 12px;
+    font-weight: 600;
+    color: grey;
+    pointer-events: none;
+}
+
+.modal-form__bottom {
+    margin: 25px 0 5px;
+    font-size: 0;
+    text-align: center;
+}
+
+.review-goto-guidelines {
+    float: left;
+    text-align: left;
+}
+
+.review-guidelines__icon-small {
+    display: inline-block;
+    float: left;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.review-guidelines__icon-small--tip {
+    background: url(../../images/bonus-light.1x.png) -150px -95px;
+    width: 40px;
+    height: 40px;
+}
+
+.review-goto-guidelines__info {
+    display: inline-block;
+    float: left;
+    vertical-align: top;
+}
+
+.review-goto-guidelines__lnk, .review-goto-guidelines__text {
+    text-align: left;
+}
+
+.review-goto-guidelines__lnk {
+    font-size: 13px;
+    text-decoration: underline;
+}
+
+.review-goto-guidelines__text {
+    font-size: 12px;
+}
+
+.add-review__button {
+    float: right;
+}
+
+.modal-form__bottom>.btn {
+    margin: 5px 0 0;
+}
+
+.review-guidelines__tip {
+    min-height: 75px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.review-guidelines__tip:nth-child(1) {
+    opacity: 0;
+    -webkit-animation-name: review-animation;
+    animation-name: review-animation;
+    -webkit-animation-duration: .4s;
+    animation-duration: .4s;
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1
+}
+
+.review-guidelines__tip:nth-child(2),.review-guidelines__tip:nth-child(3) {
+    -webkit-animation-name: review-animation;
+    -webkit-animation-duration: .4s;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-animation-iteration-count: 1;
+    opacity: 0
+}
+
+.review-guidelines__tip:nth-child(2) {
+    animation-name: review-animation;
+    animation-duration: .4s;
+    -webkit-animation-delay: .3s;
+    animation-delay: .3s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1
+}
+
+.review-guidelines__tip:nth-child(3) {
+    animation-name: review-animation;
+    animation-duration: .4s;
+    -webkit-animation-delay: .6s;
+    animation-delay: .6s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1
+}
+
+.review-guidelines__tip-info {
+    display: inline-block;
+    float: right
+}
+
+.review-guidelines__title {
+    display: block;
+    font-size: 14px
+}
+
+.review-guidelines__title--blue {
+    color: #005e7d
+}
+
+.review-guidelines__title--green {
+    color: #447d00
+}
+
+.review-guidelines__title--red {
+    color: #c10000
+}
+
+.review-guidelines__text {
+    margin-top: .5em;
+    font-size: 12px;
+    line-height: 1.7em;
+    overflow: hidden
+}
+
+.review-guidelines__lnk {
+    text-decoration: underline
+}
+
+.icon-lock {
+    position: relative;
+    top: 4px;
+    width: 13px;
+    height: 17px;
+    fill: currentColor;
+}
+
+.icon-target {
+    background: url(../../images/bonus-light.1x.png) -119px 0;
+}
+
+.modal-form__bank-selector:not(._spinner) {
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-right: 10px;
+}
+.modal-form__bank-selector._spinner {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+}
+
+.modal-form__field.error .modal-form__label {
+    color: #c10000;
+}
+
+.modal-form__field.error .modal-form__input,
+.modal-form__field.error .modal-form__bank-selector,
+.input-element.error
+{
+    -webkit-animation: framesShake 0.5s linear 0.25s 1 forwards;
+    animation: framesShake 0.5s linear 0.25s 1 forwards;
+    -webkit-animation-name: framesShake;
+    animation-name: framesShake;
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-delay: 0.25s;
+    animation-delay: 0.25s;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -webkit-animation-direction: initial;
+    animation-direction: initial;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-play-state: initial;
+    animation-play-state: initial;
+}
+
+.modal-form__field.error,
+.input-element.error
+{
+    background: #eeddd5;
+    border-color: #b8a79f;
+}
+.add-review__counter {
+    position: absolute;
+    bottom: 2px;
+    right: 2px;
+    padding: 0 8px;
+    line-height: 37px;
+    font-size: 12px;
+    font-weight: 600;
+    color: grey;
+    pointer-events: none;
+}
+.add-review__counter.is-error {
+    color: #f25100;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),only screen and (min--moz-device-pixel-ratio:1.5),only screen and (min-device-pixel-ratio:1.5),only screen and (min-resolution:144dpi),only screen and (min-resolution:1.5dppx) {
+    .icon-target {
+        background: url(../../images/bonus-light.2x.png) -119px 0;
+        background-size: 258px auto
+    }
+}
+
+.icon-scales {
+    background: url(../../images/bonus-light.1x.png) -75px -95px;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),only screen and (min--moz-device-pixel-ratio:1.5),only screen and (min-device-pixel-ratio:1.5),only screen and (min-resolution:144dpi),only screen and (min-resolution:1.5dppx) {
+    .icon-scales {
+        background: url(../../images/bonus-light.2x.png) -75px -95px;
+        background-size: 258px auto
+    }
+}
+
+.icon-shredder {
+    background: url(../../images/bonus-light.1x.png) 0 -95px;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),only screen and (min--moz-device-pixel-ratio:1.5),only screen and (min-device-pixel-ratio:1.5),only screen and (min-resolution:144dpi),only screen and (min-resolution:1.5dppx) {
+    .icon-shredder {
+        background: url(../../images/bonus-light.2x.png) 0 -95px;
+        background-size: 258px auto
+    }
+}
+
+.review-guidelines__button {
+    opacity: 0;
+    -webkit-animation-name: review-animation;
+    animation-name: review-animation;
+    -webkit-animation-duration: .4s;
+    animation-duration: .4s;
+    -webkit-animation-delay: 1.2s;
+    animation-delay: 1.2s;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    padding-left: 56px;
+    padding-right: 56px
+}
+
+.review-goto-guidelines {
+    float: left;
+    text-align: left
+}
+
+.review-guidelines__icon-small {
+    display: inline-block;
+    float: left;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi), only screen and (min-resolution: 1.5dppx) {
+    .review-guidelines__icon-small--tip {
+        background: url(../../images/bonus-light.2x.png) -150px -95px;
+        background-size: 258px auto
+    }
+}
+
+@media (max-width: 29.9375em) {
+    .add-review__bottm>.btn--right {
+        float:none
+    }
+    .review-goto-guidelines {
+        display:inline-block;
+        float: none
+    }
+    .modal-form__field-transparent .modal-form__item {
+        display: block;
+        width: 100%;
+        left: 0;
+        position: relative;
+    }
+}
+
+@media (min-width: 37.5em) {
+    .modal-form__field--bank {
+        display:none;
+    }
+
+    .modal-form__item {
+        display: block;
+        width: 120px;
+    }
+
+    .modal-form__icon {
+        display: none;
+    }
+
+    .modal-form__input, .modal-form__bank-selector {
+        padding-left: 120px
+    }
+
+    .lang--pt-br .add-review__item--rating {
+        width: 200px
+    }
+
+    .lang--pt-br .modal-form__input {
+        padding-left: 200px
+    }
+
+    .screen-ov-bottom__left {
+        float: left
+    }
+
+    .screen-ov-bottom__right {
+        float: right
+    }
+
+    .modal-form__input.otp {
+        border-left: 10px solid transparent;
+        padding-left: 120px;
+        text-align: left;
+    }
+}

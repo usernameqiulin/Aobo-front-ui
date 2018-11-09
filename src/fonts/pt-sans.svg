@@ -1,0 +1,64 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>
+Created by FontPrep 20130207 at Thu Aug 14 15:13:39 2014
+ By Krzysztof Litynski
+Copyright (c) 2009 ParaType Ltd. All rights reserved.
+</metadata>
+<defs>
+<font id="f39585f1b656e5f9297b79e526233403" horiz-adv-x='1024' >
+  <font-face 
+    font-family="PTSans-Regular"
+    font-weight="400"
+    font-stretch="normal"
+    units-per-em="2048"
+    panose-1="2 0 5 3 0 0 0 0 0 0"
+    ascent="1536"
+    descent="-512"
+    bbox="68 0 1061 1450"
+    underline-thickness="102"
+    underline-position="-102"
+    unicode-range="U+0020-20BD"
+  />
+<missing-glyph 
+ />
+    <glyph glyph-name=".notdef" unicode="&#xaf;" 
+ />
+    <glyph glyph-name=".notdef" unicode="&#xfffd;" 
+ />
+    <glyph glyph-name=".notdef" unicode="&#x2044;" 
+ />
+    <glyph glyph-name=".notdef" unicode="&#x2030;" 
+ />
+    <glyph glyph-name=".notdef" unicode="&#x2026;" 
+ />
+    <glyph glyph-name=".notdef" unicode="&#x192;" 
+ />
+    <glyph glyph-name=".notdef" unicode="&#x131;" 
+ />
+    <glyph glyph-name=".notdef" unicode="&#xf8;" 
+ />
+    <glyph glyph-name=".notdef" unicode="&#xe6;" 
+ />
+    <glyph glyph-name=".notdef" unicode="&#xdf;" 
+ />
+    <glyph glyph-name=".notdef" unicode="&#xd8;" 
+ />
+    <glyph glyph-name=".notdef" unicode="&#xc6;" 
+ />
+    <glyph glyph-name=".notdef" unicode="&#xbf;" 
+ />
+    <glyph glyph-name=".notdef" unicode="&#xb4;" 
+ />
+    <glyph glyph-name=".null" horiz-adv-x="0" 
+ />
+    <glyph glyph-name="nonmarkingreturn" horiz-adv-x="681" 
+ />
+    <glyph glyph-name="space" unicode=" " horiz-adv-x="546" 
+ />
+    <glyph glyph-name="uni20BD" unicode="&#x20bd;" horiz-adv-x="1116" 
+d="M562 1307q-71 0 -103 -4q-39 0 -76 -9v-594h156q236 0 313 156q31 59 29 158q7 147 -95 231q-88 62 -224 62zM499 1450q152 0 242 -18t164 -68q156 -114 156 -348q0 -131 -44 -216q-87 -168 -284 -214q-92 -20 -188 -25l-162 -2v-145h340v-127h-340v-287h-170v287h-145
+v127h145v147h-145v127h145v731q134 31 286 31z" />
+  </font>
+</defs></svg>

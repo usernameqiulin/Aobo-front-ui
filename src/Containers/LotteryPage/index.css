@@ -1,0 +1,45 @@
+@charset "UTF-8";
+.lottrey-page{
+    height:830px;
+}
+.lottrey-page .content {
+    background-image: none, url(../../images/lottrey/coming-soon481.jpg);
+    background-color: #260c4c;
+    background-repeat: no-repeat;
+    background-position: center bottom, center top;
+}
+
+@media (min-width: 481px) {
+    .lottrey-page .content {
+        background-image: none, url(../../images/lottrey/coming-soon801.jpg);
+    }
+}
+
+@media (min-width: 801px) {
+    .lottrey-page .content {
+        background-image: none, url(../../images/lottrey/coming-soon1367.jpg);
+    }
+}
+
+/* @media (min-width: 891px) {
+    .lottrey-page .content {
+        background-position: center bottom, center top;
+    }
+} */
+
+@media (min-width: 1367px) {
+    .lottrey-page .content {
+        background-image: none, url(../../images/lottrey/coming-soon1681.jpg);
+    }
+}
+
+@media (min-width: 1681px) {
+    .lottrey-page .content {
+        background-image: none, url(../../images/lottrey/coming-soon1921.jpg);
+    }
+}
+@media (min-width: 1921px) {
+    .lottrey-page .content {
+        background-image: none, url(../../images/lottrey/coming-soon2560.jpg);
+    }
+}

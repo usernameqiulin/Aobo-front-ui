@@ -1,0 +1,33 @@
+.frontpage-wrapper {
+    background-image: none, url('../images/background/sky.jpg');
+}
+
+@media (min-width: 481px) {
+    .frontpage-wrapper {
+        background-image: none, url('../images/background/sky_2560.jpg');
+    }
+}
+
+@media (min-width: 801px) {
+    .frontpage-wrapper {
+        background-image: none, url('../images/background/sky_2560.jpg');
+    }
+}
+
+@media (min-width: 1367px) {
+    .frontpage-wrapper {
+        background-image: none, url('../images/background/sky_2560.jpg');
+    }
+}
+
+@media (min-width: 1681px) {
+    .frontpage-wrapper {
+        background-image: none, url('../images/background/sky_2560.jpg');
+    }
+}
+
+@media (min-width: 1921px) {
+    .frontpage-wrapper {
+        background-image: none, url('../images/background/sky_2560.jpg');
+    }
+}

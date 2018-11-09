@@ -1,0 +1,943 @@
+.prices-in-cny .bank-logo-small {
+    display: inline-block;
+    background: url(../../images/account/bank-cny-logo-small.png) no-repeat -999px -999px;
+    vertical-align: -.2em;
+    width: 25px;
+    height: 15px;
+}
+
+.bank-logo-small:before {
+    content: ' ';
+    display: block;
+    height: 15px;
+}
+
+.bank-logo-small.JINCHB {
+    background-position: 0 -398px;
+}
+
+.bank-logo-small.SJBANK {
+    background-position: -25px -398px;
+}
+
+.bank-logo-small.TACCB {
+    background-position: -50px -398px;
+}
+
+.bank-logo-small.ZJTLCB {
+    background-position: -75px -398px;
+}
+
+.bank-logo-small.XABANK {
+    background-position: -100px -398px;
+}
+
+.bank-logo-small.HDBANK {
+    background-position: -125px -398px;
+}
+
+.bank-logo-small.JLBANK {
+    background-position: -150px -398px;
+}
+
+.bank-logo-small.BOSZ {
+    background-position: -175px -398px;
+}
+
+.bank-logo-small.ZBCB {
+    background-position: -200px -398px;
+}
+
+.bank-logo-small.BGB {
+    background-position: -156px -93px;
+}
+
+.bank-logo-small.HCCB {
+    background-position: -131px -108px;
+}
+
+.bank-logo-small.SDEBS {
+    background-position: -156px -108px;
+}
+
+.bank-logo-small.DYCCB {
+    background-position: -131px -123px;
+}
+
+.bank-logo-small.rccCASH {
+    background-position: -156px -123px;
+}
+
+.bank-logo-small.SXRCU {
+    background-position: -289px -140px;
+}
+
+.bank-logo-small.MTBANK {
+    background-position: -289px -155px;
+}
+
+.bank-logo-small.NBBANK {
+    background-position: -232px -176px;
+}
+
+.bank-logo-small.NBYZ {
+    background-position: -257px -176px;
+}
+
+.bank-logo-small.HBHSBANK {
+    background-position: -282px -176px;
+}
+
+.bank-logo-small.BODD {
+    background-position: -252px -200px;
+}
+
+.bank-logo-small.QLBANK {
+    background-position: -277px -200px;
+}
+
+.bank-logo-small.LANGFB {
+    background-position: -252px -215px;
+}
+
+.bank-logo-small.SRBANK {
+    background-position: -277px -215px;
+}
+
+.bank-logo-small.DLB {
+    background-position: -252px -236px;
+}
+
+.bank-logo-small.HKBEA {
+    background-position: -277px -236px;
+}
+
+.bank-logo-small.JSB {
+    background-position: -252px -251px;
+}
+
+.bank-logo-small.LSCCB {
+    background-position: -277px -251px;
+}
+
+.bank-logo-small.CDCB {
+    background-position: -252px -272px;
+}
+
+.bank-logo-small.BOCY {
+    background-position: -277px -272px;
+}
+
+.bank-logo-small.CMBC {
+    background-position: -252px -287px;
+}
+
+.bank-logo-small.JNBANK {
+    background-position: -277px -287px;
+}
+
+.bank-logo-small.CCBEPAY {
+    background-position: -320px 0;
+}
+
+.bank-logo-small.H3CB {
+    background-position: -320px -15px;
+}
+
+.bank-logo-small.CATB {
+    background-position: -320px -30px;
+}
+
+.bank-logo-small.GLBANK {
+    background-position: -320px -45px;
+}
+
+.bank-logo-small.XLBANK {
+    background-position: -320px -60px;
+}
+
+.bank-logo-small.PZHCCB {
+    background-position: -320px -75px;
+}
+
+.bank-logo-small.HNRCC {
+    background-position: -320px -90px;
+}
+
+.bank-logo-small.SDB {
+    background-position: -320px -105px;
+}
+
+.bank-logo-small.XYBANK {
+    background-position: -320px -120px;
+}
+
+.bank-logo-small.JLRCU {
+    background-position: -320px -135px;
+}
+
+.bank-logo-small.CITIC {
+    background-position: -320px -150px;
+}
+
+.bank-logo-small.YXCCB {
+    background-position: -320px -165px;
+}
+
+.bank-logo-small.BANKWF {
+    background-position: -320px -180px;
+}
+
+.bank-logo-small.SXRCCU {
+    background-position: -320px -195px;
+}
+
+.bank-logo-small.XTB {
+    background-position: -320px -210px;
+}
+
+.bank-logo-small.GXRCU {
+    background-position: -320px -225px;
+}
+
+.bank-logo-small.TZCB {
+    background-position: -320px -240px;
+}
+
+.bank-logo-small.EGBANK {
+    background-position: -320px -255px;
+}
+
+.bank-logo-small.PSBC {
+    background-position: -320px -270px;
+}
+
+.bank-logo-small.JNCCB {
+    background-position: -320px -285px;
+}
+
+.bank-logo-small.NXRCU {
+    background-position: 0 -308px;
+}
+
+.bank-logo-small.CQBANK {
+    background-position: -25px -308px;
+}
+
+.bank-logo-small.ICBC {
+    background-position: -50px -308px;
+}
+
+.bank-logo-small.HZCB {
+    background-position: -75px -308px;
+}
+
+.bank-logo-small.CBKF {
+    background-position: -100px -308px;
+}
+
+.bank-logo-small.BOHAIB {
+    background-position: -125px -308px;
+}
+
+.bank-logo-small.BQD {
+    background-position: -150px -308px;
+}
+
+.bank-logo-small.URMQCCB {
+    background-position: -175px -308px;
+}
+
+.bank-logo-small.SHBANK {
+    background-position: -200px -308px;
+}
+
+.bank-logo-small.HXBANK {
+    background-position: -225px -308px;
+}
+
+.bank-logo-small.BOJZ {
+    background-position: -250px -308px;
+}
+
+.bank-logo-small.LSBC {
+    background-position: -275px -308px;
+}
+
+.bank-logo-small.GSRCU {
+    background-position: -300px -308px;
+}
+
+.bank-logo-small.YQCCB {
+    background-position: 0 -323px;
+}
+
+.bank-logo-small.BOCD {
+    background-position: -25px -323px;
+}
+
+.bank-logo-small.SCRCU {
+    background-position: -50px -323px;
+}
+
+.bank-logo-small.GZB {
+    background-position: -75px -323px;
+}
+
+.bank-logo-small.NHB {
+    background-position: -100px -323px;
+}
+
+.bank-logo-small.ZSB {
+    background-position: -125px -323px;
+}
+
+.bank-logo-small.SDRCB {
+    background-position: -150px -323px;
+}
+
+.bank-logo-small.SCCB {
+    background-position: -175px -323px;
+}
+
+.bank-logo-small.CGNB {
+    background-position: -200px -323px;
+}
+
+.bank-logo-small.JRCB {
+    background-position: -225px -323px;
+}
+
+.bank-logo-small.LZYH {
+    background-position: -250px -323px;
+}
+
+.bank-logo-small.BOCCCL {
+    background-position: -275px -323px;
+}
+
+.bank-logo-small.CRCBANK {
+    background-position: -300px -323px;
+}
+
+.bank-logo-small.JXBANK {
+    background-position: -345px 0;
+}
+
+.bank-logo-small.FIRB {
+    background-position: -345px -15px;
+}
+
+.bank-logo-small.YDRCB {
+    background-position: -345px -30px;
+}
+
+.bank-logo-small.GDB {
+    background-position: -345px -45px;
+}
+
+.bank-logo-small.GRCB {
+    background-position: -345px -60px;
+}
+
+.bank-logo-small.GCB {
+    background-position: -345px -75px;
+}
+
+.bank-logo-small.CIB {
+    background-position: -345px -90px;
+}
+
+.bank-logo-small.CCQTGB {
+    background-position: -345px -105px;
+}
+
+.bank-logo-small.PINGAN {
+    background-position: -345px -120px;
+}
+
+.bank-logo-small.SCB {
+    background-position: -345px -135px;
+}
+
+.bank-logo-small.CZRCB {
+    background-position: -345px -150px;
+}
+
+.bank-logo-small.ZJKCCB {
+    background-position: -345px -165px;
+}
+
+.bank-logo-small.ARCU {
+    background-position: -345px -180px;
+}
+
+.bank-logo-small.CZBANK {
+    background-position: -345px -195px;
+}
+
+.bank-logo-small.HSBK {
+    background-position: -345px -210px;
+}
+
+.bank-logo-small.NYCB {
+    background-position: -345px -225px;
+}
+
+.bank-logo-small.BSB {
+    background-position: -345px -240px;
+}
+
+.bank-logo-small.SDEB {
+    background-position: -345px -255px;
+}
+
+.bank-logo-small.HURCB {
+    background-position: -345px -270px;
+}
+
+.bank-logo-small.myjCASH {
+    background-position: -345px -285px;
+}
+
+.bank-logo-small.TAIS {
+    background-position: -345px -300px;
+}
+
+.bank-logo-small.YBCCB {
+    background-position: -345px -315px;
+}
+
+.bank-logo-small.YCCB {
+    background-position: 0 -338px;
+}
+
+.bank-logo-small.SINO {
+    background-position: -25px -338px;
+}
+
+.bank-logo-small.LYCB {
+    background-position: -50px -338px;
+}
+
+.bank-logo-small.BJRCB {
+    background-position: -75px -338px;
+}
+
+.bank-logo-small.AEON {
+    background-position: -100px -338px;
+}
+
+.bank-logo-small.RCB {
+    background-position: -125px -338px;
+}
+
+.bank-logo-small.SPDB {
+    background-position: -150px -338px;
+}
+
+.bank-logo-small.KLB {
+    background-position: -175px -338px;
+}
+
+.bank-logo-small.BOZK {
+    background-position: -200px -338px;
+}
+
+.bank-logo-small.ZCKCCB {
+    background-position: -225px -338px;
+}
+
+.bank-logo-small.psbcCASH {
+    background-position: -250px -338px;
+}
+
+.bank-logo-small.SPABANK {
+    background-position: -131px -93px;
+}
+
+.bank-logo-small.HKB {
+    background-position: -331px -338px;
+}
+
+.bank-logo-small.ASCB {
+    background-position: 0 -353px;
+}
+
+.bank-logo-small.JHBANK {
+    background-position: -25px -353px;
+}
+
+.bank-logo-small.BOCSH {
+    background-position: -50px -353px;
+}
+
+.bank-logo-small.JSRCU {
+    background-position: -75px -353px;
+}
+
+.bank-logo-small.MASTER {
+    background-position: -100px -353px;
+}
+
+.bank-logo-small.DAQINGB {
+    background-position: -125px -353px;
+}
+
+.bank-logo-small.ZYCBANK {
+    background-position: -150px -353px;
+}
+
+.bank-logo-small.WZCB {
+    background-position: -175px -353px;
+}
+
+.bank-logo-small.SDRCU {
+    background-position: -200px -353px;
+}
+
+.bank-logo-small.TCCB {
+    background-position: -225px -353px;
+}
+
+.bank-logo-small.JJBANK {
+    background-position: -250px -353px;
+}
+
+.bank-logo-small.BJBANK {
+    background-position: -275px -353px;
+}
+
+.bank-logo-small.JCB {
+    background-position: -300px -353px;
+}
+
+.bank-logo-small.WHRCB {
+    background-position: -325px -353px;
+}
+
+.bank-logo-small.NCB {
+    background-position: -370px 0;
+}
+
+.bank-logo-small.BOP {
+    background-position: -370px -15px;
+}
+
+.bank-logo-small.BOC {
+    background-position: -370px -30px;
+}
+
+.bank-logo-small.LZCCB {
+    background-position: -370px -45px;
+}
+
+.bank-logo-small.JZCB {
+    background-position: -370px -60px;
+}
+
+.bank-logo-small.JZSBANK {
+    background-position: -370px -75px;
+}
+
+.bank-logo-small.TRCB {
+    background-position: -370px -90px;
+}
+
+.bank-logo-small.ABC {
+    background-position: -370px -105px;
+}
+
+.bank-logo-small.FDB {
+    background-position: -370px -120px;
+}
+
+.bank-logo-small.RZB {
+    background-position: -370px -135px;
+}
+
+.bank-logo-small.YDRCBCC {
+    background-position: -370px -150px;
+}
+
+.bank-logo-small.HBRCU {
+    background-position: -370px -165px;
+}
+
+.bank-logo-small.HANABANK {
+    background-position: -370px -180px;
+}
+
+.bank-logo-small.BOCI {
+    background-position: -370px -195px;
+}
+
+.bank-logo-small.GYCB {
+    background-position: -370px -210px;
+}
+
+.bank-logo-small.ZRCBANK {
+    background-position: -370px -225px;
+}
+
+.bank-logo-small.DYCB {
+    background-position: -370px -240px;
+}
+
+.bank-logo-small.HSBANK {
+    background-position: -370px -255px;
+}
+
+.bank-logo-small.ZGCCB {
+    background-position: -370px -270px;
+}
+
+.bank-logo-small.CSRCB {
+    background-position: -370px -285px;
+}
+
+.bank-logo-small.XXBANK {
+    background-position: -370px -300px;
+}
+
+.bank-logo-small.CZCB {
+    background-position: -370px -315px;
+}
+
+.bank-logo-small.GDRCC {
+    background-position: -370px -330px;
+}
+
+.bank-logo-small.BOD {
+    background-position: -370px -345px;
+}
+
+.bank-logo-small.HBC {
+    background-position: 0 -368px;
+}
+
+.bank-logo-small.VISA {
+    background-position: -25px -368px;
+}
+
+.bank-logo-small.SZSBK {
+    background-position: -50px -368px;
+}
+
+.bank-logo-small.SXCB {
+    background-position: -75px -368px;
+}
+
+.bank-logo-small.GZRCU {
+    background-position: -100px -368px;
+}
+
+.bank-logo-small.DZBANK {
+    background-position: -125px -368px;
+}
+
+.bank-logo-small.ORBANK {
+    background-position: -150px -368px;
+}
+
+.bank-logo-small.JZBANK {
+    background-position: -175px -368px;
+}
+
+.bank-logo-small.YNRCC {
+    background-position: -200px -368px;
+}
+
+.bank-logo-small.BOQH {
+    background-position: -225px -368px;
+}
+
+.bank-logo-small.JZCBANK {
+    background-position: -250px -368px;
+}
+
+.bank-logo-small.ZZBANK {
+    background-position: -275px -368px;
+}
+
+.bank-logo-small.NJCB {
+    background-position: -300px -368px;
+}
+
+.bank-logo-small.FJHXBC {
+    background-position: -325px -368px;
+}
+
+.bank-logo-small.DRCBCL {
+    background-position: -350px -368px;
+}
+
+.bank-logo-small.KELBANK {
+    background-position: -395px 0;
+}
+
+.bank-logo-small.AYCB {
+    background-position: -395px -15px;
+}
+
+.bank-logo-small.CSCB {
+    background-position: -395px -30px;
+}
+
+.bank-logo-small.WRCB {
+    background-position: -395px -45px;
+}
+
+.bank-logo-small.CDRCB {
+    background-position: -395px -60px;
+}
+
+.bank-logo-small.TCRCB {
+    background-position: -395px -75px;
+}
+
+.bank-logo-small.JXRCU {
+    background-position: -395px -90px;
+}
+
+.bank-logo-small.WJRCB {
+    background-position: -395px -105px;
+}
+
+.bank-logo-small.CEB {
+    background-position: -395px -120px;
+}
+
+.bank-logo-small.BHB {
+    background-position: -395px -135px;
+}
+
+.bank-logo-small.NXBANK {
+    background-position: -395px -150px;
+}
+
+.bank-logo-small.BOHN {
+    background-position: -395px -165px;
+}
+
+.bank-logo-small.CZCCB {
+    background-position: -395px -180px;
+}
+
+.bank-logo-small.ABCSH {
+    background-position: -395px -195px;
+}
+
+.bank-logo-small.COMM {
+    background-position: -395px -210px;
+}
+
+.bank-logo-small.KSRB {
+    background-position: -395px -225px;
+}
+
+.bank-logo-small.DQCCB {
+    background-position: -395px -240px;
+}
+
+.bank-logo-small.HNRCU {
+    background-position: -395px -255px;
+}
+
+.bank-logo-small.BOYK {
+    background-position: -395px -270px;
+}
+
+.bank-logo-small.FXCB {
+    background-position: -395px -285px;
+}
+
+.bank-logo-small.BZMD {
+    background-position: -395px -300px;
+}
+
+.bank-logo-small.LSBANK {
+    background-position: -395px -315px;
+}
+
+.bank-logo-small.CMB {
+    background-position: -395px -330px;
+}
+
+.bank-logo-small.CCB {
+    background-position: -395px -345px;
+}
+
+.bank-logo-small.ESUN {
+    background-position: -395px -360px;
+}
+
+.bank-logo-small.HRXJB {
+    background-position: 0 -383px;
+}
+
+.bank-logo-small.HZCCB {
+    background-position: -25px -383px;
+}
+
+.bank-logo-small.FUBB {
+    background-position: -50px -383px;
+}
+
+.bank-logo-small.QDCCB {
+    background-position: -75px -383px;
+}
+
+.bank-logo-small.NMGNXS {
+    background-position: -100px -383px;
+}
+
+.bank-logo-small.ZJNX {
+    background-position: -125px -383px;
+}
+
+.bank-logo-small.SRCB {
+    background-position: -150px -383px;
+}
+
+.bank-logo-small.SHRCB {
+    background-position: -175px -383px;
+}
+
+.bank-logo-small.DBS {
+    background-position: -200px -383px;
+}
+
+.bank-logo-small.DBSCN {
+    background-position: -225px -383px;
+}
+
+.bank-logo-small.BOSH {
+    background-position: -250px -383px;
+}
+
+.bank-logo-small.FSCB {
+    background-position: -275px -383px;
+}
+
+.bank-logo-small.JSBANK {
+    background-position: -300px -383px;
+}
+
+.bank-logo-small.WHCCB {
+    background-position: -325px -383px;
+}
+
+.bank-logo-small.XCYH {
+    background-position: -350px -383px;
+}
+
+.bank-logo-small.SCBBANK {
+    background-position: -375px -383px;
+}
+
+.bank-logo-small.BEA {
+    width: 126px;
+    height: 36px;
+    background-position: -189px -63px;
+}
+
+.bank-logo-small.CHB {
+    width: 126px;
+    height: 36px;
+    background-position: 0 -236px;
+}
+
+.bank-logo-small.BOCM {
+    width: 126px;
+    height: 36px;
+    background-position: -126px -236px;
+}
+
+.bank-logo-small.BOCHK {
+    width: 126px;
+    height: 36px;
+    background-position: 0 -272px;
+}
+
+.bank-logo-small.BOSC {
+    width: 126px;
+    height: 36px;
+    background-position: -126px -272px;
+}
+
+.bank-logo-small.WHB {
+    width: 126px;
+    height: 36px;
+    background-position: 0 -200px;
+}
+
+.bank-logo-small.FBHK {
+    width: 126px;
+    height: 36px;
+    background-position: -163px -140px;
+}
+
+.bank-logo-small.DSB {
+    width: 126px;
+    height: 36px;
+    background-position: -126px -200px;
+}
+
+.bank-logo-small.WLB {
+    width: 126px;
+    height: 36px;
+    background-position: -189px -99px;
+}
+
+.bank-logo-small.BOCMA {
+    background-position: -225px -398px;
+}
+
+.bank-logo-small.CHBHK {
+    background-position: -250px -398px;
+}
+
+.bank-logo-small.COMMHK {
+    background-position: -275px -398px;
+}
+
+.bank-logo-small.FBBHK {
+    background-position: -300px -398px;
+}
+
+.bank-logo-small.ICBCHK {
+    background-position: -325px -398px;
+}
+
+.bank-logo-small.ICBCMA {
+    background-position: -350px -398px;
+}
+
+.bank-logo-small.SCBHK {
+    background-position: -375px -398px;
+}
+
+.bank-logo-small.WHBHK {
+    background-position: -420px 0;
+}
+
+.bank-logo-small.WLBHK {
+    background-position: -420px -15px;
+}
+
+.bank-logo-small.BEAHK {
+    background-position: -420px -30px;
+}
+
+.bank-logo-small.CITIHK {
+    background-position: -420px -45px;
+}
+
+.bank-logo-small.DSBHK {
+    background-position: -420px -60px;
+}
+
+.bank-logo-small.SHCBHK {
+    background-position: -420px -75px;
+}

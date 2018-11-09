@@ -1,0 +1,234 @@
+.dimming-chooser__overlay {
+    z-index: auto;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    cursor: default;
+    visibility: hidden;
+}
+
+.account__products .product-row.dimming-chooser__element,
+.dimming-chooser__element {
+    z-index: auto;
+}
+
+.dimming-chooser__element:before {
+    content: "";
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    visibility: hidden
+}
+
+.dimming-chooser__element:before,
+.dimming-chooser__overlay {
+    background: rgba(0,0,0,.5)
+}
+
+.dimming-chooser--active .dimming-chooser__element:before,
+.dimming-chooser--active .dimming-chooser__overlay {
+    visibility: inherit
+}
+
+.dimming-chooser--active .dimming-chooser__active-element-wrap .dimming-chooser__element:before,
+.dimming-chooser--active .dimming-chooser__element:hover:before {
+    visibility: hidden
+}
+
+.dimming-chooser--active .game-details {
+    z-index: 15
+}
+
+.dimming-chooser--active .account__products .product-row.dimming-chooser__element,
+.dimming-chooser--active .dimming-chooser__element {
+    z-index: 14
+}
+
+.dimming-chooser--active .dimming-chooser__overlay {
+    /*z-index: 13*/
+}
+
+.dimming-chooser--active .page-header {
+    z-index: 12
+}
+
+.game-details {
+    position: relative;
+    color: #c39b53;
+    /*top: 25px;*/
+    /*left: -2.83%;*/
+    left: 0;
+    z-index: 15;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    /*width: 105.66%;*/
+    width: 100%;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0s ease-in-out,visibility 0s ease-in-out,-webkit-transform 0s ease-in-out;
+    transition: opacity 0s ease-in-out,visibility 0s ease-in-out,transform 0s ease-in-out;
+    transition: opacity 0s ease-in-out,visibility 0s ease-in-out,transform 0s ease-in-out,-webkit-transform 0s ease-in-out;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    box-shadow: 0 0 15px rgba(0,0,0,.15),0 1px 3px rgba(0,0,0,.15);
+    /*background: transparent;*/
+}
+
+.game-details:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: -1;
+    opacity: .75;
+    /*background: #ccc center -70px no-repeat;*/
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0)
+}
+
+.game-details.is-bg-transitioning:before {
+    transition: opacity .5s linear
+}
+
+.game-details.is-bg-unavailable:before {
+    opacity: 0
+}
+
+.game-details.is-visible {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity .35s ease-in-out,visibility .35s ease-in-out,-webkit-transform 0s ease-in-out;
+    transition: opacity .35s ease-in-out,visibility .35s ease-in-out,transform 0s ease-in-out;
+    transition: opacity .35s ease-in-out,visibility .35s ease-in-out,transform 0s ease-in-out,-webkit-transform 0s ease-in-out
+}
+
+.game-details.is-top-animated {
+    transition: opacity 0s ease-in-out,visibility 0s ease-in-out,-webkit-transform .3s ease-in-out;
+    transition: opacity 0s ease-in-out,visibility 0s ease-in-out,transform .3s ease-in-out;
+    transition: opacity 0s ease-in-out,visibility 0s ease-in-out,transform .3s ease-in-out,-webkit-transform .3s ease-in-out
+}
+
+.game-details__body {
+    /*padding: 1.125em 0 3.125em;*/
+}
+
+.game-details__loading {
+    position: relative;
+    min-height: 12.5em;
+}
+
+.game-details__loading .spinner--big {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
+
+.game-details__close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 15px;
+    font-size: .875em
+}
+
+.game-details__header {
+    padding-bottom: 15px
+}
+
+.game-details__header__button {
+    margin: 0 0 0 1px;
+    position: absolute;
+    right: 0;
+    top: -50px;
+}
+
+.game-details__header__button .product-dropdown__subitems {
+    right: auto;
+    left: 100%;
+    margin-left: 1px
+}
+
+.game-details__header__button .product-dropdown__subitems:after {
+    left: auto;
+    right: 100%
+}
+
+.game-details__header__button .subitems-control__icon--left {
+    visibility: hidden
+}
+
+.game-details__header__button .subitems-control__icon--right {
+    visibility: inherit
+}
+
+.game-details__header__button .subitems:before {
+    top: 3px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,.15)
+}
+
+.game-details__pointer-wrapper {
+    margin-left: 2px
+}
+
+.game-details__icon-down {
+    vertical-align: 1px;
+    font-size: 9px
+}
+
+.game-details__pointer-wrapper>.game-details__pointer-up {
+    top: auto;
+    bottom: -5px;
+    margin: 0
+}
+
+.game-details__dropdown-items {
+    left: 0;
+    top: 100%;
+    margin-top: 5px
+}
+
+.game-details__title {
+    margin-top: 0;
+    margin-bottom: .45em;
+    font-size: 32px
+}
+
+.game-details__section {
+    margin-top: 40px
+}
+
+.game-details__column--left>.game-details__section:first-child {
+    margin-top: 0
+}
+
+.game-details__section .rich-text {
+    padding: 13px 0;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border-bottom: 1px solid rgba(0,0,0,.08);
+    font-size: 13px;
+    line-height: 18px
+}
+
+.game-details__section .rich-text p {
+    line-height: inherit
+}
+
+.game-details__section__paragraph {
+    margin-top: 0
+}
+
+.dimming-chooser__element .product-row__link {
+    cursor: pointer;
+}
+
+.dimming-chooser__active-element-wrap .dimming-chooser__element .product-row__link {
+    cursor: default;
+}

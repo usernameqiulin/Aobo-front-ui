@@ -1,0 +1,93 @@
+.advantageDesc-component {
+    border-radius: 8px;
+    position: relative;
+    padding: 25px 20px;
+  }
+  .advantageDesc-component .triangle-container {
+    position: absolute;
+    top: 30px;
+  }
+  .advantageDesc-component h2 {
+    line-height: 35px;
+    font-size: 18px;
+  }
+  .advantageDesc-component p {
+    font-size: 14px;
+    line-height: 23px;
+  }
+  .advantageDesc-component.fadeInLeft {
+    -webkit-animation-name: zpFadeInLeft;
+            animation-name: zpFadeInLeft;
+  }
+  .advantageDesc-component.fadeInRight {
+    -webkit-animation-name: zpFadeInRight;
+            animation-name: zpFadeInRight;
+  }
+  @media screen and (max-width: 650px) {
+    .advantageDesc-component {
+      border-radius: 8px;
+      position: relative;
+      padding: 10px 7px;
+    }
+    .advantageDesc-component .triangle-container {
+      position: absolute;
+      top: .5rem;
+    }
+    .advantageDesc-component h2 {
+      line-height: 22px;
+      font-size: 14px;
+    }
+    .advantageDesc-component p {
+      font-size: 12px;
+      line-height: 15px;
+    }
+  }
+  @-webkit-keyframes zpFadeInLeft {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(-200px, 0, 0);
+      transform: translate3d(-200px, 0, 0);
+    }
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  @keyframes zpFadeInLeft {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(-200px, 0, 0);
+      transform: translate3d(-200px, 0, 0);
+    }
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  @-webkit-keyframes zpFadeInRight {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(200px, 0, 0);
+      transform: translate3d(200px, 0, 0);
+    }
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  @keyframes zpFadeInRight {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(200px, 0, 0);
+      transform: translate3d(200px, 0, 0);
+    }
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  

@@ -1,0 +1,69 @@
+<style>
+    .frontpage-wrapper {
+        background-image: none, url('//images-2.gog.com/0474098b632ef078cb77634c4996aedf5ac2d169d408ea28c1ef60c231c5c382.jpg');
+    }
+
+    @media (min-width:481px) {
+        .frontpage-wrapper {
+            background-image: none, url('//images-4.gog.com/ed32899aa490249fe1f2d94e7f27f3becf1b2b4e05214a36cfe5bfb47afd4519.jpg');
+        }
+    }
+
+    @media (min-width:801px) {
+        .frontpage-wrapper {
+            background-image: none, url('//images-4.gog.com/ed32899aa490249fe1f2d94e7f27f3becf1b2b4e05214a36cfe5bfb47afd4519.jpg');
+        }
+    }
+
+    @media (min-width:1367px) {
+        .frontpage-wrapper {
+            background-image: none, url('//images-1.gog.com/cc27af4699600f9251697ab986291a1d7c1fcdf05d54fd40a73c7a32c0535022.jpg');
+        }
+    }
+
+    @media (min-width:1681px) {
+        .frontpage-wrapper {
+            background-image: none, url('//images-3.gog.com/36a9e958250b4d8ef2f5706340920875ec0775def24491a6edfe3c750c4b2089.jpg');
+        }
+    }
+
+    @media (min-width:1921px) {
+        .frontpage-wrapper {
+            background-image: none, url('//images-2.gog.com/6e62a493c396318301a53b11d99307a44599ec86a0e63218fee0fb8969f7ed32.jpg');
+        }
+    }
+</style>
+
+<div class="frontpage-promo cf">
+    <div class="product-takeover product-takeover--light is-discount-colored-level-2" gog-product="1808970674" gog-colored-discount="1808970674">
+        <div class="container product-takeover__container">
+            <a class="product-takeover__link" href="/game/absolver"></a>
+            <div class="product-takeover__content product-takeover__content--center">
+                <img class="product-takeover__logo" srcset="//images-4.gog.com/f548bb55914e7dd32021cf3c17d6e307cc87211633e8000477f2a433f742f53a_logo_takeover_product.png 1x,//images-2.gog.com/f548bb55914e7dd32021cf3c17d6e307cc87211633e8000477f2a433f742f53a_logo_takeover_product_2x.png 2x"/>
+                <p class="product-takeover__text">
+                    <b>Roll with the punches</b><br> A stylish, tactical, mask-have fighting game
+                </p>
+                <div class="ultimate-price-holder js-product-state is-buyable is-preorder is-discounted is-discount-colored-level-2 product-row--has-card is-visible" ng-class="{ 'is-visible': product.isPriceVisible }">
+                    <div class="ultimate-price">
+                        <div class="ultimate-price__discount colored-discount js-colored-discount">
+                            -
+                            <span ng-bind="product.price.discountPercentage">10</span>%
+                        </div>
+                        <div class="ultimate-price__btn" ng-class="{ 'is-in-cart': product.inCart }" ng-click="!product.inCart &amp;&amp; productCtrl.addToCart()">
+                            <div class="ultimate-price__in-cart"><i class="ic icon-cart"></i></div>
+                            <div class="ultimate-price__main-price">
+                                <span class="_price " ng-bind="product.price.amount">26.99</span>
+                            </div>
+                            <div class="ultimate-price__buy-now-label">buy now</div>
+                            <div class="ultimate-price__preorder-label">pre-order</div>
+                            <div class="ultimate-price__tba-label">TBA</div>
+                            <div class="ultimate-price__owned-label">owned</div>
+                            <div class="ultimate-price__free-label">Free</div>
+                            <div class="ultimate-price__old-price"><span class="_price " ng-bind="product.price.baseAmount">29.99</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

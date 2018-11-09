@@ -1,0 +1,7 @@
+.spot-need.play-btn--active:hover{
+    background-color: #9fbf00;
+    cursor: pointer
+}
+.spot-demo-btn{
+    min-width: 3.5em;
+}

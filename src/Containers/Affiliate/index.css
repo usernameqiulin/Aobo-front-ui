@@ -1,0 +1,464 @@
+.affiliate-component .clearfix{
+  zoom: 1;
+}
+.affiliate-component .clearfix:after{
+  display: block;
+  clear: both;
+  content: "";
+  visibility: hidden;
+  height: 0;
+}
+.affiliate-component a{
+  text-decoration: none;
+}
+.affiliate-component ul{
+  list-style: none;
+}
+.affiliate-component img{
+  display: block;
+}
+.affiliate-component .wrapper{
+  background-image: none;
+}
+.affiliate-component h1, .affiliate-component h3{
+  margin-top: 0;
+  font-weight: bold;
+}
+.affiliate-component h2{
+  margin-top: 0;
+  font-weight: bold;
+}
+.affiliate-component p{
+  margin-top: 0;
+}
+
+
+.affiliate-component {
+    width: 100%;
+    min-height: 1000px;
+    overflow: hidden;
+  }
+  .partOne-component {
+    width: 100%;
+    background: url('../../images/affiliate/bg1.jpg') no-repeat center center;
+    background-size: auto 100%;
+  }
+  .partTwo-component {
+    width: 100%;
+    background-color: whitesmoke;
+  }
+  .partTwo-component .wrapper {
+    width: 100%;
+    max-width: 1020px;
+    margin: 0 auto;
+    background-color: whitesmoke;
+  }
+  .partTwo-component .wrapper .produce-container {
+    margin: 0 auto;
+  }
+  .partThree-component {
+    width: 100%;
+  }
+  .partThree-component .wrapper {
+    width: 100%;
+  }
+  .partThree-component .wrapper .advantage-container {
+    
+  }
+  .partFour-component {
+    width: 100%;
+    background-color: white;
+  }
+  .partFour-component table,
+  .partFour-component table tr th,
+  .partFour-component table tr td {
+    border: 1px solid rgba(64, 224, 211, 0.3);
+  }
+  .partFour-component table {
+    text-align: center;
+    width: 80%;
+    max-width: 1020px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    -webkit-box-shadow: 0 0 2px 2px rgba(64, 224, 211, 0.2);
+            box-shadow: 0 0 2px 2px rgba(64, 224, 211, 0.2);
+  }
+  .partFour-component table thead {
+    background-color: rgba(64, 224, 211, 0.034);
+  }
+  .partFour-component table td {
+    width: 33.3%;
+  }
+  .partFour-component .partFour-footer {
+    width: 80%;
+    max-width: 1020px;
+  }
+  .partFour-component .partFour-footer h2 {
+    text-align: left;
+    font-weight: 400;
+  }
+  .partFive-component {
+    width: 100%;
+  }
+  .partFive-component .calendar-container {
+    width: 50%;
+    float: left;
+  }
+  .partFive-component .calendar-container img {
+    width: 80%;
+    max-width: 510px;
+    float: right;
+  }
+  .partFive-component .typewriter-container {
+    width: 45%;
+    float: left;
+    margin-top: calc(12.36% - 45px);
+    /* max-height: 300px; */
+  }
+  .partFive-component .typewriter-container .typewriter {
+  }
+  .partFive-component .typewriter-container .typewriter h2 {
+    width: 88%;
+    text-align: left;
+  }
+  .partSix-component{
+    background-color: white;
+  }
+  .partSeven-component {
+    overflow: hidden;
+    width: 100%;
+  }
+  .partSeven-component .seven-header h1 {
+    text-align: center;
+  }
+  .partSeven-component .seven-header h2 {
+    text-align: center;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+  .partSeven-component .partSeven-container {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  .partSeven-component .partSeven-container li {
+    width: 25%;
+    float: left;
+  }
+  .partSeven-component .partSeven-container li img {
+    width: 60%;
+    height: 60%;
+    margin-left: 20%;
+  }
+  .partSeven-component .partSeven-container li h3 {
+    text-align: center;
+  }
+  .partThreeLine-component {
+    width: 100%;
+    list-style: none;
+  }
+  .partThreeLine-component .advantageDesc-component {
+    max-width: 88%;
+  }
+  .partThreeLine-component .left {
+    float: left;
+  }
+  .partThreeLine-component .left.typeTwo img {
+    float: right;
+  }
+  .partThreeLine-component .center {
+    width: 10%;
+    float: left;
+  }
+  .partThreeLine-component .right {
+    float: left;
+  }
+  .partSixLine-component img {
+    float: right;
+  }
+  .partSixLine-component .text-container {
+    display: table;
+    float: right;
+    max-width: 80%;
+  }
+  .partSixLine-component .text-container .text {
+    display: table-cell;
+    vertical-align: middle;
+  }
+  @media screen and (min-width: 566px) {
+    .partOne-component {
+      height: 400px;
+    }
+    .partTwo-component {
+      padding-top: 20px;
+      padding-bottom: 40px;
+    }
+    .partFour-component table {
+      line-height: 44px;
+      font-size: 15px;
+    }
+    .partFour-component .partFour-footer {
+      margin: 20px auto;
+    }
+    .partFour-component .partFour-footer h2 {
+      font-size: 14px;
+      line-height: 30px;
+    }
+    .partFive-component .partFive-container {
+      padding: 0 0 60px 0;
+    }
+    .partFive-component .typewriter-container {
+      float: left;
+      margin-left: 20px;
+    }
+    .partFive-component .typewriter-container h2 {
+      font-size: 16px;
+      line-height: 30px;
+      font-weight: 400;
+    }
+    .partSix-component .partSix-container {
+      margin-bottom: 30px;
+    }
+    .partSix-component .partSix-container .rightImg {
+      margin: 0 0 20px 20px;
+    }
+    .partSeven-component {
+      padding: 40px 0;
+    }
+    .partSeven-component .seven-header {
+      padding-bottom: 40px;
+    }
+    .partSeven-component .seven-header h1 {
+      font-size: 25px;
+      line-height: 50px;
+    }
+    .partSeven-component .seven-header h2 {
+      font-size: 13px;
+    }
+    .partSeven-component .partSeven-container h3 {
+      font-size: 15px;
+      line-height: 40px;
+    }
+    .partSixLine-component {
+      padding: 20px 0px;
+    }
+    .partSixLine-component img {
+      width: 30px;
+      height: 30px;
+      margin-right: 10px;
+      margin-top: 15px;
+    }
+    .partSixLine-component .text-container .text{
+      height: 60px;
+    }
+    .partSixLine-component .text-container .text h2{
+      font-size: 20px;
+    }
+  }
+  @media screen and (max-width: 566px) {
+    .partOne-component {
+      height: 225px;
+    }
+    .partTwo-component {
+      
+    }
+    .partTwo-component .produce-container {
+      min-height: 330px;
+      max-width: 440px;
+      width: 100%;
+    }
+    .partThree-component {
+      margin-top: 0;
+    }
+    .partFour-component table {
+      line-height: 24px;
+      font-size: 12px;
+    }
+    .partFour-component .partFour-footer {
+      margin: 8px auto;
+    }
+    .partFour-component .partFour-footer h2 {
+      font-size: 13px;
+      line-height: 20px;
+    }
+    .partFive-component .partFive-container {
+      padding: 0 0 1rem 0;
+    }
+    .partFive-component .typewriter-container {
+      float: left;
+      margin-left: 10px;
+      margin-top: 10px;
+    }
+    .partFive-component .typewriter-container h2 {
+      font-size: 12px;
+      line-height: 15px;
+      font-weight: 400;
+    }
+    .partSix-component .partSix-container {
+      
+    }
+    .partSix-component .partSix-container .rightImg {
+      width: 90%;
+      margin: 45px 0 0 5px;
+    }
+    .partSeven-component {
+      padding-top: 20px;
+    }
+    .partSeven-component .seven-header {
+      padding-bottom: 20px;
+    }
+    .partSeven-component .seven-header h1 {
+      font-size: 18px;
+      line-height: 37px;
+    }
+    .partSeven-component .seven-header h2 {
+      font-size: 12px;
+    }
+    .partSeven-component .partSeven-container h3 {
+      font-size: 12px;
+      line-height: 30px;
+    }
+    .partSixLine-component {
+      padding: 7px 0;
+    }
+    .partSixLine-component img {
+      width: 25px;
+      height: 25px;
+      margin-right: 7px;
+      margin-top: 15px;
+    }
+    .partSixLine-component .text-container .text{
+      height: 56px;
+      
+    }
+    .partSixLine-component .text-container .text h2{
+      font-size: 15px;
+    }
+  }
+  @media screen and (max-width: 960px) and (min-width: 566px) {
+    .partTwo-component .produce-container {
+      height: 400px;
+      max-width: 440px;
+      width: 100%;
+    }
+  }
+  @media screen and (min-width: 960px) {
+    .partTwo-component .produce-container {
+      height: 147px;
+      width: 960px;
+    }
+  }
+  @media screen and (min-width: 800px) {
+    .partThreeLine-component {
+      padding: 30px 0;
+    }
+    .partThreeLine-component .left img {
+      width: 170px;
+      height: 170px;
+    }
+    .partThreeLine-component .left.typeOne {
+      width: 45%;
+    }
+    .partThreeLine-component .left.typeTwo {
+      width: 45%;
+    }
+    .partThreeLine-component .center img {
+      margin: 10px auto;
+      width: 50px;
+      height: 50px;
+    }
+    .partThreeLine-component .right img {
+      width: 170px;
+      height: 170px;
+    }
+    .partThreeLine-component .right.typeOne {
+      width: 45%;
+    }
+    .partThreeLine-component .right.typeTwo {
+      width: 45%;
+    }
+  }
+  @media screen and (max-width: 800px) and (min-width: 650px) {
+    .partThreeLine-component {
+      padding: 30px 0;
+    }
+    .partThreeLine-component .left img {
+      width: 170px;
+      height: 170px;
+    }
+    .partThreeLine-component .left.typeOne {
+      width: 65%;
+    }
+    .partThreeLine-component .left.typeTwo {
+      width: 25%;
+    }
+    .partThreeLine-component .center img {
+      margin: 10px auto;
+      width: 50px;
+      height: 50px;
+    }
+    .partThreeLine-component .right img {
+      width: 170px;
+      height: 170px;
+    }
+    .partThreeLine-component .right.typeOne {
+      width: 25%;
+    }
+    .partThreeLine-component .right.typeTwo {
+      width: 65%;
+    }
+  }
+  @media screen and (max-width: 650px) {
+    .partThreeLine-component {
+      padding: 18px 0;
+    }
+    .partThreeLine-component .left img {
+      width: 100%;
+      height: 100%;
+    }
+    .partThreeLine-component .left.typeOne {
+      width: 62%;
+      margin-right: 3%;
+    }
+    .partThreeLine-component .left.typeTwo {
+      width: 25%;
+    }
+    .partThreeLine-component .center img {
+      margin: 30% auto;
+      width: 70%;
+      height: 70%;
+    }
+    .partThreeLine-component .right img {
+      width: 100%;
+      height: 100%;
+    }
+    .partThreeLine-component .right.typeOne {
+      width: 25%;
+    }
+    .partThreeLine-component .right.typeTwo {
+      width: 62%;
+      margin-left: 3%;
+    }
+  }
+  
+
+
+  @media screen and (min-width: 1200px){
+    .partFive-component .typewriter-container{
+      margin-top: 100px;
+      margin-left: 40px;
+    }
+  }
+
+  @media screen and (max-width: 900px){
+    .partSix-component .partSix-container .rightImg {
+      width: 80%;
+      margin-left: 20px;
+      margin-top: calc(200px - 40%);
+    }
+  }
+  @media screen and (max-width: 566px){
+    .partSix-component .partSix-container .rightImg {
+      margin-top: calc(140px - 40%);
+    }
+  }

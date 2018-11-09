@@ -1,0 +1,221 @@
+.game-title {
+    display: -webkit-box;
+    display: -moz-box;
+    -moz-box-orient: vertical;
+    -moz-line-clamp: 1;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 0;
+}
+.product-row__demo {
+    float: right;
+    padding-left: 24px;
+    line-height: 0;
+    font-weight: 600;
+    z-index: 1;
+}
+
+.product-title__icon.icon-heart.active {
+    color: #ffa200
+}
+
+.product-row--grid .product-row__demo {
+    position: absolute;
+    bottom: 10px;
+    right: 4.1666666667em;
+    margin-right: 15px
+}
+
+.lang--de-de .product-row--grid .product-row__demo, .prices-in-aud .product-row--grid .product-row__demo, .prices-in-brl .product-row--grid .product-row__demo, .prices-in-cad .product-row--grid .product-row__demo, .prices-in-chf .product-row--grid .product-row__demo, .prices-in-cny .product-row--grid .product-row__demo, .prices-in-dkk .product-row--grid .product-row__demo, .prices-in-nok .product-row--grid .product-row__demo, .prices-in-pln .product-row--grid .product-row__demo, .prices-in-sek .product-row--grid .product-row__demo {
+    right: 5em
+}
+
+.lang--pt-br .product-row--grid .product-row__demo {
+    right: 6.1666666667em
+}
+
+.product-row--micro .product-row__demo {
+    height: inherit
+}
+
+.product-row--small .product-row__demo {
+    padding-left: 5px;
+    font-size: 12px
+}
+
+@media (max-width: 28.125em) {
+    .gogmix:not(.product-row--grid) .product-row__demo, .product-row:not(.product-row--grid) .product-row__demo {
+        padding-left: 5px;
+        font-size: 12px
+    }
+}
+
+@media (min-width: 28.125em) {
+    .product-row--grid .product-row__demo, .list--grid .product-row .product-row__demo {
+        right: 4.3846153846em;
+        margin-right: 15px
+    }
+
+    .prices-in-aud .product-row--grid .product-row__demo, .prices-in-cad .product-row--grid .product-row__demo, .prices-in-chf .product-row--grid .product-row__demo, .prices-in-cny .product-row--grid .product-row__demo {
+        right: 4.7692307692em
+    }
+
+    .lang--de-de .product-row--grid .product-row__demo, .prices-in-brl .product-row--grid .product-row__demo, .prices-in-dkk .product-row--grid .product-row__demo, .prices-in-nok .product-row--grid .product-row__demo, .prices-in-pln .product-row--grid .product-row__demo, .prices-in-sek .product-row--grid .product-row__demo {
+        right: 5.0769230769em
+    }
+
+    .lang--pt-br .product-row--grid .product-row__demo {
+        right: 5.6923076923em
+    }
+
+    .list--grid .gogmix .product-row__demo, .list--grid .product-row .product-row__demo {
+        right: 4.3846153846em;
+        margin-right: 15px
+    }
+
+    .prices-in-aud .list--grid .gogmix .product-row__demo, .prices-in-aud .list--grid .product-row .product-row__demo, .prices-in-cad .list--grid .gogmix .product-row__demo, .prices-in-cad .list--grid .product-row .product-row__demo, .prices-in-chf .list--grid .gogmix .product-row__demo, .prices-in-chf .list--grid .product-row .product-row__demo, .prices-in-cny .list--grid .gogmix .product-row__demo, .prices-in-cny .list--grid .product-row .product-row__demo {
+        right: 4.7692307692em
+    }
+
+    .lang--de-de .list--grid .gogmix .product-row__demo, .lang--de-de .list--grid .product-row .product-row__demo, .prices-in-brl .list--grid .gogmix .product-row__demo, .prices-in-brl .list--grid .product-row .product-row__demo, .prices-in-dkk .list--grid .gogmix .product-row__demo, .prices-in-dkk .list--grid .product-row .product-row__demo, .prices-in-nok .list--grid .gogmix .product-row__demo, .prices-in-nok .list--grid .product-row .product-row__demo, .prices-in-pln .list--grid .gogmix .product-row__demo, .prices-in-pln .list--grid .product-row .product-row__demo, .prices-in-sek .list--grid .gogmix .product-row__demo, .prices-in-sek .list--grid .product-row .product-row__demo {
+        right: 5.0769230769em
+    }
+
+    .lang--pt-br .list--grid .gogmix .product-row__demo, .lang--pt-br .list--grid .product-row .product-row__demo {
+        right: 5.6923076923em
+    }
+
+    .prices-in-aud .list--grid .product-row .product-row__demo, .prices-in-cad .list--grid .product-row .product-row__demo, .prices-in-chf .list--grid .product-row .product-row__demo, .prices-in-cny .list--grid .product-row .product-row__demo {
+        right: 4.7692307692em
+    }
+
+    .lang--de-de .list--grid .product-row .product-row__demo, .prices-in-brl .list--grid .product-row .product-row__demo, .prices-in-dkk .list--grid .product-row .product-row__demo, .prices-in-nok .list--grid .product-row .product-row__demo, .prices-in-pln .list--grid .product-row .product-row__demo, .prices-in-sek .list--grid .product-row .product-row__demo {
+        right: 5.0769230769em
+    }
+
+    .lang--pt-br .list--grid .product-row .product-row__demo {
+        right: 5.6923076923em
+    }
+}
+
+.list--grid .gogmix .product-row__demo, .list--grid .product-row .product-row__demo {
+    position: absolute;
+    bottom: 10px;
+    right: 4.1666666667em;
+    margin-right: 15px
+}
+
+.lang--de-de .list--grid .gogmix .product-row__demo, .lang--de-de .list--grid .product-row .product-row__demo, .prices-in-aud .list--grid .gogmix .product-row__demo, .prices-in-aud .list--grid .product-row .product-row__demo, .prices-in-brl .list--grid .gogmix .product-row__demo, .prices-in-brl .list--grid .product-row .product-row__demo, .prices-in-cad .list--grid .gogmix .product-row__demo, .prices-in-cad .list--grid .product-row .product-row__demo, .prices-in-chf .list--grid .gogmix .product-row__demo, .prices-in-chf .list--grid .product-row .product-row__demo, .prices-in-cny .list--grid .gogmix .product-row__demo, .prices-in-cny .list--grid .product-row .product-row__demo, .prices-in-dkk .list--grid .gogmix .product-row__demo, .prices-in-dkk .list--grid .product-row .product-row__demo, .prices-in-nok .list--grid .gogmix .product-row__demo, .prices-in-nok .list--grid .product-row .product-row__demo, .prices-in-pln .list--grid .gogmix .product-row__demo, .prices-in-pln .list--grid .product-row .product-row__demo, .prices-in-sek .list--grid .gogmix .product-row__demo, .prices-in-sek .list--grid .product-row .product-row__demo {
+    right: 5em
+}
+
+.lang--pt-br .list--grid .gogmix .product-row__demo, .lang--pt-br .list--grid .product-row .product-row__demo {
+    right: 6.1666666667em
+}
+
+@media (max-width: 55.625em) {
+    .top-nav__results--search .gogmix .product-row__demo, .top-nav__results--search .product-row .product-row__demo {
+        height: inherit
+    }
+}
+
+@media (min-width: 891px) {
+    .top-nav__results--cart .gogmix:hover .product-row__demo, .top-nav__results--cart .product-row:hover .product-row__demo {
+        display: none
+    }
+}
+
+.list--rows .product-row__demo {
+    min-width: 50px
+}
+
+@media (min-width: 40.0625em) {
+    .list--rows .product-row__demo {
+        height: 100%;
+        padding: 0 0 0 5px;
+        text-align: right
+    }
+}
+
+.list--grid .product-row .product-row__demo {
+    position: absolute;
+    bottom: 10px;
+    right: 4.1666666667em;
+    margin-right: 15px
+}
+
+
+.price-text--demo:not(:empty):before {
+    content: '';
+}
+
+.product-state-holder._spinner.is-spinning > * {
+    visibility: visible;
+    opacity: .75;
+}
+
+.prof-badge {
+    border-radius: 2px;
+    padding: 0 4px;
+    height: 14px;
+    background: #c12400;
+    font-size: 8px;
+    color: #fff;
+    line-height: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.game__badge {
+    /* display: none; */
+    position: absolute;
+    z-index: 3;
+    top: 8px;
+    left: -2px;
+    /* opacity: 0; */
+}
+
+@keyframes g {
+    0% {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+.product-row.is-new .game__badge {
+    display: block;
+    animation: g .2s forwards;
+    animation-delay: 1s;
+}
+
+.product-row.live .product-row__picture {
+    padding-bottom: 96.4285714285714%;
+}
+.product-row.live .product-row__link {
+    position: relative;
+}
+.list--grid .product-row.live .product-row__text {
+    margin-top: -62px;
+    background-color: rgba(0, 0, 0, .44);
+}
+
+.list--grid .product-row.live .play-text--demo {
+    background-color: #d4a800
+}
+
+.list--grid .product-row.live .product-row__title {
+    /*color: rgb(227, 189, 116);*/
+    color: #f1f1f1;
+    height: 17px;
+}
+
+.list--grid .product-row.live:not(:hover) .play-btn--active {
+    border: 1px solid rgba(255, 255, 255, .6);
+    background-color: rgba(255, 255, 255, .24);
+    color: #fff;
+}

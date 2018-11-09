@@ -1,0 +1,132 @@
+.modal-form__bank-selector.transfer {
+    padding: 0 19px 0 0;
+    border-left-width: 0;
+}
+
+.wallet-expl {
+    box-sizing: border-box;
+    float: left;
+    width: 50%;
+    position: relative;
+}
+.wallet-expl .module {
+    /*box-shadow: none;*/
+    background: transparent;
+}
+.wallet-expl__arrow-wrapper {
+    position: relative;
+}
+
+.wallet-expl__arrow {
+    display: initial;
+    position: absolute;
+    right: -13.5px;
+    top: 50%;
+    height: 14px;
+    width: 8px;
+    margin: -7px 0 0 -4px;
+    fill: #a9a9a9;
+}
+
+.wallet-expl--2 {
+    right: -19px;
+}
+
+.wallets__item {
+    display: block;
+    height: 40px;
+    color: #656565;
+    /*padding-right: 10px;*/
+    border-top: 1px solid #cfcfcf;
+    font-size: 12px;
+    font-weight: 600;
+    position: relative;
+}
+
+.wallets__item.disabled {
+    opacity: .5;
+}
+
+.wallets__item:not(.disabled):not(.selected):hover, .wallets__item.selected {
+    background: #e5e5e5;
+    color: #4E4E4E;
+}
+
+.wallets__item.selected {
+    background: #cfcfcf;
+}
+
+.wallets__item.selected .wallets__balance {
+    color: #4E4E4E;
+}
+
+.wallets__item:first-child {
+    border-top-width: 0;
+}
+
+.wallets__link {
+    display: block;
+    height: 100%;
+    cursor: pointer;
+    padding-left: 10px;
+}
+
+.wallets__item.disabled .wallets__link {
+    cursor: default;
+}
+
+.wallets__icon-holder {
+    float: left;
+    padding: 12px 5px 0 0;
+    display: inline-block;
+}
+@media (max-width: 450px) {
+    .wallet-expl .wallets__icon-holder {
+        display: none;
+    }
+}
+.wallets__icon {
+    height: 18px;
+    width: 18px;
+    fill: currentColor;
+}
+.filter__item .wallets__icon {
+    height: 16px;
+    width: 16px;
+    vertical-align: -2px;
+}
+
+.wallet-transactions .wallets__icon {
+    height: 17px;
+    width: 17px;
+    vertical-align: -2px;
+    margin-right: .2em;
+}
+
+.wallets__text {
+    display: table;
+    height: 100%;
+    padding-left: 0;
+    line-height: 41px;
+}
+
+.wallets__title {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 1em;
+    /*font-weight: 600;*/
+    white-space: nowrap;
+    text-transform: capitalize;
+}
+.wallets__brands .icon-svg {
+    height: 12px;
+    width: 18px;
+}
+
+.wallets__balance {
+    position: absolute;
+    right: 10px;
+    top: 0;
+    color: #999;
+    line-height: 41px;
+}

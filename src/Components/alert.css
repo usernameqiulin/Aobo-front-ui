@@ -1,0 +1,71 @@
+.alert {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 59px;
+    background: #fad68b;
+    z-index: 1000;
+    font-size: 13px;
+    line-height: 16px;
+    box-sizing: border-box;
+}
+
+.alert.error {
+    background: #c10000;
+}
+.alert.success {
+    background: #8bba00;
+}
+
+.alert__in {
+    height: auto;
+    position: relative;
+    top: 0;
+}
+
+.alert__text {
+    margin: 20px 53px 0 0;
+}
+
+.vdark_un {
+    /*color: #272727;*/
+    background: url(../images/un_vdark.gif) repeat-x bottom;
+    padding-bottom: 0;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.alert__close {
+    position: absolute;
+    right: 0;
+    top: 16px;
+    width: 26px;
+    height: 26px;
+    text-align: center;
+    line-height: 26px;
+    color: #a08859;
+    cursor: pointer;
+    font-size: 23px;
+}
+
+.alert.fade-in {
+    -webkit-animation: statusFadeIn .2s ease-out forwards;
+    animation: statusFadeIn .2s ease-out forwards;
+    display: block;
+}
+
+.error .alert__close, .success .alert__close {
+    color: #fff;
+}
+
+.error .alert__text, .success .alert__text {
+    color: #fff;
+}
+
+@media (max-width: 31.25em) {
+    .alert__text {
+        margin-left: 2%;
+    }
+}

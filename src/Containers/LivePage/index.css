@@ -1,0 +1,190 @@
+@charset "UTF-8";
+body.live-page .content {
+    /*background-color: #4e4e4e!important;*/
+    background: #000 url('../../images/live/bg_2560@2x.png') center top no-repeat;
+    overflow: hidden;
+}
+
+.live-wrapper {
+    position: relative;
+    z-index: 1;
+    background-repeat: no-repeat;
+}
+.live-page .dimming-chooser {
+    z-index: 1;
+    position: relative;
+    margin: 0;
+    height: 512px;
+}
+@media (max-width: 46em) {
+    .live-page .dimming-chooser {
+        height: 518px;
+    }
+}
+/*@media (min-width: 1100px) {*/
+    /*.live-page .container {*/
+        /*margin-left: auto;*/
+        /*margin-right: auto;*/
+    /*}*/
+/*}*/
+
+.live-page .brands-in .product-row__picture {
+    padding-bottom: 154.08%;
+}
+.live-page .brands-in .product-row {
+    background: transparent;
+}
+
+.brands-wrapper {
+    position: absolute;
+    bottom: 50px;
+    width: 100%;
+}
+
+.brands-container {
+    min-width: 810px
+}
+
+.brands-in {
+    margin-left: -5px;
+    /*margin-top: 5px;*/
+}
+
+.brands-in .product-row {
+    margin-top: 0
+}
+
+.brands-in .product-row-wrapper {
+    width: 25%;
+    padding-left: 5px;
+}
+
+.brands-in .product-row-wrapper:nth-child(5) {
+    position: absolute;
+    opacity: 1;
+    visibility: visible;
+}
+@media (min-width: 53.125em) {
+    .small-spots>.css-data-holder:before {
+        content: '{ "isScrollingActive": false }'
+    }
+
+    .brands-container {
+        min-width: 0
+    }
+
+    .brands-in {
+        margin-left: -20px;
+        /*margin-top: 20px;*/
+    }
+
+    .brands-in .product-row-wrapper {
+        padding-left: 20px
+    }
+}
+@media (min-width: 1060px) {
+    .brands-in .product-row-wrapper {
+        width: 20%
+    }
+
+    .brands-in .product-row-wrapper:nth-child(5) {
+        visibility: visible;
+        position: relative;
+        opacity: 1
+    }
+}
+._page--BBIN,
+._page--MG,
+._page--PT {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0
+}
+
+._selected-page--BBIN ._page--BBIN,
+._selected-page--BBIN.is-reverting-page ._page--BBIN,
+._selected-page--AG ._page--AG,
+._selected-page--AG.is-reverting-page ._page--AG,
+._selected-page--MG ._page--MG,
+._selected-page--MG.is-reverting-page ._page--MG,
+._selected-page--PT ._page--PT,
+._selected-page--PT.is-reverting-page ._page--PT
+{
+    opacity: 1;
+    visibility: inherit;
+    -webkit-transform: translateX(0);
+    transform: translateX(0)
+}
+
+._selected-page--BBIN--removed.is-changing-page ._page--BBIN,
+._selected-page--AG--removed.is-changing-page ._page--AG,
+._selected-page--MG--removed.is-changing-page ._page--MG,
+._selected-page--PT--removed.is-changing-page ._page--PT
+{
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%)
+}
+
+._selected-page--BBIN--removed.is-reverting-page ._page--BBIN,
+._selected-page--AG--removed.is-reverting-page ._page--AG,
+._selected-page--MG--removed.is-reverting-page ._page--MG,
+._selected-page--PT--removed.is-reverting-page ._page--PT
+{
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%)
+}
+
+.live-page .game-details ._pages {
+    position: relative;
+}
+
+._pages.is-changing-page,.is-changing-page ._pages {
+    overflow: hidden
+}
+
+._page {
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%)
+}
+
+.is-changing-page ._page {
+    visibility: inherit;
+    transition: .4s ease-out;
+    transition-property: opacity,-webkit-transform;
+    transition-property: opacity,transform;
+    transition-property: opacity,transform,-webkit-transform
+}
+
+.is-reverting-page ._page {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%)
+}
+
+._selected-page--AG .hide-on-page--AG {
+    display: none
+}
+
+._selected-page--AG .hide-on-page--AG._dropdown__item:first-child+._dropdown__item {
+    border-top-width: 0
+}
+
+._selected-page--BBIN .hide-on-page--BBIN {
+    display: none
+}
+
+._selected-page--BBIN .hide-on-page--BBIN._dropdown__item:first-child+._dropdown__item {
+    border-top-width: 0
+}
+
+._selected-page--MG .hide-on-page--MG {
+    display: none
+}
+
+._selected-page--MG .hide-on-page--MG._dropdown__item:first-child+._dropdown__item {
+    border-top-width: 0
+}
+

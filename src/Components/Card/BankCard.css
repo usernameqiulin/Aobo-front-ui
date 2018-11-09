@@ -1,0 +1,307 @@
+@charset "UTF-8";
+
+.bank-card {
+    padding-bottom: 20px;
+    /*position: relative;*/
+    animation: fadeIn .3s both;
+    /*animation-delay: .3s*/
+}
+
+.bank-card__inner {
+    position: relative;
+}
+
+.bank-card--3d {
+    -webkit-perspective: 600px;
+    perspective: 600px;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d
+}
+
+.bank-card__flip-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition: -webkit-transform .2s;
+    transition: transform .2s;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden
+}
+
+.bank-card__flip-container.bank-card__flip-container--back {
+    -webkit-transform: rotateX(-180deg);
+    transform: rotateX(-180deg);
+}
+
+bank-card__flip-container.bank-card__flip-container--front {
+    -webkit-transform: rotateX(0);
+    transform: rotateX(0)
+}
+
+.bank-card__inner.is-flipped .bank-card__flip-container.bank-card__flip-container--front {
+    -webkit-transform: rotateX(180deg);
+    transform: rotateX(180deg)
+}
+
+.bank-card__inner.is-flipped .bank-card__flip-container.bank-card__flip-container--back {
+    -webkit-transform: rotateX(0);
+    transform: rotateX(0)
+}
+
+.card-rectangle {
+    height: 132px;
+    padding: 9px;
+    line-height: 1.3em;
+    background: #fff!important;
+    border-radius: 4px;
+}
+
+.card-number {
+    font-size: 1.5em;
+    margin: 15px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.card-rectangle__right {
+    height: 42px;
+    line-height: 38px;
+    text-align: right;
+}
+
+.card-rectangle__dropdown {
+    display: inline-block;
+    /*margin-right: 9px;*/
+    height: 24px;
+    padding: 7px 0;
+    vertical-align: middle;
+    cursor: default;
+}
+.card-time {
+    display: inline-block;
+    float: left;
+    font-size: 13px;
+    color: #a6a6a6;
+}
+.card-time .icon-clock {
+    margin-right: 5px;
+}
+
+.card-rectangle__btn {
+    padding: 0 .5em;
+    border: 1px solid #a6a6a6;
+    border-radius: 3px;
+    box-shadow: 0 1px 3px -1px rgba(0,0,0,.25);
+    display: block;
+    width: 25px;
+    height: 24px;
+    line-height: 20px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.card-rectangle__btn .icon-svg {
+    width: 15px;
+    height: 15px;
+    fill: rgba(0,0,0,.5);
+}
+.card-rectangle__dropdown-icon {
+    font-size: 9px;
+    color: rgba(0,0,0,.5);
+}
+
+.card-rectangle--add_wrapper {
+    height: 100%;
+    display: table;
+    width: 100%;
+}
+
+.card-rectangle--add {
+    display: table-cell;
+    width: 100%;
+    font-size: 1.625em;
+    color: rgba(0,0,0,.5);
+    text-align: center;
+    vertical-align: middle;
+}
+
+.card-delete--confirm {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 10;
+    /*padding-top: 30px;*/
+    text-align: center;
+    background: rgba(195, 195, 195, .95);
+}
+
+.card-delete--confirm._spinner.is-spinning {
+    position: absolute;
+}
+
+.card-delete--confirm__message, .card-delete--confirm .otp_wrapper {
+    margin: 10px 0;
+}
+
+.card-delete--confirm__message.error {
+    color: #c10000;
+}
+
+@media (min-width: 32.5625em) and (max-width:55.625em) {
+    .bank-card {
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        display: inline-block;
+        width: 50%;
+        vertical-align: top
+    }
+
+    .bank-card:nth-child(2n+1) {
+        padding-right: 10px
+    }
+
+    .bank-card:nth-child(2n) {
+        padding-left: 10px
+    }
+
+    .card-number {
+        font-size: 1.1em;
+    }
+}
+
+@media (min-width: 55.6875em) {
+    .bank-card {
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        display: inline-block;
+        width: 33.3333333333%;
+        vertical-align: top
+    }
+    .bank-card:nth-child(3n+1) {
+        padding-right: 10px
+    }
+
+    .bank-card:nth-child(3n+2) {
+        padding-left: 10px;
+        padding-right: 10px
+    }
+
+    .bank-card:nth-child(3n) {
+        padding-left: 10px
+    }
+
+    .card-rectangle__dropdown {
+        display: none
+    }
+
+    .card-rectangle:hover .card-rectangle__dropdown {
+        display: inline-block
+    }
+
+    .card-number {
+        font-size: 1.2em;
+    }
+}
+.bank-logo {
+    border-radius: 3px;
+}
+.prices-in-cny .bank-logo {
+    height: 32px;
+    display: block;
+    background: url(../../images/account/bank-cny-logo.png) no-repeat -999px -999px;
+}
+.bank-logo:before {
+    content: ' ';
+    display: block;
+    height: 32px;
+}
+/*农行*/
+.bank-logo.ABC {
+    background-position: 0 0;
+}
+/*工商*/
+.bank-logo.ICBC {
+    background-position: 0 -2988px;
+}
+/*中行*/
+.bank-logo.BOC {
+    background-position: 0 -324px;
+}
+/*建设*/
+.bank-logo.CCB {
+    background-position: 0 -900px;
+}
+/*中国邮政储蓄银行*/
+.bank-logo.PSBC {
+    background-position: 0 -4248px;
+}
+/*交通*/
+.bank-logo.COMM, .bank-logo.BCOM {
+    background-position: 0 -1296px;
+}
+/*招商*/
+.bank-logo.CMB {
+    background-position: 0 -1224px;
+}
+/*浦发*/
+.bank-logo.SPDB {
+    background-position: 0 -4644px;
+}
+/*兴业*/
+.bank-logo.CIB {
+    background-position: 0 -1152px;
+}
+/*华夏*/
+.bank-logo.HXBANK, .bank-logo.HXB {
+    background-position: 0px -2880px;
+}
+/*民生*/
+.bank-logo.CMBC {
+    background-position: 0px -1260px;
+}
+/*中信*/
+.bank-logo.CITIC {
+    background-position: 0px -1188px;
+}
+/*光大*/
+.bank-logo.CEB {
+    background-position: 0px -1080px;
+}
+/*广发*/
+.bank-logo.GDB {
+    background-position: 0px -2016px;
+}
+/*平安*/
+.bank-logo.SPABANK, .bank-logo.PAB {
+    background-position: 0px -4608px;
+}
+/*浙商*/
+.bank-logo.CZBANK {
+    background-position: 0px -1476px;
+}
+/*东亚银行*/
+.bank-logo.HKBEA, .bank-logo.BEA {
+    background-position: 0px -2628px;
+}
+/*北京银行*/
+.bank-logo.BJBANK, .bank-logo.BCCB {
+    background-position: 0px -252px;
+}
+/*上海银行*/
+.bank-logo.SHBANK, .bank-logo.BOS {
+    background-position: 0px -4500px;
+}
+/*宁波银行*/
+.bank-logo.NBBANK, .bank-logo.NBB {
+    background-position: 0px -3888px;
+}
+/*上海农商*/
+.bank-logo.SHRCB, .bank-logo.SRCB {
+    background-position: 0px -4536px;
+}

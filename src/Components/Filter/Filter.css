@@ -1,0 +1,323 @@
+.filters {
+    display: table;
+    width: 100%
+}
+
+.filters__section {
+    position: relative;
+    display: block;
+    height: 56px;
+    line-height: 56px;
+    background: inherit
+}
+
+.filter__title {
+    text-transform: uppercase;
+}
+
+.amount-range .module-btn {
+    padding-right: 0;
+    float: right;
+    color: #007ed9
+}
+
+.filters__section--time-range ._dropdown__item:hover,
+.amount-range ._dropdown__item:hover {
+    background: inherit;
+    cursor: default;
+}
+
+.filters__section--alter-on-big-screens {
+    visibility: hidden;
+    position: absolute
+}
+
+.filters--visible-on-small-screen .filters__section--alter-on-big-screens {
+    visibility: inherit;
+    position: relative
+}
+
+.filtr.is-applied>.icon-dropdown-down,
+.filters__section--alter-on-big-screens .filter__pointer {
+    visibility: hidden
+}
+
+.filters__section~.filters__section>.filtr {
+    border: solid #cfcfcf;
+    border-width: 1px 0 0
+}
+
+.filters__section--search {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    vertical-align: top;
+    overflow: hidden;
+    line-height: 0;
+    padding-top: 17px;
+    background: inherit
+}
+
+.filters__section--alter-on-big-screens {
+    height: 44px;
+    line-height: 44px
+}
+
+.filters__section--alter-on-big-screens>.filtr, .filters__section--time-range>.filtr {
+    border-width: 1px 0 0
+}
+
+.filters__section--time-range .filtr:not(._search) {
+    height: 100%;
+    /*padding-top: 17px!important;*/
+}
+
+.filters__section--alter-on-big-screens .filter__items, .filters__section--time-range .filter__items {
+    top: -1px;
+    z-index: 1;
+    /*width: 33%;*/
+    right: 0;
+    left: auto
+}
+
+.filtr {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0 25px 0 10px;
+    line-height: inherit;
+    white-space: nowrap
+}
+
+.filtr>.icon-close2 {
+    visibility: hidden;
+    position: absolute;
+    font-size: 1.0769230769em
+}
+
+.filtr>.filter__pointer {
+    position: absolute;
+    bottom: -1px;
+    right: 2px
+}
+
+.filters__section--time-range .filtr>.filter__pointer {
+    bottom: 0;
+    /*left: 2px*/
+}
+
+.filtr.is-applied {
+    color: #262626
+}
+
+.filtr.filter--search>._search__input,.filter__item,.filter__items {
+    color: grey
+}
+
+.filtr.is-applied>.icon-close2 {
+    visibility: inherit
+}
+
+.filtr.is-contracted:hover {
+    background: #e5e5e5
+}
+
+.filtr.filter--search, .filter__item input {
+    display: block;
+    position: relative;
+    height: 24px;
+    margin: 0 10px;
+    border: 1px solid #b7b7b7;
+    background: #e6e6e6;
+    line-height: 24px;
+    font-weight: 600;
+    border-radius: 13px
+}
+
+.filter__item input {
+    display: inline-block;
+    width: 36px;
+    color: gray;
+    padding: 0 13px;
+    margin: 0;
+    font-weight: normal;
+}
+
+.filter__dropdown-toggle {
+    float: right;
+    padding: 0 10px;
+    border-left: 1px solid rgba(0,0,0,.08);
+    line-height: 56px
+}
+
+.filter__dropdown-toggle>.ic {
+    min-width: 14px;
+    margin-left: .7272727273em;
+    font-size: .8461538462em;
+    text-align: center
+}
+
+.filter__icon {
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%)
+}
+
+.account__filters .filter__items {
+    position: absolute;
+    right: 0;
+    top: 0;
+    min-width: 50%
+}
+
+.filters__section--time-range .filter__items {
+    width: 506px;
+    top: 100%;
+    left: 0;
+    right: auto;
+    min-width: 250px!important;
+}
+@media (max-width: 47.9em) {
+    .filters__section--time-range .filter__items {
+        width: 250px!important;
+    }
+}
+@media (min-width: 48em) {
+    .rc-calendar-range {
+        width: 100%!important;
+    }
+}
+.filters__section--time-range .filter__item {
+    padding: 0;
+    border-top-width: 0;
+}
+
+.filter__items-pagination {
+    padding: 9px 0;
+    line-height: 26px;
+    text-align: center;
+    color: grey;
+    cursor: default
+}
+
+.filter-checkbox,.filter-radio {
+    margin-right: .6923076923em
+}
+
+.filter__item--sub {
+    padding-left: 24px
+}
+
+.filter__item.is-selected {
+    color: #262626
+}
+
+.filters__control {
+    float: right;
+    position: relative;
+    height: 56px;
+    min-width: 120px;
+    line-height: 56px
+}
+
+.filters__control>.filter--toggle-filters {
+    border-left: #cfcfcf solid 1px
+}
+
+.filters__section--time-range {
+    box-sizing: border-box;
+    /*vertical-align: top;*/
+    /*overflow: hidden;*/
+    /*line-height: 0;*/
+    background: inherit
+}
+
+.filters__section--time-range .filtr.filter--search {
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0;
+}
+@media (max-width: 800px) {
+    .filters__section--time-range {
+        margin-right: 120px;
+    }
+    .filters__section--time-range .filter__items {
+        left: auto;
+        right: 0;
+    }
+}
+@media (max-width: 400px) {
+    .filters__section--time-range .filter__items {
+        left: 0;
+        right: auto;
+    }
+}
+@media (min-width: 800px) {
+    .filters__control {
+        display:none
+    }
+
+    .filters__section {
+        display: table-cell;
+        vertical-align: middle
+    }
+
+    .filters__section:last-child .filter__items {
+        left: auto;
+        right: 0
+    }
+
+    .filters__section--search {
+        z-index: 2;
+        vertical-align: top;
+        width: 30.0943396226%
+    }
+
+    .filters__section--time-range {
+        z-index: 2;
+        vertical-align: top;
+        width: 30.0943396226%;
+        visibility: inherit;
+        position: relative;
+        height: 56px;
+        line-height: 56px
+    }
+
+    .filters__section--alter-on-big-screens {
+        visibility: inherit;
+        position: relative;
+        height: 56px;
+        width: 14.1509433962%;
+        line-height: 56px
+    }
+
+    .filters__section~.filters__section--alter-on-big-screens>.filtr, .filters__section~.filters__section--time-range>.filtr {
+        border-width: 0 0 0 1px
+    }
+
+    .filters__section--alter-on-big-screens .filter__pointer, .filters__section--time-range .filter__pointer {
+        visibility: inherit
+    }
+
+    .filters__section--alter-on-big-screens .filter__items {
+        right: auto;
+        left: 0;
+        top: 100%;
+        z-index: -1;
+        width: 100%;
+        min-width: 210px;
+    }
+
+    .lang--de-de .filters__section--alter-on-big-screens .filter__items,
+    .lang--fr-fr .filters__section--alter-on-big-screens .filter__items {
+        min-width: 260px
+    }
+
+    .lang--ru-ru .filters__section--alter-on-big-screens .filter__items {
+        min-width: 230px
+    }
+
+    .filters__section--alter-on-big-screens .filter__item:first-child,.filters__section--alter-on-big-screens .filter__item:first-child.ng-hide+.filter__item {
+        border-top-width: 1px
+    }
+}

@@ -1,0 +1,28 @@
+@media (min-width:850px) {
+    #big-spot-blur--1 { background-image:url(//images-3.gog.com/a0008b7128813ca6cd99d27ed5e76368bf22025decbfb25e7d7548595e043732_bg_1366.jpg);}
+    #big-spot-blur--2 { background-image:url(//images-2.gog.com/61ba0aaab1479b412afceaca071819b0ff7b31a93c7607179844bf72e536b8f6_bg_1366.jpg);}
+    #big-spot-blur--3 { background-image:url(//images-1.gog.com/0a1501b2b293baf591184503937abe2dfa2333529ebe4b92dbcc77724720aa9c_bg_1366.jpg);}
+    #big-spot-blur--4 { background-image:url(//images-2.gog.com/9ba30188a380715088e79a696746e528780e118a8f5923b139dd9a321a4c35a3_bg_1366.jpg);}
+    #big-spot-blur--5 { background-image:url(//images-4.gog.com/9941d5f06ef2b4522562ff2c41f5acc57ecdffbf087b459e9490beae70ba7ad9_bg_1366.jpg);}
+}
+@media (min-width:1367px) {
+    #big-spot-blur--1 { background-image:url(//images-3.gog.com/a0008b7128813ca6cd99d27ed5e76368bf22025decbfb25e7d7548595e043732_bg_1680.jpg);}
+    #big-spot-blur--2 { background-image:url(//images-2.gog.com/61ba0aaab1479b412afceaca071819b0ff7b31a93c7607179844bf72e536b8f6_bg_1680.jpg);}
+    #big-spot-blur--3 { background-image:url(//images-1.gog.com/0a1501b2b293baf591184503937abe2dfa2333529ebe4b92dbcc77724720aa9c_bg_1680.jpg);}
+    #big-spot-blur--4 { background-image:url(//images-2.gog.com/9ba30188a380715088e79a696746e528780e118a8f5923b139dd9a321a4c35a3_bg_1680.jpg);}
+    #big-spot-blur--5 { background-image:url(//images-4.gog.com/9941d5f06ef2b4522562ff2c41f5acc57ecdffbf087b459e9490beae70ba7ad9_bg_1680.jpg);}
+}
+@media (min-width:1681px) {
+    #big-spot-blur--1 { background-image:url(//images-3.gog.com/a0008b7128813ca6cd99d27ed5e76368bf22025decbfb25e7d7548595e043732_bg_1920.jpg);}
+    #big-spot-blur--2 { background-image:url(//images-2.gog.com/61ba0aaab1479b412afceaca071819b0ff7b31a93c7607179844bf72e536b8f6_bg_1920.jpg);}
+    #big-spot-blur--3 { background-image:url(//images-1.gog.com/0a1501b2b293baf591184503937abe2dfa2333529ebe4b92dbcc77724720aa9c_bg_1920.jpg);}
+    #big-spot-blur--4 { background-image:url(//images-2.gog.com/9ba30188a380715088e79a696746e528780e118a8f5923b139dd9a321a4c35a3_bg_1920.jpg);}
+    #big-spot-blur--5 { background-image:url(//images-4.gog.com/9941d5f06ef2b4522562ff2c41f5acc57ecdffbf087b459e9490beae70ba7ad9_bg_1920.jpg);}
+}
+@media (min-width:1921px) {
+    #big-spot-blur--1 { background-image:url(//images-3.gog.com/a0008b7128813ca6cd99d27ed5e76368bf22025decbfb25e7d7548595e043732.jpg);}
+    #big-spot-blur--2 { background-image:url(//images-2.gog.com/61ba0aaab1479b412afceaca071819b0ff7b31a93c7607179844bf72e536b8f6.jpg);}
+    #big-spot-blur--3 { background-image:url(//images-1.gog.com/0a1501b2b293baf591184503937abe2dfa2333529ebe4b92dbcc77724720aa9c.jpg);}
+    #big-spot-blur--4 { background-image:url(//images-2.gog.com/9ba30188a380715088e79a696746e528780e118a8f5923b139dd9a321a4c35a3.jpg);}
+    #big-spot-blur--5 { background-image:url(//images-4.gog.com/9941d5f06ef2b4522562ff2c41f5acc57ecdffbf087b459e9490beae70ba7ad9.jpg);}
+}

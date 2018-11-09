@@ -1,0 +1,1055 @@
+@charset "UTF-8";
+.ultimate-price,
+.ultimate-price-holder {
+    pointer-events: none
+}
+
+.ultimate-price,
+.ultimate-price__old-price {
+    position: relative
+}
+.colored-discount {
+    background-color: #788795
+}
+
+.is-discount-colored-level-1 .colored-discount,
+.is-discount-colored-level-2 .colored-discount,
+.is-discount-colored-level-3 .colored-discount,
+.is-discount-colored-level-4 .colored-discount,
+.is-discount-colored-level-5 .colored-discount {
+    background-color: #d4a800
+}
+
+.is-discount-colored-level-10 .colored-discount,
+.is-discount-colored-level-6 .colored-discount,
+.is-discount-colored-level-7 .colored-discount,
+.is-discount-colored-level-8 .colored-discount,
+.is-discount-colored-level-9 .colored-discount {
+    background-color: #ec721b
+}
+
+.ultimate-price.ultimate-price--inline-block {
+    display: inline-block
+}
+
+.ultimate-price__free-label,
+.ultimate-price__in-cart,
+.ultimate-price__main-price,
+.ultimate-price__tba-label {
+    display: none;
+    float: none
+}
+
+.ultimate-price__buy-now-label,
+.ultimate-price__old-price,
+.ultimate-price__owned-label,
+.ultimate-price__preorder-label {
+    display: none;
+    vertical-align: top;
+    font-weight: 600
+}
+
+.ultimate-price__old-price,
+.ultimate-price__owned-label {
+    color: #fff
+}
+.ultimate-price__buy-now-label,
+.ultimate-price__free-label,
+.ultimate-price__main-price,
+.ultimate-price__old-price,
+.ultimate-price__owned-label,
+.ultimate-price__preorder-label {
+    width: 100%
+}
+
+.is-buyable:hover .ultimate-price__buy-now-label,
+.is-buyable:hover .ultimate-price__free-label,
+.is-buyable:hover .ultimate-price__main-price,
+.is-buyable:hover .ultimate-price__old-price,
+.is-buyable:hover .ultimate-price__owned-label,
+.is-buyable:hover .ultimate-price__preorder-label,
+.is-discounted .ultimate-price__buy-now-label,
+.is-discounted .ultimate-price__free-label,
+.is-discounted .ultimate-price__main-price,
+.is-discounted .ultimate-price__old-price,
+.is-discounted .ultimate-price__owned-label,
+.is-discounted .ultimate-price__preorder-label,
+.is-owned .ultimate-price__buy-now-label,
+.is-owned .ultimate-price__free-label,
+.is-owned .ultimate-price__main-price,
+.is-owned .ultimate-price__old-price,
+.is-owned .ultimate-price__owned-label,
+.is-owned .ultimate-price__preorder-label {
+    width: auto
+}
+
+.ultimate-price__old-price:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -1px;
+    width: 100%;
+    padding-left: 2px;
+    border-top: 1px solid
+}
+@media (max-width:749px) {
+    .ultimate-price__discount-prefix {
+        display: none
+    }
+}
+.live-game__container {
+    padding-left: 20px;
+    width: 148px;
+    float: left;
+}
+@media (min-width: 990px) {
+    .live-game__container/*.live-game__container--quartet*/ .live-game-item .ultimate-price__old-price,
+    .live-game__container/*.live-game__container--quartet*/ .live-game-item .ultimate-price__owned-label,
+    .live-game__container/*.live-game__container--quartet*/ .live-game-item.is-free .ultimate-price__old-price,
+    .live-game__container/*.live-game__container--quartet*/ .live-game-item.is-free .ultimate-price__owned-label,
+    .live-game__container/*.live-game__container--quartet*/ .live-game-item.is-free:hover .ultimate-price__old-price,
+    .live-game__container/*.live-game__container--quartet*/ .live-game-item.is-free:hover .ultimate-price__owned-label {
+        color:rgba(255,255,255,.7)
+    }
+
+    .live-game__container/*.live-game__container--quartet*/ .product-row__os-support {
+        margin-bottom: 7px
+    }
+
+    .live-game__container/*.live-game__container--quartet*/ .live-game-item .ultimate-price__main-price {
+        display: block
+    }
+
+    .live-game__container/*.live-game__container--quartet*/ .live-game-item.is-discounted .ultimate-price__discount,
+    .live-game__container/*.live-game__container--quartet*/ .live-game-item.is-discounted .ultimate-price__old-price {
+        display: inline-block
+    }
+
+    .live-game__container/*.live-game__container--quartet*/ .live-game-item.is-free .ultimate-price__main-price,
+    .live-game__container/*.live-game__container--quartet*/ .live-game-item.is-free:hover .ultimate-price__main-price {
+        display: none
+    }
+
+    .live-game__container/*.live-game__container--quartet*/ .live-game-item.is-free .ultimate-price__free-label,
+    .live-game__container/*.live-game__container--quartet*/ .live-game-item.is-free:hover .ultimate-price__free-label {
+        display: block
+    }
+
+    .live-game__container/*.live-game__container--quartet*/ .live-game-item.is-owned .ultimate-price__free-label,
+    .live-game__container/*.live-game__container--quartet*/ .live-game-item.is-owned .ultimate-price__old-price {
+        display: none
+    }
+
+    .live-game__container/*.live-game__container--quartet*/ .live-game-item.is-owned .ultimate-price__owned-label {
+        display: inline-block
+    }
+
+    .live-game__container/*.live-game__container--quartet*/ .live-game-item:hover .ultimate-price__old-price,
+    .live-game__container/*.live-game__container--quartet*/ .live-game-item:hover .ultimate-price__owned-label {
+        display: none
+    }
+
+    .live-game__container/*.live-game__container--quartet*/ .live-game-item.is-preorder:hover .ultimate-price__preorder-label,
+    .live-game__container/*.live-game__container--quartet*/ .live-game-item:not(.is-preorder):hover .ultimate-price__buy-now-label {
+        display: inline-block
+    }
+
+    .live-game__container/*.live-game__container--quartet*/ .live-game-item.is-buyable:hover .ultimate-price__btn {
+        box-shadow: 0 0 0 1px rgba(0,0,0,.45),0 1px 3px 0 rgba(0,0,0,.45);
+        border-left-width: 0;
+        border-right-width: 0;
+        border-top-color: #9fbf00;
+        border-bottom-color: #80ab00;
+        color: #fff;
+        background: linear-gradient(to bottom,#9fbf00,#80ab00)
+    }
+
+    .live-game__container/*.live-game__container--quartet*/ .live-game-item.is-buyable:hover .ultimate-price__btn:hover {
+        background: linear-gradient(to bottom,#acce00,#8bba00);
+        border-top-color: #acce00;
+        border-bottom-color: #8bba00
+    }
+
+    .live-game__container/*.live-game__container--quartet*/ .live-game-item.is-tba .ultimate-price__tba-label,
+    .live-game__container/*.live-game__container--quartet*/ .live-game-item.is-tba:hover .ultimate-price__tba-label {
+        display: block
+    }
+
+    .live-game__container/*.live-game__container--quartet*/ .live-game-item .is-in-cart .ultimate-price__free-label,
+    .live-game__container/*.live-game__container--quartet*/ .live-game-item .is-in-cart .ultimate-price__main-price,
+    .live-game__container/*.live-game__container--quartet*/ .live-game-item .is-in-cart .ultimate-price__old-price,
+    .live-game__container/*.live-game__container--quartet*/ .live-game-item .is-in-cart .ultimate-price__owned-label,
+    .live-game__container/*.live-game__container--quartet*/ .live-game-item .is-in-cart .ultimate-price__tba-label,
+    .live-game__container/*.live-game__container--quartet*/ .live-game-item.is-tba .ultimate-price__buy-now-label,
+    .live-game__container/*.live-game__container--quartet*/ .live-game-item.is-tba .ultimate-price__free-label,
+    .live-game__container/*.live-game__container--quartet*/ .live-game-item.is-tba .ultimate-price__main-price,
+    .live-game__container/*.live-game__container--quartet*/ .live-game-item.is-tba .ultimate-price__old-price,
+    .live-game__container/*.live-game__container--quartet*/ .live-game-item.is-tba .ultimate-price__owned-label,
+    .live-game__container/*.live-game__container--quartet*/ .live-game-item.is-tba .ultimate-price__preorder-label,
+    .live-game__container/*.live-game__container--quartet*/ .live-game-item.is-tba:hover .ultimate-price__buy-now-label,
+    .live-game__container/*.live-game__container--quartet*/ .live-game-item.is-tba:hover .ultimate-price__free-label,
+    .live-game__container/*.live-game__container--quartet*/ .live-game-item.is-tba:hover .ultimate-price__main-price,
+    .live-game__container/*.live-game__container--quartet*/ .live-game-item.is-tba:hover .ultimate-price__old-price,
+    .live-game__container/*.live-game__container--quartet*/ .live-game-item.is-tba:hover .ultimate-price__owned-label,
+    .live-game__container/*.live-game__container--quartet*/ .live-game-item.is-tba:hover .ultimate-price__preorder-label {
+        display: none
+    }
+
+    .live-game__container/*.live-game__container--quartet*/ .live-game-item.is-tba .ultimate-price__old-price,
+    .live-game__container/*.live-game__container--quartet*/ .live-game-item.is-tba .ultimate-price__owned-label,
+    .live-game__container/*.live-game__container--quartet*/ .live-game-item.is-tba:hover .ultimate-price__old-price,
+    .live-game__container/*.live-game__container--quartet*/ .live-game-item.is-tba:hover .ultimate-price__owned-label {
+        color: rgba(255,255,255,.7)
+    }
+
+    .live-game__container/*.live-game__container--quartet*/ .live-game-item .ultimate-price__free-label,
+    .live-game__container/*.live-game__container--quartet*/ .live-game-item .ultimate-price__main-price {
+        float: right
+    }
+
+    .live-game__container/*.live-game__container--quartet*/ .live-game-item .is-in-cart .ultimate-price__in-cart {
+        display: block
+    }
+
+    .live-game__container/*.live-game__container--quartet*/ .live-game-item:hover .is-in-cart .ultimate-price__buy-now-label,
+    .live-game__container/*.live-game__container--quartet*/ .live-game-item:hover .is-in-cart .ultimate-price__free-label,
+    .live-game__container/*.live-game__container--quartet*/ .live-game-item:hover .is-in-cart .ultimate-price__preorder-label {
+        display: none
+    }
+
+    .live-game__container/*.live-game__container--quartet*/ .live-game-item .ultimate-price__discount,
+    .live-game__container/*.live-game__container--quartet*/ .live-game-item .ultimate-price__main-price {
+        font-size: 11px
+    }
+
+    .live-game__container/*.live-game__container--quartet*/ .live-game-item .ultimate-price__buy-now-label,
+    .live-game__container/*.live-game__container--quartet*/ .live-game-item .ultimate-price__old-price,
+    .live-game__container/*.live-game__container--quartet*/ .live-game-item .ultimate-price__owned-label {
+        font-weight: 400
+    }
+
+    .live-game__container/*.live-game__container--quartet*/ .live-game-item .ultimate-price__btn,
+    .live-game__container/*.live-game__container--quartet*/ .live-game-item .ultimate-price__discount {
+        padding: 0 5px
+    }
+
+    .live-game__container/*.live-game__container--quartet*/ .live-game-item .ultimate-price__btn {
+        line-height: 22px;
+        min-width: 108px
+    }
+
+    .live-game__container/*.live-game__container--quartet*/ .live-game-item .ultimate-price__discount {
+        line-height: 24px
+    }
+
+    .live-game__container/*.live-game__container--quartet*/ .live-game-item.is-discounted .ultimate-price__buy-now-label,
+    .live-game__container/*.live-game__container--quartet*/ .live-game-item.is-discounted .ultimate-price__old-price,
+    .live-game__container/*.live-game__container--quartet*/ .live-game-item.is-discounted .ultimate-price__owned-label,
+    .live-game__container/*.live-game__container--quartet*/ .live-game-item.is-discounted .ultimate-price__preorder-label,
+    .live-game__container/*.live-game__container--quartet*/ .live-game-item:hover .ultimate-price__buy-now-label,
+    .live-game__container/*.live-game__container--quartet*/ .live-game-item:hover .ultimate-price__old-price,
+    .live-game__container/*.live-game__container--quartet*/ .live-game-item:hover .ultimate-price__owned-label,
+    .live-game__container/*.live-game__container--quartet*/ .live-game-item:hover .ultimate-price__preorder-label {
+        margin-right: 5px
+    }
+
+    .live-game__container/*.live-game__container--quartet*/ .live-game-item .is-owned .ultimate-price__owned-label {
+        margin-right: 0
+    }
+
+    .live-game__container/*.live-game__container--quartet*/ .live-game-item .ultimate-price__old-price {
+        position: relative;
+        clip: auto;
+        overflow: inherit
+    }
+
+    .live-game__container/*.live-game__container--quartet*/ .live-game-item .ultimate-price__buy-now-label {
+        position: static;
+        clip: auto;
+        overflow: inherit
+    }
+}
+@media (max-width: 849px) and (min-width: 564px) {
+    .live-game-item .ultimate-price__old-price,
+    .live-game-item .ultimate-price__owned-label,
+    .live-game-item.is-free .ultimate-price__old-price,
+    .live-game-item.is-free .ultimate-price__owned-label,
+    .live-game-item.is-free:hover .ultimate-price__old-price,
+    .live-game-item.is-free:hover .ultimate-price__owned-label {
+        color:rgba(255,255,255,.7)
+    }
+
+    .live-game-item .ultimate-price__main-price {
+        display: block
+    }
+
+    .live-game-item.is-discounted .ultimate-price__discount,
+    .live-game-item.is-discounted .ultimate-price__old-price {
+        display: inline-block;
+    }
+
+    .live-game-item.is-free .ultimate-price__main-price,
+    .live-game-item.is-free:hover .ultimate-price__main-price {
+        display: none
+    }
+
+    .live-game-item.is-free .ultimate-price__free-label,
+    .live-game-item.is-free:hover .ultimate-price__free-label {
+        display: block
+    }
+
+    .live-game-item.is-owned .ultimate-price__free-label,
+    .live-game-item.is-owned .ultimate-price__old-price {
+        display: none
+    }
+
+    .live-game-item.is-owned .ultimate-price__owned-label {
+        display: inline-block
+    }
+
+    .live-game-item:hover .ultimate-price__old-price,
+    .live-game-item:hover .ultimate-price__owned-label {
+        display: none
+    }
+
+    .live-game-item.is-preorder:hover .ultimate-price__preorder-label,
+    .live-game-item:not(.is-preorder):hover .ultimate-price__buy-now-label {
+        display: inline-block
+    }
+
+    .live-game-item.is-buyable:hover .ultimate-price__btn {
+        box-shadow: 0 0 0 1px rgba(0,0,0,.45),0 1px 3px 0 rgba(0,0,0,.45);
+        border-left-width: 0;
+        border-right-width: 0;
+        border-top-color: #9fbf00;
+        border-bottom-color: #80ab00;
+        color: #fff;
+        background: linear-gradient(to bottom,#9fbf00,#80ab00)
+    }
+
+    .live-game-item.is-buyable:hover .ultimate-price__btn:hover {
+        background: linear-gradient(to bottom,#acce00,#8bba00);
+        border-top-color: #acce00;
+        border-bottom-color: #8bba00
+    }
+
+    .live-game-item.is-tba .ultimate-price__tba-label,.live-game-item.is-tba:hover .ultimate-price__tba-label {
+        display: block
+    }
+
+    .live-game-item .is-in-cart .ultimate-price__free-label,
+    .live-game-item .is-in-cart .ultimate-price__main-price,
+    .live-game-item .is-in-cart .ultimate-price__old-price,
+    .live-game-item .is-in-cart .ultimate-price__owned-label,
+    .live-game-item .is-in-cart .ultimate-price__tba-label,
+    .live-game-item.is-tba .ultimate-price__buy-now-label,
+    .live-game-item.is-tba .ultimate-price__free-label,
+    .live-game-item.is-tba .ultimate-price__main-price,
+    .live-game-item.is-tba .ultimate-price__old-price,
+    .live-game-item.is-tba .ultimate-price__owned-label,
+    .live-game-item.is-tba .ultimate-price__preorder-label,
+    .live-game-item.is-tba:hover .ultimate-price__buy-now-label,
+    .live-game-item.is-tba:hover .ultimate-price__free-label,
+    .live-game-item.is-tba:hover .ultimate-price__main-price,
+    .live-game-item.is-tba:hover .ultimate-price__old-price,
+    .live-game-item.is-tba:hover .ultimate-price__owned-label,
+    .live-game-item.is-tba:hover .ultimate-price__preorder-label {
+        display: none
+    }
+
+    .live-game-item.is-tba .ultimate-price__old-price,
+    .live-game-item.is-tba .ultimate-price__owned-label,
+    .live-game-item.is-tba:hover .ultimate-price__old-price,
+    .live-game-item.is-tba:hover .ultimate-price__owned-label {
+        color: rgba(255,255,255,.7)
+    }
+
+    .live-game-item .ultimate-price__free-label,
+    .live-game-item .ultimate-price__main-price {
+        float: right
+    }
+
+    .live-game-item .is-in-cart .ultimate-price__in-cart {
+        display: block
+    }
+
+    .live-game-item:hover .is-in-cart .ultimate-price__buy-now-label,
+    .live-game-item:hover .is-in-cart .ultimate-price__free-label,
+    .live-game-item:hover .is-in-cart .ultimate-price__preorder-label {
+        display: none
+    }
+
+    .live-game-item .ultimate-price__discount,
+    .live-game-item .ultimate-price__main-price {
+        font-size: 11px
+    }
+
+    .live-game-item .ultimate-price__buy-now-label,
+    .live-game-item .ultimate-price__old-price,
+    .live-game-item .ultimate-price__owned-label {
+        font-weight: 400
+    }
+
+    .live-game-item .ultimate-price__btn,
+    .live-game-item .ultimate-price__discount {
+        padding: 0 5px
+    }
+
+    .live-game-item .ultimate-price__btn {
+        line-height: 22px;
+        min-width: 108px
+    }
+
+    .live-game-item .ultimate-price__discount {
+        line-height: 24px
+    }
+
+    .live-game-item.is-discounted .ultimate-price__buy-now-label,
+    .live-game-item.is-discounted .ultimate-price__old-price,
+    .live-game-item.is-discounted .ultimate-price__owned-label,
+    .live-game-item.is-discounted .ultimate-price__preorder-label,
+    .live-game-item:hover .ultimate-price__buy-now-label,
+    .live-game-item:hover .ultimate-price__old-price,
+    .live-game-item:hover .ultimate-price__owned-label,
+    .live-game-item:hover .ultimate-price__preorder-label {
+        margin-right: 5px
+    }
+
+    .live-game-item .is-owned .ultimate-price__owned-label {
+        margin-right: 0
+    }
+
+    .live-game-item .ultimate-price__old-price {
+        position: relative;
+        clip: auto;
+        overflow: inherit
+    }
+
+    .live-game-item .ultimate-price__buy-now-label {
+        position: static;
+        clip: auto;
+        overflow: inherit
+    }
+
+    .live-game__container .product-row__os-support {
+        margin-bottom: 7px
+    }
+}
+@media (max-width: 439px) {
+    .live-game-item .ultimate-price__old-price,
+    .live-game-item .ultimate-price__owned-label,
+    .live-game-item.is-free .ultimate-price__old-price,
+    .live-game-item.is-free .ultimate-price__owned-label,
+    .live-game-item.is-free:hover .ultimate-price__old-price,
+    .live-game-item.is-free:hover .ultimate-price__owned-label {
+        color:rgba(255,255,255,.7)
+    }
+
+    .live-game-item .ultimate-price__main-price {
+        display: block
+    }
+
+    .live-game-item.is-discounted .ultimate-price__discount,
+    .live-game-item.is-discounted .ultimate-price__old-price {
+        display: inline-block
+    }
+
+    .live-game-item.is-free .ultimate-price__main-price,
+    .live-game-item.is-free:hover .ultimate-price__main-price {
+        display: none
+    }
+
+    .live-game-item.is-free .ultimate-price__free-label,
+    .live-game-item.is-free:hover .ultimate-price__free-label {
+        display: block
+    }
+
+    .live-game-item.is-owned .ultimate-price__free-label,
+    .live-game-item.is-owned .ultimate-price__old-price {
+        display: none
+    }
+
+    .live-game-item.is-owned .ultimate-price__owned-label {
+        display: inline-block
+    }
+
+    .live-game-item:hover .ultimate-price__old-price,
+    .live-game-item:hover .ultimate-price__owned-label {
+        display: none
+    }
+
+    .live-game-item.is-preorder:hover .ultimate-price__preorder-label,
+    .live-game-item:not(.is-preorder):hover .ultimate-price__buy-now-label {
+        display: inline-block
+    }
+
+    .live-game-item.is-buyable:hover .ultimate-price__btn {
+        box-shadow: 0 0 0 1px rgba(0,0,0,.45),0 1px 3px 0 rgba(0,0,0,.45);
+        border-left-width: 0;
+        border-right-width: 0;
+        border-top-color: #9fbf00;
+        border-bottom-color: #80ab00;
+        color: #fff;
+        background: linear-gradient(to bottom,#9fbf00,#80ab00)
+    }
+
+    .live-game-item.is-tba .ultimate-price__old-price,
+    .live-game-item.is-tba .ultimate-price__owned-label,
+    .live-game-item.is-tba:hover .ultimate-price__old-price,
+    .live-game-item.is-tba:hover .ultimate-price__owned-label,
+    .live-game-item:not(.is-in-cart):not(.is-free):hover .ultimate-price__old-price,
+    .live-game-item:not(.is-in-cart):not(.is-free):hover .ultimate-price__owned-label {
+        color: rgba(255,255,255,.7)
+    }
+
+    .live-game-item.is-buyable:hover .ultimate-price__btn:hover {
+        background: linear-gradient(to bottom,#acce00,#8bba00);
+        border-top-color: #acce00;
+        border-bottom-color: #8bba00
+    }
+
+    .live-game-item.is-tba .ultimate-price__tba-label,
+    .live-game-item.is-tba:hover .ultimate-price__tba-label {
+        display: block
+    }
+
+    .live-game-item .is-in-cart .ultimate-price__free-label,
+    .live-game-item .is-in-cart .ultimate-price__main-price,
+    .live-game-item .is-in-cart .ultimate-price__old-price,
+    .live-game-item .is-in-cart .ultimate-price__owned-label,
+    .live-game-item .is-in-cart .ultimate-price__tba-label,
+    .live-game-item.is-tba .ultimate-price__buy-now-label,
+    .live-game-item.is-tba .ultimate-price__free-label,
+    .live-game-item.is-tba .ultimate-price__main-price,
+    .live-game-item.is-tba .ultimate-price__old-price,
+    .live-game-item.is-tba .ultimate-price__owned-label,
+    .live-game-item.is-tba .ultimate-price__preorder-label,
+    .live-game-item.is-tba:hover .ultimate-price__buy-now-label,
+    .live-game-item.is-tba:hover .ultimate-price__free-label,
+    .live-game-item.is-tba:hover .ultimate-price__main-price,
+    .live-game-item.is-tba:hover .ultimate-price__old-price,
+    .live-game-item.is-tba:hover .ultimate-price__owned-label,
+    .live-game-item.is-tba:hover .ultimate-price__preorder-label {
+        display: none
+    }
+
+    .live-game-item .is-in-cart .ultimate-price__in-cart {
+        display: block
+    }
+
+    .live-game-item.is-owned .ultimate-price__main-price,
+    .live-game-item:hover .is-in-cart .ultimate-price__buy-now-label,
+    .live-game-item:hover .is-in-cart .ultimate-price__free-label,
+    .live-game-item:hover .is-in-cart .ultimate-price__preorder-label {
+        display: none
+    }
+
+    .live-game-item .ultimate-price__discount,
+    .live-game-item .ultimate-price__main-price {
+        font-size: 11px
+    }
+
+    .live-game-item .ultimate-price__buy-now-label,
+    .live-game-item .ultimate-price__old-price,
+    .live-game-item .ultimate-price__owned-label {
+        font-weight: 400
+    }
+
+    .live-game-item .ultimate-price__btn,
+    .live-game-item .ultimate-price__discount {
+        padding: 0 5px
+    }
+
+    .live-game-item .ultimate-price__btn {
+        line-height: 22px;
+        min-width: 60px
+    }
+
+    .live-game-item .ultimate-price__discount {
+        line-height: 24px
+    }
+
+    .live-game-item.is-discounted .ultimate-price__buy-now-label,
+    .live-game-item.is-discounted .ultimate-price__old-price,
+    .live-game-item.is-discounted .ultimate-price__owned-label,
+    .live-game-item.is-discounted .ultimate-price__preorder-label,
+    .live-game-item:hover .ultimate-price__buy-now-label,
+    .live-game-item:hover .ultimate-price__old-price,
+    .live-game-item:hover .ultimate-price__owned-label,
+    .live-game-item:hover .ultimate-price__preorder-label {
+        margin-right: 0
+    }
+
+    .live-game-item .ultimate-price__buy-now-label,
+    .live-game-item .ultimate-price__old-price {
+        position: absolute;
+        clip: rect(0,0,0,0);
+        overflow: hidden
+    }
+
+    .live-game-item:not(.is-in-cart):not(.is-free):hover .ultimate-price__main-price {
+        display: block
+    }
+
+    .live-game-item .ultimate-price__free-label,
+    .live-game-item .ultimate-price__main-price {
+        float: none
+    }
+
+    .live-game__container .product-row__os-support {
+        margin-bottom: 7px
+    }
+}
+
+@media (min-width: 440px) and (max-width:563px) {
+    .promo-item .ultimate-price__old-price,.promo-item .ultimate-price__owned-label,.promo-item.is-free .ultimate-price__old-price,.promo-item.is-free .ultimate-price__owned-label,.promo-item.is-free:hover .ultimate-price__old-price,.promo-item.is-free:hover .ultimate-price__owned-label {
+        color:rgba(255,255,255,.7)
+    }
+
+    .promo-item .ultimate-price__main-price {
+        display: block
+    }
+
+    .promo-item.is-discounted .ultimate-price__discount,.promo-item.is-discounted .ultimate-price__old-price {
+        display: inline-block
+    }
+
+    .promo-item.is-free .ultimate-price__main-price,.promo-item.is-free:hover .ultimate-price__main-price {
+        display: none
+    }
+
+    .promo-item.is-free .ultimate-price__free-label,.promo-item.is-free:hover .ultimate-price__free-label {
+        display: block
+    }
+
+    .promo-item.is-owned .ultimate-price__free-label,.promo-item.is-owned .ultimate-price__old-price {
+        display: none
+    }
+
+    .promo-item.is-owned .ultimate-price__owned-label {
+        display: inline-block
+    }
+
+    .promo-item:hover .ultimate-price__old-price,.promo-item:hover .ultimate-price__owned-label {
+        display: none
+    }
+
+    .promo-item.is-preorder:hover .ultimate-price__preorder-label,.promo-item:not(.is-preorder):hover .ultimate-price__buy-now-label {
+        display: inline-block
+    }
+
+    .promo-item.is-buyable:hover .ultimate-price__btn {
+        box-shadow: 0 0 0 1px rgba(0,0,0,.45),0 1px 3px 0 rgba(0,0,0,.45);
+        border-left-width: 0;
+        border-right-width: 0;
+        border-top-color: #9fbf00;
+        border-bottom-color: #80ab00;
+        color: #fff;
+        background: linear-gradient(to bottom,#9fbf00,#80ab00)
+    }
+
+    .promo-item.is-buyable:hover .ultimate-price__btn:hover {
+        background: linear-gradient(to bottom,#acce00,#8bba00);
+        border-top-color: #acce00;
+        border-bottom-color: #8bba00
+    }
+
+    .promo-item.is-tba .ultimate-price__tba-label,.promo-item.is-tba:hover .ultimate-price__tba-label {
+        display: block
+    }
+
+    .promo-item .is-in-cart .ultimate-price__free-label,.promo-item .is-in-cart .ultimate-price__main-price,.promo-item .is-in-cart .ultimate-price__old-price,.promo-item .is-in-cart .ultimate-price__owned-label,.promo-item .is-in-cart .ultimate-price__tba-label,.promo-item.is-tba .ultimate-price__buy-now-label,.promo-item.is-tba .ultimate-price__free-label,.promo-item.is-tba .ultimate-price__main-price,.promo-item.is-tba .ultimate-price__old-price,.promo-item.is-tba .ultimate-price__owned-label,.promo-item.is-tba .ultimate-price__preorder-label,.promo-item.is-tba:hover .ultimate-price__buy-now-label,.promo-item.is-tba:hover .ultimate-price__free-label,.promo-item.is-tba:hover .ultimate-price__main-price,.promo-item.is-tba:hover .ultimate-price__old-price,.promo-item.is-tba:hover .ultimate-price__owned-label,.promo-item.is-tba:hover .ultimate-price__preorder-label {
+        display: none
+    }
+
+    .promo-item.is-tba .ultimate-price__old-price,.promo-item.is-tba .ultimate-price__owned-label,.promo-item.is-tba:hover .ultimate-price__old-price,.promo-item.is-tba:hover .ultimate-price__owned-label {
+        color: rgba(255,255,255,.7)
+    }
+
+    .promo-item .ultimate-price__free-label,.promo-item .ultimate-price__main-price {
+        float: right
+    }
+
+    .promo-item .is-in-cart .ultimate-price__in-cart {
+        display: block
+    }
+
+    .promo-item:hover .is-in-cart .ultimate-price__buy-now-label,.promo-item:hover .is-in-cart .ultimate-price__free-label,.promo-item:hover .is-in-cart .ultimate-price__preorder-label {
+        display: none
+    }
+
+    .promo-item.is-discounted .ultimate-price__buy-now-label,.promo-item.is-discounted .ultimate-price__old-price,.promo-item.is-discounted .ultimate-price__owned-label,.promo-item.is-discounted .ultimate-price__preorder-label,.promo-item:hover .ultimate-price__buy-now-label,.promo-item:hover .ultimate-price__old-price,.promo-item:hover .ultimate-price__owned-label,.promo-item:hover .ultimate-price__preorder-label {
+        margin-right: 10px
+    }
+
+    .promo-item .ultimate-price__old-price {
+        position: relative;
+        clip: auto;
+        overflow: inherit
+    }
+
+    .promo-item .ultimate-price__buy-now-label {
+        position: static;
+        clip: auto;
+        overflow: inherit
+    }
+
+    .promo-item .ultimate-price__discount,.promo-item .ultimate-price__free-label,.promo-item .ultimate-price__main-price,.promo-item .ultimate-price__tba-label {
+        font-size: 16px
+    }
+
+    .promo-item .ultimate-price__btn,.promo-item .ultimate-price__discount {
+        padding: 0 9px
+    }
+
+    .promo-item .ultimate-price__btn {
+        line-height: 32px;
+        min-width: 140px
+    }
+
+    .promo-item .ultimate-price__discount {
+        line-height: 34px
+    }
+
+    .promo-item__container .product-row__os-support {
+        margin-bottom: 12px
+    }
+}
+
+.live-game-item {
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .35);
+    position: relative;
+    height: 0;
+    user-select: none;
+    -webkit-user-drag: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    touch-action: auto;
+}
+.badge--alt-slide,
+.badge-generic__badge,
+.badge-generic__slider,
+.badge__text,
+.live-game-item .live-game-item__picture {
+    overflow: hidden
+}
+.live-game-item__component-position {
+    position: absolute
+}
+.live-game-item__component-position.live-game-item__component-position--z-bg {
+    z-index: 0
+}
+.live-game-item__component-position.live-game-item__component-position--z-fg {
+    z-index: 2
+}
+.live-game-item__component-position:not(.live-game-item__component-position--z-bg):not(.live-game-item__component-position--z-fg) {
+    z-index: 1
+}
+
+.live-game__container--quartet .live-game-item__highlight {
+    padding-bottom: 46.4%
+}
+.live-game__container .live-game-item__highlight {
+    padding-bottom: 100%
+}
+.live-game-item .live-game-item__picture:before {
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, .2);
+    z-index: 1;
+    pointer-events: none
+}
+
+.live-game-item .live-game-item__picture:after,
+.live-game-item .live-game-item__picture:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0
+}
+.live-game-item__img.live-game-item__img--primary:after {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    content: attr(alt);
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    padding-top: 30px;
+    font-size: 13px;
+    font-weight: 600;
+    text-align: center;
+    color: #4c4c4c;
+    background-color: #353535
+}
+.live-game-item__component-position.live-game-item__component-position--fill {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0
+}
+.live-game-item__component-position.live-game-item__component-position--no-pointer-event {
+    pointer-events: none
+}
+
+.live-game-item__lnk {
+    position: absolute
+}
+.badge-generic__container {
+    display: none;
+    line-height: 0;
+    pointer-events: none
+}
+.live-game-item__component-position.live-game-item__component-position--center-center .live-game-item__description,
+.live-game-item__component-position.live-game-item__component-position--center-center .live-game-item__title {
+    width: 100%
+}
+
+.live-game-item__component-position.live-game-item__component-position--center-top {
+    top: 8px;
+    right: 0;
+    left: 0
+}
+
+.live-game-item__component-position.live-game-item__component-position--left-bottom {
+    bottom: 8px;
+    left: 8px
+}
+
+.live-game-item__component-position.live-game-item__component-position--right-bottom {
+    right: 8px;
+    bottom: 8px
+}
+
+.live-game-item__component-position.live-game-item__component-position--left-top-off-h {
+    top: 8px;
+    left: 0
+}
+
+.live-game-item__component-position.live-game-item__component-position--no-offset-top {
+    top: 0
+}
+
+.live-game-item__component-position.live-game-item__component-position--no-offset-right {
+    right: 0
+}
+
+.live-game-item__component-position.live-game-item__component-position--no-offset-bottom {
+    bottom: 0
+}
+
+.live-game-item__component-position.live-game-item__component-position--no-offset-left {
+    left: 0
+}
+.live-game-item .live-game-item__picture.live-game-item__picture--secondary {
+    z-index: 1
+}
+
+.live-game-item.is-badged .badge-generic__container,
+.live-game-item.is-wishlisted .badge-generic__badge.badge-generic__badge--wishlisted,
+.live-game-item.is-wishlisted .badge-generic__container {
+    display: block
+}
+
+.live-game-item.is-badged .badge-generic__badge.badge-generic__badge--wishlisted {
+    display: none
+}
+
+.live-game-item.is-badged .badge-generic__badge.badge-generic__badge--custom {
+    display: block
+}
+
+.live-game-item:hover .live-game-item__picture:after {
+    background-color: rgba(229, 229, 229, .05)
+}
+
+.live-game-item:hover .badge-generic__slider,
+.live-game-item:hover .badge-generic__text {
+    -webkit-transform: translateX(0);
+    transform: translateX(0)
+}
+.badge-generic__container .badge-generic__badge,
+.badge.badge {
+    color: #ffcd1a
+}
+.badge-generic__container .badge-generic__badge:after,
+.badge-generic__container .badge-generic__badge:before,
+.badge-generic__container .badge-generic__slider {
+    background-color: #323232
+}
+
+.badge-generic__container .badge-generic__slider {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%)
+}
+
+.badge-generic__container .badge-generic__text {
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%)
+}
+
+.badge-generic__container .badge__icon.badge__icon--prefix {
+    z-index: 3
+}
+
+.badge-generic__container .badge__icon.badge__icon--postfix {
+    margin-left: 6px
+}
+
+.badge-generic__container.x-ng-cloak .badge-generic__slider,
+.badge-generic__container.x-ng-cloak .badge-generic__text {
+    -webkit-transform: translateX(0);
+    transform: translateX(0)
+}
+
+.badge-generic__badge.badge-generic__badge--positioned {
+    position: absolute;
+    top: 10px;
+    left: 0
+}
+
+.badge-generic__badge:after,
+.badge-generic__badge:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0
+}
+
+.badge-generic__badge:before {
+    left: 20px;
+    width: 9px
+}
+
+.badge-generic__badge:after {
+    left: 0;
+    z-index: 2;
+    width: 20px
+}
+
+.badge-generic__badge--slide .badge-generic__slider,
+.badge-generic__badge--slide .badge-generic__text {
+    transition: -webkit-transform ease-in-out .3s;
+    transition: transform ease-in-out .3s
+}
+
+.badge-generic__badge.badge-generic__badge--wishlisted {
+    color: #fea328
+}
+
+.badge-generic__badge.badge-generic__badge--custom {
+    display: none
+}
+
+.badge-generic__slider {
+    display: inline-block;
+    margin-left: 26px
+}
+
+.badge-generic__text {
+    display: inline-block;
+    padding-left: 1px;
+    padding-right: 11px;
+    line-height: 24px;
+    white-space: nowrap;
+    font-size: 11px
+}
+.lang--zh-CN .badge-generic__text,
+.lang--zh-TW .badge-generic__text {
+    font-size: 12px;
+}
+.badge-generic__container.is-badged .badge-generic__badge--wishlisted {
+    display: none
+}
+
+.badge-generic__container.is-badged .badge-generic__badge--custom {
+    display: block
+}
+.badge__icon--postfix,
+.badge__text {
+    margin-left: 6px
+}
+@-webkit-keyframes badgeSlideIn {
+    100% {
+        max-width: 100%
+    }
+}
+
+@keyframes badgeSlideIn {
+    100% {
+        max-width: 100%
+    }
+}
+
+@-webkit-keyframes badgeSlideOut {
+    0% {
+        max-width: 100%
+    }
+    99% {
+        opacity: 1
+    }
+    100% {
+        max-width: 0;
+        opacity: 0
+    }
+}
+
+@keyframes badgeSlideOut {
+    0% {
+        max-width: 100%
+    }
+    99% {
+        opacity: 1
+    }
+    100% {
+        max-width: 0;
+        opacity: 0
+    }
+}
+
+.badge {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    height: 24px;
+    padding: 0 0 0 20px;
+    min-width: 9px;
+    font-size: 11px;
+    line-height: 24px;
+    background: #323232;
+    transition: max-width .3s cubic-bezier(.42, 0, .58, 1)
+}
+
+.badge--initial-animation {
+    max-width: 100%;
+    -webkit-animation: badgeSlideOut .3s cubic-bezier(.42, 0, .58, 1) 7s forwards;
+    animation: badgeSlideOut .3s cubic-bezier(.42, 0, .58, 1) 7s forwards
+}
+
+.badge__text {
+    display: block;
+    margin-right: 10px;
+    white-space: nowrap
+}
+
+.badge__icon {
+    font-size: 10px
+}
+
+.badge__icon--prefix {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 10px;
+    line-height: 24px
+}
+
+.badge--custom {
+    display: none
+}
+.badge--custom .badge__icon:before,
+.badge-generic__badge.badge-generic__badge--custom:not(.badge-generic__badge--last-chance) .badge__icon:before {
+    content: "\e601"
+}
+
+

@@ -1,0 +1,41 @@
+.card-wrapper {
+    position: relative;
+    display: inline-block;
+    width: auto;
+    border-left: grey 1px solid;
+    padding-left: 9px;
+    color: grey;
+    white-space: nowrap;
+    opacity: .75;
+}
+
+.card-wrapper:first-child {
+    border-left-width: 0;
+    padding-left: 0;
+}
+
+.card-wrapper.selected {
+    color: inherit;
+    opacity: 1;
+    /*background: rgba(188, 188, 188, .5);*/
+}
+
+.card-wrapper .card-text {
+
+}
+
+.card-wrapper .icon-tick {
+    display: inline-block;
+    visibility: hidden;
+    width: 9px;
+    height: 8px;
+    margin: 0 5px;
+    fill: currentColor;
+}
+
+.card-wrapper.selected .icon-tick {
+    visibility: visible;
+    /*position: absolute;*/
+    /*right: 5px;*/
+    /*bottom: 5px;*/
+}

@@ -1,0 +1,27 @@
+.partHeader-component {
+    width: 100%;
+  }
+  .partHeader-component h1 {
+    text-align: center;
+    margin-top: 0;
+    font-weight: bold;
+  }
+  @media screen and (min-width: 566px) {
+    .partHeader-component {
+      height: 100px;
+    }
+    .partHeader-component h1 {
+      font-size: 25px;
+      line-height: 100px;
+    }
+  }
+  @media screen and (max-width: 566px) {
+    .partHeader-component {
+      
+    }
+    .partHeader-component h1 {
+      font-size: 18px;
+      line-height: 50px;
+    }
+  }
+  
